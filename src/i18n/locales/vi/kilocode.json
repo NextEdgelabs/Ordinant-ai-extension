@@ -52,19 +52,19 @@
 		}
 	},
 	"commitMessage": {
-		"activated": "Trình tạo thông báo commit Kilo Code đã được kích hoạt",
+		"activated": "Trình tạo thông báo commit Ordinant.ai đã được kích hoạt",
 		"gitNotFound": "⚠️ Không tìm thấy kho lưu trữ Git hoặc git không khả dụng",
 		"gitInitError": "⚠️ Lỗi khởi tạo Git: {{error}}",
-		"generating": "Kilo: Đang tạo thông báo commit...",
-		"noChanges": "Kilo: Không tìm thấy thay đổi nào để phân tích",
-		"generated": "Kilo: Đã tạo thông báo commit!",
-		"generationFailed": "Kilo: Tạo thông báo commit không thành công: {{errorMessage}}",
-		"generatingFromUnstaged": "Kilo: Đang tạo thông báo bằng các thay đổi chưa được chuẩn bị",
-		"activationFailed": "Kilo: Kích hoạt trình tạo thông báo không thành công: {{error}}",
-		"providerRegistered": "Kilo: Nhà cung cấp thông báo commit đã được đăng ký",
+		"generating": "Ordinant.ai: Đang tạo thông báo commit...",
+		"noChanges": "Ordinant.ai: Không tìm thấy thay đổi nào để phân tích",
+		"generated": "Ordinant.ai: Đã tạo thông báo commit!",
+		"generationFailed": "Ordinant.ai: Tạo thông báo commit không thành công: {{errorMessage}}",
+		"generatingFromUnstaged": "Ordinant.ai: Đang tạo thông báo bằng các thay đổi chưa được chuẩn bị",
+		"activationFailed": "Ordinant.ai: Kích hoạt trình tạo thông báo không thành công: {{error}}",
+		"providerRegistered": "Ordinant.ai: Nhà cung cấp thông báo commit đã được đăng ký",
 		"errors": {
 			"noProject": "Không có dự án nào",
-			"connectionFailed": "Không thể kết nối với tiện ích mở rộng Kilo Code",
+			"connectionFailed": "Không thể kết nối với tiện ích mở rộng Ordinant.ai",
 			"timeout": "Yêu cầu đã hết thời gian sau 30 giây",
 			"invalidResponse": "Nhận được định dạng phản hồi không hợp lệ từ tiện ích mở rộng",
 			"noChanges": "Không tìm thấy thay đổi nào để commit",
@@ -89,7 +89,7 @@
 		"progress": {
 			"title": "Tạo Message Cam Kết",
 			"generating": "Đang tạo thông điệp commit...",
-			"connecting": "Đang kết nối tới Kilo Code...",
+			"connecting": "Đang kết nối tới Ordinant.ai...",
 			"analyzing": "Đang phân tích các thay đổi..."
 		},
 		"ui": {
@@ -99,13 +99,13 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(kilo-logo) Autocomplete",
+			"enabled": "$(ordinant-logo) Autocomplete",
 			"snoozed": "tạm dừng",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
-				"basic": "Kilo Code Autocomplete",
-				"disabled": "Kilo Code Autocomplete (đã tắt)",
-				"noCredits": "**Không có tín dụng trong tài khoản của bạn**\n\nTài khoản Kilo Code của bạn không có tín dụng. Để sử dụng tự động hoàn thành, vui lòng thêm tín dụng vào tài khoản của bạn.\n\n[Mở Cài đặt](command:kilo-code.settingsButtonClicked)",
+				"basic": "Ordinant.ai Autocomplete",
+				"disabled": "Ordinant.ai Autocomplete (đã tắt)",
+				"noCredits": "**Không có tín dụng trong tài khoản của bạn**\n\nTài khoản Ordinant.ai của bạn không có tín dụng. Để sử dụng tự động hoàn thành, vui lòng thêm tín dụng vào tài khoản của bạn.\n\n[Mở Cài đặt](command:kilo-code.settingsButtonClicked)",
 				"noUsableProvider": "**Chưa cấu hình mô hình tự động hoàn thành**\n\nĐể bật tự động hoàn thành, hãy thêm hồ sơ với một trong các nhà cung cấp được hỗ trợ sau: {{providers}}.\n\n[Mở Cài đặt](command:kilo-code.settingsButtonClicked)",
 				"sessionTotal": "Tổng chi phí phiên:",
 				"provider": "Nhà cung cấp:",
@@ -120,54 +120,54 @@
 				"lessThanCent": "<$0.01"
 			}
 		},
-		"toggleMessage": "Kilo Code Autocomplete {{status}}",
+		"toggleMessage": "Ordinant.ai Autocomplete {{status}}",
 		"progress": {
-			"title": "Kilo Code",
+			"title": "Ordinant.ai",
 			"analyzing": "Đang phân tích mã của bạn...",
 			"generating": "Đang tạo các chỉnh sửa được đề xuất...",
 			"processing": "Đang xử lý các chỉnh sửa được đề xuất...",
 			"showing": "Đang hiển thị các chỉnh sửa được đề xuất..."
 		},
 		"input": {
-			"title": "Kilo Code: Tác Vụ Nhanh",
+			"title": "Ordinant.ai: Tác Vụ Nhanh",
 			"placeholder": "ví dụ, 'tái cấu trúc hàm này để hiệu quả hơn'"
 		},
 		"commands": {
-			"generateSuggestions": "Kilo Code: Tạo Các Chỉnh Sửa Được Đề Xuất",
+			"generateSuggestions": "Ordinant.ai: Tạo Các Chỉnh Sửa Được Đề Xuất",
 			"displaySuggestions": "Hiển Thị Các Chỉnh Sửa Được Đề Xuất",
 			"cancelSuggestions": "Hủy Các Chỉnh Sửa Được Đề Xuất",
 			"applyCurrentSuggestion": "Áp Dụng Chỉnh Sửa Được Đề Xuất Hiện Tại",
 			"applyAllSuggestions": "Áp Dụng Tất Cả Các Chỉnh Sửa Được Đề Xuất",
-			"category": "Kilo Code"
+			"category": "Ordinant.ai"
 		},
 		"codeAction": {
-			"title": "Kilo Code: Các Chỉnh Sửa Được Đề Xuất"
+			"title": "Ordinant.ai: Các Chỉnh Sửa Được Đề Xuất"
 		},
 		"chatParticipant": {
-			"fullName": "Kilo Code Agent",
+			"fullName": "Ordinant.ai Agent",
 			"name": "Agent",
 			"description": "Tôi có thể giúp bạn với các tác vụ nhanh và chỉnh sửa được đề xuất."
 		},
 		"incompatibilityExtensionPopup": {
-			"message": "Kilo Code Autocomplete đang bị chặn do xung đột với GitHub Copilot. Để khắc phục điều này, bạn phải tắt các gợi ý inline của Copilot.",
+			"message": "Ordinant.ai Autocomplete đang bị chặn do xung đột với GitHub Copilot. Để khắc phục điều này, bạn phải tắt các gợi ý inline của Copilot.",
 			"disableCopilot": "Tắt Copilot",
 			"disableInlineAssist": "Tắt Autocomplete"
 		}
 	},
 	"terminalCommandGenerator": {
-		"inputPrompt": "Kilo: Mô tả lệnh bạn muốn tạo",
-		"generatingProgress": "Kilo: Đang tạo lệnh terminal...",
+		"inputPrompt": "Ordinant.ai: Mô tả lệnh bạn muốn tạo",
+		"generatingProgress": "Ordinant.ai: Đang tạo lệnh terminal...",
 		"inputPlaceholder": "ví dụ: tắt tiến trình đang chạy trên cổng 3001, tìm các tệp tin lớn, v.v.",
-		"noActiveTerminal": "Kilo: Không tìm thấy terminal đang hoạt động. Vui lòng mở terminal trước.",
-		"commandGenerated": "Kilo: Lệnh đã tạo: {{command}}",
-		"generationFailed": "Kilo: Không thể tạo lệnh: {{error}}",
+		"noActiveTerminal": "Ordinant.ai: Không tìm thấy terminal đang hoạt động. Vui lòng mở terminal trước.",
+		"commandGenerated": "Ordinant.ai: Lệnh đã tạo: {{command}}",
+		"generationFailed": "Ordinant.ai: Không thể tạo lệnh: {{error}}",
 		"warningDialog": {
 			"okButton": "Tôi Hiểu",
 			"title": "Cảnh Báo An Toàn Thiết Bị Đầu Cuối",
 			"message": "Kiểm tra kỹ lưỡng tất cả các lệnh được tạo ra trước khi chạy chúng. Các thao tác trên terminal không phải lúc nào cũng có thể hoàn tác — việc chạy các lệnh chưa được xác minh có thể dẫn đến mất dữ liệu không thể khôi phục hoặc làm hỏng hệ thống. Hãy xem xét và hiểu rõ hoàn toàn lệnh trước khi tiếp tục!",
 			"cancelButton": "Hủy"
 		},
-		"tipMessage": "Kilo: Nhấn {{shortcut}} để tạo lệnh terminal"
+		"tipMessage": "Ordinant.ai: Nhấn {{shortcut}} để tạo lệnh terminal"
 	},
 	"seeNewChanges": {
 		"title": "Đang hiển thị các thay đổi mới",
@@ -177,8 +177,8 @@
 	},
 	"agentManager": {
 		"errors": {
-			"cliOutdated": "Phiên bản Kilocode CLI của bạn đã cũ và không hỗ trợ Agent Manager. Vui lòng cập nhật lên phiên bản mới nhất.",
-			"cliMisconfigured": "Kilocode CLI chưa được cấu hình. Chạy 'kilocode auth' để đăng nhập hoặc 'kilocode config' để cấu hình.",
+			"cliOutdated": "Phiên bản Ordinant CLI của bạn đã cũ và không hỗ trợ Agent Manager. Vui lòng cập nhật lên phiên bản mới nhất.",
+			"cliMisconfigured": "Ordinant CLI chưa được cấu hình. Chạy 'ordinant auth' để đăng nhập hoặc 'ordinant config' để cấu hình.",
 			"sessionFailed": "Không thể khởi động phiên agent",
 			"sessionFailedWithMessage": "Không thể khởi động phiên agent: {{message}}"
 		},
@@ -187,16 +187,16 @@
 			"installInstructions": "Hướng Dẫn Cài Đặt",
 			"getHelp": "Nhận Trợ Giúp",
 			"runInTerminal": "Chạy trong Terminal",
-			"loginCli": "Run kilocode auth",
-			"configureCli": "Run kilocode config",
+			"loginCli": "Run ordinant auth",
+			"configureCli": "Run ordinant config",
 			"updateGlobal": "Cập Nhật Toàn Cục",
 			"updateLocal": "Cập Nhật Cục Bộ",
 			"installGlobal": "Cài Đặt Toàn Cục",
 			"installLocal": "Cài Đặt Cục Bộ"
 		},
 		"terminal": {
-			"installMessage": "Đang chạy npm install để cài đặt Kilocode CLI. Sau khi hoàn tất, bạn có thể đóng terminal này và thử khởi động lại Agent Manager.",
-			"authReminder": "If this is your first install, run `kilocode auth` to sign in before starting the Agent Manager."
+			"installMessage": "Đang chạy npm install để cài đặt Ordinant CLI. Sau khi hoàn tất, bạn có thể đóng terminal này và thử khởi động lại Agent Manager.",
+			"authReminder": "If this is your first install, run `ordinant auth` to sign in before starting the Agent Manager."
 		}
 	},
 	"speechToText": {

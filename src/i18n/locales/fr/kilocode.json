@@ -52,7 +52,7 @@
 		}
 	},
 	"commitMessage": {
-		"activated": "Générateur de messages de commit Kilo Code activé",
+		"activated": "Générateur de messages de commit Ordinant.ai activé",
 		"gitNotFound": "⚠️ Dépôt Git introuvable ou git non disponible",
 		"gitInitError": "⚠️ Erreur d'initialisation Git : {{error}}",
 		"generating": "Kilo : Génération du message de commit...",
@@ -65,7 +65,7 @@
 		"errors": {
 			"noProject": "Aucun projet disponible",
 			"timeout": "La requête a expiré après 30 secondes",
-			"connectionFailed": "Échec de connexion à l'extension Kilo Code",
+			"connectionFailed": "Échec de connexion à l'extension Ordinant.ai",
 			"invalidResponse": "Format de réponse invalide reçu de l'extension",
 			"missingMessage": "Aucun message de commit reçu de l'extension",
 			"noWorkspacePath": "Impossible de déterminer le chemin d'espace de travail pour le dépôt Git",
@@ -88,7 +88,7 @@
 		},
 		"progress": {
 			"title": "Génération du Message de Commit",
-			"connecting": "Connexion à Kilo Code...",
+			"connecting": "Connexion à Ordinant.ai...",
 			"analyzing": "Analyse des changements en cours...",
 			"generating": "Génération du message de commit..."
 		},
@@ -99,13 +99,13 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(kilo-logo) Autocomplete",
+			"enabled": "$(ordinant-logo) Autocomplete",
 			"snoozed": "en pause",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
-				"basic": "Kilo Code Autocomplete",
-				"disabled": "Kilo Code Autocomplete (désactivé)",
-				"noCredits": "**Pas de crédits sur ton compte**\n\nTon compte Kilo Code n'a pas de crédits. Pour utiliser l'autocomplétion, ajoute des crédits à ton compte.\n\n[Ouvrir les Paramètres](command:kilo-code.settingsButtonClicked)",
+				"basic": "Ordinant.ai Autocomplete",
+				"disabled": "Ordinant.ai Autocomplete (désactivé)",
+				"noCredits": "**Pas de crédits sur ton compte**\n\nTon compte Ordinant.ai n'a pas de crédits. Pour utiliser l'autocomplétion, ajoute des crédits à ton compte.\n\n[Ouvrir les Paramètres](command:kilo-code.settingsButtonClicked)",
 				"noUsableProvider": "**Aucun modèle d'autocomplétion configuré**\n\nPour activer l'autocomplétion, ajoute un profil avec l'un de ces fournisseurs pris en charge : {{providers}}.\n\n[Ouvrir les Paramètres](command:kilo-code.settingsButtonClicked)",
 				"sessionTotal": "Coût total de la session :",
 				"provider": "Fournisseur:",
@@ -120,36 +120,36 @@
 				"lessThanCent": "<$0.01"
 			}
 		},
-		"toggleMessage": "Kilo Code Autocomplete {{status}}",
+		"toggleMessage": "Ordinant.ai Autocomplete {{status}}",
 		"progress": {
-			"title": "Kilo Code",
+			"title": "Ordinant.ai",
 			"analyzing": "Analyse de ton code...",
 			"generating": "Génération des modifications suggérées...",
 			"processing": "Traitement des modifications suggérées...",
 			"showing": "Affichage des modifications suggérées..."
 		},
 		"input": {
-			"title": "Kilo Code : Tâche Rapide",
+			"title": "Ordinant.ai : Tâche Rapide",
 			"placeholder": "ex., 'refactorise cette fonction pour plus d'efficacité'"
 		},
 		"commands": {
-			"generateSuggestions": "Kilo Code : Générer des Modifications Suggérées",
+			"generateSuggestions": "Ordinant.ai : Générer des Modifications Suggérées",
 			"displaySuggestions": "Afficher les Modifications Suggérées",
 			"cancelSuggestions": "Annuler les Modifications Suggérées",
 			"applyCurrentSuggestion": "Appliquer la Modification Suggérée Actuelle",
 			"applyAllSuggestions": "Appliquer Toutes les Modifications Suggérées",
-			"category": "Kilo Code"
+			"category": "Ordinant.ai"
 		},
 		"codeAction": {
-			"title": "Kilo Code : Modifications Suggérées"
+			"title": "Ordinant.ai : Modifications Suggérées"
 		},
 		"chatParticipant": {
-			"fullName": "Kilo Code Agent",
+			"fullName": "Ordinant.ai Agent",
 			"name": "Agent",
 			"description": "Je peux t'aider avec des tâches rapides et des modifications suggérées."
 		},
 		"incompatibilityExtensionPopup": {
-			"message": "Le Kilo Code Autocomplete est bloqué par un conflit avec GitHub Copilot. Pour résoudre cela, tu dois désactiver les suggestions en ligne de Copilot.",
+			"message": "Le Ordinant.ai Autocomplete est bloqué par un conflit avec GitHub Copilot. Pour résoudre cela, tu dois désactiver les suggestions en ligne de Copilot.",
 			"disableCopilot": "Désactiver Copilot",
 			"disableInlineAssist": "Désactiver Autocomplete"
 		}
@@ -177,8 +177,8 @@
 	},
 	"agentManager": {
 		"errors": {
-			"cliOutdated": "Ta version de Kilocode CLI est obsolète et ne prend pas en charge le Gestionnaire d'Agents. Mets-la à jour vers la dernière version.",
-			"cliMisconfigured": "Kilocode CLI n'est pas configuré. Exécute 'kilocode auth' pour te connecter ou 'kilocode config' pour configurer.",
+			"cliOutdated": "Ta version de Ordinant CLI est obsolète et ne prend pas en charge le Gestionnaire d'Agents. Mets-la à jour vers la dernière version.",
+			"cliMisconfigured": "Ordinant CLI n'est pas configuré. Exécute 'ordinant auth' pour te connecter ou 'ordinant config' pour configurer.",
 			"sessionFailed": "Échec du démarrage de la session de l'agent",
 			"sessionFailedWithMessage": "Échec du démarrage de la session de l'agent : {{message}}"
 		},
@@ -187,16 +187,16 @@
 			"installInstructions": "Instructions d'Installation",
 			"getHelp": "Obtenir de l'Aide",
 			"runInTerminal": "Exécuter dans le Terminal",
-			"loginCli": "Run kilocode auth",
-			"configureCli": "Run kilocode config",
+			"loginCli": "Run ordinant auth",
+			"configureCli": "Run ordinant config",
 			"updateGlobal": "Mettre à jour Global",
 			"updateLocal": "Mettre à jour Local",
 			"installGlobal": "Installer Global",
 			"installLocal": "Installer Local"
 		},
 		"terminal": {
-			"installMessage": "Exécution de npm install pour installer Kilocode CLI. Une fois terminé, tu peux fermer ce terminal et essayer de démarrer le Gestionnaire d'Agents à nouveau.",
-			"authReminder": "If this is your first install, run `kilocode auth` to sign in before starting the Agent Manager."
+			"installMessage": "Exécution de npm install pour installer Ordinant CLI. Une fois terminé, tu peux fermer ce terminal et essayer de démarrer le Gestionnaire d'Agents à nouveau.",
+			"authReminder": "If this is your first install, run `ordinant auth` to sign in before starting the Agent Manager."
 		}
 	},
 	"speechToText": {

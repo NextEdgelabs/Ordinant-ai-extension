@@ -52,19 +52,19 @@
 		}
 	},
 	"commitMessage": {
-		"activated": "Generator pesan komit Kilo Code diaktifkan",
+		"activated": "Generator pesan komit Ordinant.ai diaktifkan",
 		"gitNotFound": "⚠️ Repositori Git tidak ditemukan atau git tidak tersedia",
 		"gitInitError": "⚠️ Kesalahan inisialisasi Git: {{error}}",
-		"generating": "Kilo: Menghasilkan pesan komit...",
-		"noChanges": "Kilo: Tidak ada perubahan yang ditemukan untuk dianalisis",
-		"generated": "Kilo: Pesan komit dihasilkan!",
-		"generationFailed": "Kilo: Gagal menghasilkan pesan komit: {{errorMessage}}",
-		"generatingFromUnstaged": "Kilo: Menghasilkan pesan menggunakan perubahan yang belum ditahapkan",
-		"activationFailed": "Kilo: Gagal mengaktifkan generator pesan: {{error}}",
-		"providerRegistered": "Kilo: Penyedia pesan komit terdaftar",
+		"generating": "Ordinant.ai: Menghasilkan pesan komit...",
+		"noChanges": "Ordinant.ai: Tidak ada perubahan yang ditemukan untuk dianalisis",
+		"generated": "Ordinant.ai: Pesan komit dihasilkan!",
+		"generationFailed": "Ordinant.ai: Gagal menghasilkan pesan komit: {{errorMessage}}",
+		"generatingFromUnstaged": "Ordinant.ai: Menghasilkan pesan menggunakan perubahan yang belum ditahapkan",
+		"activationFailed": "Ordinant.ai: Gagal mengaktifkan generator pesan: {{error}}",
+		"providerRegistered": "Ordinant.ai: Penyedia pesan komit terdaftar",
 		"errors": {
 			"noProject": "Tidak ada proyek yang tersedia",
-			"connectionFailed": "Gagal terhubung ke ekstensi Kilo Code",
+			"connectionFailed": "Gagal terhubung ke ekstensi Ordinant.ai",
 			"timeout": "Permintaan waktu habis setelah 30 detik",
 			"invalidResponse": "Format respons tidak valid diterima dari ekstensi",
 			"noChanges": "Tidak ada perubahan ditemukan untuk di-commit",
@@ -89,7 +89,7 @@
 		"progress": {
 			"title": "Membuat Pesan Commit",
 			"analyzing": "Menganalisis perubahan...",
-			"connecting": "Menghubungkan ke Kilo Code...",
+			"connecting": "Menghubungkan ke Ordinant.ai...",
 			"generating": "Menghasilkan pesan commit..."
 		},
 		"ui": {
@@ -99,13 +99,13 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(kilo-logo) Autocomplete",
+			"enabled": "$(ordinant-logo) Autocomplete",
 			"snoozed": "dijeda",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
-				"basic": "Kilo Code Autocomplete",
-				"disabled": "Kilo Code Autocomplete (dinonaktifkan)",
-				"noCredits": "**Tidak ada kredit di akun kamu**\n\nAkun Kilo Code kamu tidak memiliki kredit. Untuk menggunakan autocomplete, silakan tambahkan kredit ke akun kamu.\n\n[Buka Pengaturan](command:kilo-code.settingsButtonClicked)",
+				"basic": "Ordinant.ai Autocomplete",
+				"disabled": "Ordinant.ai Autocomplete (dinonaktifkan)",
+				"noCredits": "**Tidak ada kredit di akun kamu**\n\nAkun Ordinant.ai kamu tidak memiliki kredit. Untuk menggunakan autocomplete, silakan tambahkan kredit ke akun kamu.\n\n[Buka Pengaturan](command:kilo-code.settingsButtonClicked)",
 				"noUsableProvider": "**Tidak ada model autocomplete yang dikonfigurasi**\n\nUntuk mengaktifkan autocomplete, tambahkan profil dengan salah satu penyedia yang didukung ini: {{providers}}.\n\n[Buka Pengaturan](command:kilo-code.settingsButtonClicked)",
 				"sessionTotal": "Total biaya sesi:",
 				"provider": "Penyedia:",
@@ -120,54 +120,54 @@
 				"lessThanCent": "<$0.01"
 			}
 		},
-		"toggleMessage": "Kilo Code Autocomplete {{status}}",
+		"toggleMessage": "Ordinant.ai Autocomplete {{status}}",
 		"progress": {
-			"title": "Kilo Code",
+			"title": "Ordinant.ai",
 			"analyzing": "Menganalisis kode Anda...",
 			"generating": "Menghasilkan suntingan yang disarankan...",
 			"processing": "Memproses suntingan yang disarankan...",
 			"showing": "Menampilkan suntingan yang disarankan..."
 		},
 		"input": {
-			"title": "Kilo Code: Tugas Cepat",
+			"title": "Ordinant.ai: Tugas Cepat",
 			"placeholder": "mis., 'refaktor fungsi ini agar lebih efisien'"
 		},
 		"commands": {
-			"generateSuggestions": "Kilo Code: Hasilkan Suntingan yang Disarankan",
+			"generateSuggestions": "Ordinant.ai: Hasilkan Suntingan yang Disarankan",
 			"displaySuggestions": "Tampilkan Suntingan yang Disarankan",
 			"cancelSuggestions": "Batalkan Suntingan yang Disarankan",
 			"applyCurrentSuggestion": "Terapkan Suntingan yang Disarankan Saat Ini",
 			"applyAllSuggestions": "Terapkan Semua Suntingan yang Disarankan",
-			"category": "Kilo Code"
+			"category": "Ordinant.ai"
 		},
 		"codeAction": {
-			"title": "Kilo Code: Suntingan yang Disarankan"
+			"title": "Ordinant.ai: Suntingan yang Disarankan"
 		},
 		"chatParticipant": {
-			"fullName": "Kilo Code Agent",
+			"fullName": "Ordinant.ai Agent",
 			"name": "Agent",
 			"description": "Saya dapat membantu Anda dengan tugas cepat dan suntingan yang disarankan."
 		},
 		"incompatibilityExtensionPopup": {
-			"message": "Kilo Code Autocomplete diblokir oleh konflik dengan GitHub Copilot. Untuk memperbaiki ini, Anda harus menonaktifkan saran inline Copilot.",
+			"message": "Ordinant.ai Autocomplete diblokir oleh konflik dengan GitHub Copilot. Untuk memperbaiki ini, Anda harus menonaktifkan saran inline Copilot.",
 			"disableCopilot": "Nonaktifkan Copilot",
 			"disableInlineAssist": "Nonaktifkan Autocomplete"
 		}
 	},
 	"terminalCommandGenerator": {
 		"inputPlaceholder": "mis., matikan proses yang berjalan di port 3001, temukan file besar, dll",
-		"noActiveTerminal": "Kilo: Tidak ada terminal aktif yang ditemukan. Silakan buka terminal terlebih dahulu.",
-		"inputPrompt": "Kilo: Jelaskan perintah yang ingin Anda hasilkan",
-		"generatingProgress": "Kilo: Menghasilkan perintah terminal...",
-		"generationFailed": "Kilo: Gagal menghasilkan perintah: {{error}}",
-		"commandGenerated": "Kilo: Perintah yang dihasilkan: {{command}}",
+		"noActiveTerminal": "Ordinant.ai: Tidak ada terminal aktif yang ditemukan. Silakan buka terminal terlebih dahulu.",
+		"inputPrompt": "Ordinant.ai: Jelaskan perintah yang ingin Anda hasilkan",
+		"generatingProgress": "Ordinant.ai: Menghasilkan perintah terminal...",
+		"generationFailed": "Ordinant.ai: Gagal menghasilkan perintah: {{error}}",
+		"commandGenerated": "Ordinant.ai: Perintah yang dihasilkan: {{command}}",
 		"warningDialog": {
 			"title": "Peringatan Keamanan Terminal",
 			"okButton": "Saya Mengerti",
 			"message": "Periksa kembali semua perintah yang dihasilkan sebelum menjalankannya. Tindakan terminal tidak selalu dapat dibatalkan—menjalankan perintah yang belum diverifikasi dapat mengakibatkan kehilangan data atau kerusakan sistem yang tidak dapat dipulihkan. Tinjau dan pahami perintah sepenuhnya sebelum melanjutkan!",
 			"cancelButton": "Batal"
 		},
-		"tipMessage": "Kilo: Tekan {{shortcut}} untuk menghasilkan perintah terminal"
+		"tipMessage": "Ordinant.ai: Tekan {{shortcut}} untuk menghasilkan perintah terminal"
 	},
 	"seeNewChanges": {
 		"title": "Menampilkan perubahan baru",
@@ -177,8 +177,8 @@
 	},
 	"agentManager": {
 		"errors": {
-			"cliOutdated": "Versi Kilocode CLI kamu sudah usang dan tidak mendukung Agent Manager. Harap perbarui ke versi terbaru.",
-			"cliMisconfigured": "Kilocode CLI belum dikonfigurasi. Jalankan 'kilocode auth' untuk masuk atau 'kilocode config' untuk mengonfigurasi.",
+			"cliOutdated": "Versi Ordinant CLI kamu sudah usang dan tidak mendukung Agent Manager. Harap perbarui ke versi terbaru.",
+			"cliMisconfigured": "Ordinant CLI belum dikonfigurasi. Jalankan 'ordinant auth' untuk masuk atau 'ordinant config' untuk mengonfigurasi.",
 			"sessionFailed": "Gagal memulai sesi agen",
 			"sessionFailedWithMessage": "Gagal memulai sesi agen: {{message}}"
 		},
@@ -187,16 +187,16 @@
 			"installInstructions": "Petunjuk Instalasi",
 			"getHelp": "Dapatkan Bantuan",
 			"runInTerminal": "Jalankan di Terminal",
-			"loginCli": "Run kilocode auth",
-			"configureCli": "Run kilocode config",
+			"loginCli": "Run ordinant auth",
+			"configureCli": "Run ordinant config",
 			"updateGlobal": "Perbarui Global",
 			"updateLocal": "Perbarui Lokal",
 			"installGlobal": "Instal Global",
 			"installLocal": "Instal Lokal"
 		},
 		"terminal": {
-			"installMessage": "Menjalankan npm install untuk menginstal Kilocode CLI. Setelah selesai, kamu dapat menutup terminal ini dan mencoba memulai Agent Manager lagi.",
-			"authReminder": "If this is your first install, run `kilocode auth` to sign in before starting the Agent Manager."
+			"installMessage": "Menjalankan npm install untuk menginstal Ordinant CLI. Setelah selesai, kamu dapat menutup terminal ini dan mencoba memulai Agent Manager lagi.",
+			"authReminder": "If this is your first install, run `ordinant auth` to sign in before starting the Agent Manager."
 		}
 	},
 	"speechToText": {

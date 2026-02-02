@@ -98,7 +98,7 @@ describe("VercelAiGatewayHandler", () => {
 			// kilocode_change start
 			defaultHeaders: expect.objectContaining({
 				"HTTP-Referer": "https://kilocode.ai",
-				"X-Title": "Kilo Code",
+				"X-Title": "Ordinant.ai",
 				"User-Agent": expect.stringContaining("Kilo-Code/"),
 			}),
 			// kilocode_change end

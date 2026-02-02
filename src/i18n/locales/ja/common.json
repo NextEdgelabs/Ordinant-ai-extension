@@ -1,6 +1,6 @@
 {
 	"extension": {
-		"name": "Kilo Code",
+		"name": "Ordinant.ai",
 		"description": "自然言語からコードを生成し、タスクを自動化し、ターミナルコマンドを実行するオープンソースAIコーディングエージェント。インライン自動補完、ブラウザ自動化、自動リファクタリング、計画・コーディング・デバッグ用のカスタムモードを搭載。Claude (Anthropic)、Gemini、Grok、GPT、Codex、GLMを含む500以上のAIモデルに対応。"
 	},
 	"number_format": {
@@ -132,7 +132,7 @@
 			"oauthLoadFailed": "OAuth認証情報の読み込みに失敗しました。まず認証してください: {{error}}"
 		},
 		"roo": {
-			"authenticationRequired": "Rooプロバイダーはクラウド認証が必要です。Roo Code Cloudにサインインしてください。"
+			"authenticationRequired": "Rooプロバイダーはクラウド認証が必要です。Ordinant Cloudにサインインしてください。"
 		},
 		"api": {
 			"invalidKeyInvalidChars": "APIキーに無効な文字が含まれています。",
@@ -165,7 +165,7 @@
 	"warnings": {
 		"no_terminal_content": "選択されたターミナルコンテンツがありません",
 		"missing_task_files": "このタスクのファイルが見つかりません。タスクリストから削除しますか？",
-		"auto_import_failed": "Kilo Code設定の自動インポートに失敗しました：{{error}}"
+		"auto_import_failed": "Ordinant.ai設定の自動インポートに失敗しました：{{error}}"
 	},
 	"info": {
 		"no_changes": "変更は見つかりませんでした。",
@@ -174,7 +174,7 @@
 		"custom_storage_path_set": "カスタムストレージパスが設定されました：{{path}}",
 		"default_storage_path": "デフォルトのストレージパスに戻りました",
 		"settings_imported": "設定が正常にインポートされました。",
-		"auto_import_success": "Kilo Code設定が{{filename}}から自動インポートされました",
+		"auto_import_success": "Ordinant.ai設定が{{filename}}から自動インポートされました",
 		"share_link_copied": "共有リンクがクリップボードにコピーされました",
 		"image_copied_to_clipboard": "画像データURIがクリップボードにコピーされました",
 		"image_saved": "画像を{{path}}に保存しました",
@@ -208,12 +208,12 @@
 	},
 	"storage": {
 		"prompt_custom_path": "会話履歴のカスタムストレージパスを入力してください。デフォルトの場所を使用する場合は空のままにしてください",
-		"path_placeholder": "D:\\KiloCodeStorage",
-		"enter_absolute_path": "絶対パスを入力してください（例：D:\\KiloCodeStorage または /home/user/storage）",
+		"path_placeholder": "D:\\OrdinantStorage",
+		"enter_absolute_path": "絶対パスを入力してください（例：D:\\OrdinantStorage または /home/user/storage）",
 		"enter_valid_path": "有効なパスを入力してください"
 	},
 	"input": {
-		"task_prompt": "Kilo Codeにどんなことをさせますか？",
+		"task_prompt": "Ordinant.aiにどんなことをさせますか？",
 		"task_placeholder": "タスクをここに入力してください"
 	},
 	"settings": {
@@ -246,8 +246,8 @@
 	},
 	"mdm": {
 		"errors": {
-			"cloud_auth_required": "あなたの組織では Roo Code Cloud 認証が必要です。続行するにはサインインしてください。",
-			"organization_mismatch": "組織の Roo Code Cloud アカウントで認証する必要があります。",
+			"cloud_auth_required": "あなたの組織では Ordinant Cloud 認証が必要です。続行するにはサインインしてください。",
+			"organization_mismatch": "組織の Ordinant Cloud アカウントで認証する必要があります。",
 			"manual_url_empty": "有効なコールバック URL を入力してください",
 			"manual_url_no_query": "無効なコールバック URL：クエリパラメータがありません",
 			"manual_url_missing_params": "無効なコールバック URL：必要なパラメータ（code と state）がありません",

@@ -1,6 +1,6 @@
 {
 	"extension": {
-		"name": "Kilo Code",
+		"name": "Ordinant.ai",
 		"description": "Open source AI-coderingsagent die code genereert uit natuurlijke taal, taken automatiseert en terminalopdrachten uitvoert. Met inline autocomplete, browserautomatisering, geautomatiseerde refactoring en aangepaste modi voor planning, codering en debugging. Ondersteunt meer dan 500 AI-modellen, waaronder Claude (Anthropic), Gemini, Grok, GPT, Codex en GLM."
 	},
 	"number_format": {
@@ -132,7 +132,7 @@
 			"completionError": "Cerebras-voltooiingsfout: {{error}}"
 		},
 		"roo": {
-			"authenticationRequired": "Roo provider vereist cloud authenticatie. Log in bij Roo Code Cloud."
+			"authenticationRequired": "Ordinant provider vereist cloud authenticatie. Log in bij Ordinant Cloud."
 		},
 		"api": {
 			"invalidKeyInvalidChars": "API-sleutel bevat ongeldige karakters.",
@@ -165,7 +165,7 @@
 	"warnings": {
 		"no_terminal_content": "Geen terminalinhoud geselecteerd",
 		"missing_task_files": "De bestanden van deze taak ontbreken. Wil je deze uit de takenlijst verwijderen?",
-		"auto_import_failed": "Automatisch importeren van Kilo Code-instellingen mislukt: {{error}}"
+		"auto_import_failed": "Automatisch importeren van Ordinant.ai-instellingen mislukt: {{error}}"
 	},
 	"info": {
 		"no_changes": "Geen wijzigingen gevonden.",
@@ -174,7 +174,7 @@
 		"custom_storage_path_set": "Aangepast opslagpad ingesteld: {{path}}",
 		"default_storage_path": "Terug naar standaard opslagpad",
 		"settings_imported": "Instellingen succesvol geïmporteerd.",
-		"auto_import_success": "Kilo Code-instellingen automatisch geïmporteerd van {{filename}}",
+		"auto_import_success": "Ordinant.ai-instellingen automatisch geïmporteerd van {{filename}}",
 		"share_link_copied": "Deellink gekopieerd naar klembord",
 		"image_copied_to_clipboard": "Afbeelding data-URI gekopieerd naar klembord",
 		"image_saved": "Afbeelding opgeslagen naar {{path}}",
@@ -208,12 +208,12 @@
 	},
 	"storage": {
 		"prompt_custom_path": "Voer een aangepast opslagpad voor gespreksgeschiedenis in, laat leeg voor standaardlocatie",
-		"path_placeholder": "D:\\KiloCodeStorage",
-		"enter_absolute_path": "Voer een absoluut pad in (bijv. D:\\KiloCodeStorage of /home/user/storage)",
+		"path_placeholder": "D:\\OrdinantStorage",
+		"enter_absolute_path": "Voer een absoluut pad in (bijv. D:\\OrdinantStorage of /home/user/storage)",
 		"enter_valid_path": "Voer een geldig pad in"
 	},
 	"input": {
-		"task_prompt": "Wat moet Kilo Code doen?",
+		"task_prompt": "Wat moet Ordinant.ai doen?",
 		"task_placeholder": "Typ hier je taak"
 	},
 	"settings": {
@@ -246,8 +246,8 @@
 	},
 	"mdm": {
 		"errors": {
-			"cloud_auth_required": "Je organisatie vereist Roo Code Cloud-authenticatie. Log in om door te gaan.",
-			"organization_mismatch": "Je moet geauthenticeerd zijn met het Roo Code Cloud-account van je organisatie.",
+			"cloud_auth_required": "Je organisatie vereist Ordinant Cloud-authenticatie. Log in om door te gaan.",
+			"organization_mismatch": "Je moet geauthenticeerd zijn met het Ordinant Cloud-account van je organisatie.",
 			"manual_url_empty": "Voer een geldige callback-URL in",
 			"manual_url_no_query": "Ongeldige callback-URL: query-parameters ontbreken",
 			"manual_url_missing_params": "Ongeldige callback-URL: vereiste parameters ontbreken (code en state)",

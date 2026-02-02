@@ -52,20 +52,20 @@
 		}
 	},
 	"commitMessage": {
-		"activated": "Generator wiadomości commit Kilo Code aktywowany",
+		"activated": "Generator wiadomości commit Ordinant.ai aktywowany",
 		"gitNotFound": "⚠️ Nie znaleziono repozytorium Git lub git jest niedostępny",
 		"gitInitError": "⚠️ Błąd inicjalizacji Git: {{error}}",
-		"generating": "Kilo: Generowanie wiadomości commit...",
-		"noChanges": "Kilo: Nie znaleziono zmian do analizy",
-		"generated": "Kilo: Wiadomość commit wygenerowana!",
-		"generationFailed": "Kilo: Nie udało się wygenerować wiadomości commit: {{errorMessage}}",
-		"generatingFromUnstaged": "Kilo: Generowanie wiadomości przy użyciu niezatwierdzonych zmian",
-		"activationFailed": "Kilo: Nie udało się aktywować generatora wiadomości: {{error}}",
-		"providerRegistered": "Kilo: Zarejestrowano dostawcę wiadomości commit",
+		"generating": "Ordinant.ai: Generowanie wiadomości commit...",
+		"noChanges": "Ordinant.ai: Nie znaleziono zmian do analizy",
+		"generated": "Ordinant.ai: Wiadomość commit wygenerowana!",
+		"generationFailed": "Ordinant.ai: Nie udało się wygenerować wiadomości commit: {{errorMessage}}",
+		"generatingFromUnstaged": "Ordinant.ai: Generowanie wiadomości przy użyciu niezatwierdzonych zmian",
+		"activationFailed": "Ordinant.ai: Nie udało się aktywować generatora wiadomości: {{error}}",
+		"providerRegistered": "Ordinant.ai: Zarejestrowano dostawcę wiadomości commit",
 		"errors": {
 			"noProject": "Brak dostępnego projektu",
 			"timeout": "Upłynął limit czasu żądania po 30 sekundach",
-			"connectionFailed": "Nie udało się połączyć z rozszerzeniem Kilo Code",
+			"connectionFailed": "Nie udało się połączyć z rozszerzeniem Ordinant.ai",
 			"invalidResponse": "Nieprawidłowy format odpowiedzi otrzymany z rozszerzenia",
 			"noChanges": "Nie znaleziono zmian do zatwierdzenia",
 			"missingMessage": "Nie otrzymano komunikatu zatwierdzenia z rozszerzenia",
@@ -89,7 +89,7 @@
 		"progress": {
 			"title": "Generowanie treści commita",
 			"analyzing": "Analizowanie zmian...",
-			"connecting": "Łączenie z Kilo Code...",
+			"connecting": "Łączenie z Ordinant.ai...",
 			"generating": "Generowanie wiadomości do commita..."
 		},
 		"ui": {
@@ -105,8 +105,8 @@
 	},
 	"agentManager": {
 		"errors": {
-			"cliOutdated": "Twoja wersja Kilocode CLI jest przestarzała i nie obsługuje Agent Managera. Zaktualizuj do najnowszej wersji.",
-			"cliMisconfigured": "Kilocode CLI nie jest skonfigurowany. Uruchom 'kilocode auth', aby się zalogować lub 'kilocode config', aby skonfigurować.",
+			"cliOutdated": "Twoja wersja Ordinant CLI jest przestarzała i nie obsługuje Agent Managera. Zaktualizuj do najnowszej wersji.",
+			"cliMisconfigured": "Ordinant CLI nie jest skonfigurowany. Uruchom 'ordinant auth', aby się zalogować lub 'ordinant config', aby skonfigurować.",
 			"sessionFailed": "Nie udało się uruchomić sesji agenta",
 			"sessionFailedWithMessage": "Nie udało się uruchomić sesji agenta: {{message}}"
 		},
@@ -115,27 +115,27 @@
 			"installInstructions": "Instrukcje Instalacji",
 			"getHelp": "Uzyskaj Pomoc",
 			"runInTerminal": "Uruchom w Terminalu",
-			"loginCli": "Run kilocode auth",
-			"configureCli": "Run kilocode config",
+			"loginCli": "Run ordinant auth",
+			"configureCli": "Run ordinant config",
 			"updateGlobal": "Aktualizuj Globalnie",
 			"updateLocal": "Aktualizuj Lokalnie",
 			"installGlobal": "Zainstaluj Globalnie",
 			"installLocal": "Zainstaluj Lokalnie"
 		},
 		"terminal": {
-			"installMessage": "Uruchamianie npm install w celu zainstalowania Kilocode CLI. Po zakończeniu możesz zamknąć ten terminal i spróbować ponownie uruchomić Agent Managera.",
-			"authReminder": "If this is your first install, run `kilocode auth` to sign in before starting the Agent Manager."
+			"installMessage": "Uruchamianie npm install w celu zainstalowania Ordinant CLI. Po zakończeniu możesz zamknąć ten terminal i spróbować ponownie uruchomić Agent Managera.",
+			"authReminder": "If this is your first install, run `ordinant auth` to sign in before starting the Agent Manager."
 		}
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(kilo-logo) Autocomplete",
+			"enabled": "$(ordinant-logo) Autocomplete",
 			"snoozed": "wstrzymane",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
-				"basic": "Kilo Code Autocomplete",
-				"disabled": "Kilo Code Autocomplete (wyłączone)",
-				"noCredits": "**Brak środków na koncie**\n\nTwoje konto Kilo Code nie ma środków. Aby korzystać z autouzupełniania, dodaj środki do swojego konta.\n\n[Otwórz Ustawienia](command:kilo-code.settingsButtonClicked)",
+				"basic": "Ordinant.ai Autocomplete",
+				"disabled": "Ordinant.ai Autocomplete (wyłączone)",
+				"noCredits": "**Brak środków na koncie**\n\nTwoje konto Ordinant.ai nie ma środków. Aby korzystać z autouzupełniania, dodaj środki do swojego konta.\n\n[Otwórz Ustawienia](command:kilo-code.settingsButtonClicked)",
 				"noUsableProvider": "**Nie skonfigurowano modelu autouzupełniania**\n\nAby włączyć autouzupełnianie, dodaj profil z jednym z tych obsługiwanych dostawców: {{providers}}.\n\n[Otwórz Ustawienia](command:kilo-code.settingsButtonClicked)",
 				"sessionTotal": "Całkowity koszt sesji:",
 				"provider": "Dostawca:",
@@ -150,54 +150,54 @@
 				"lessThanCent": "<$0.01"
 			}
 		},
-		"toggleMessage": "Kilo Code Autocomplete {{status}}",
+		"toggleMessage": "Ordinant.ai Autocomplete {{status}}",
 		"progress": {
-			"title": "Kilo Code",
+			"title": "Ordinant.ai",
 			"analyzing": "Analizuję twój kod...",
 			"generating": "Generuję sugerowane edycje...",
 			"processing": "Przetwarzam sugerowane edycje...",
 			"showing": "Wyświetlam sugerowane edycje..."
 		},
 		"input": {
-			"title": "Kilo Code: Szybkie Zadanie",
+			"title": "Ordinant.ai: Szybkie Zadanie",
 			"placeholder": "np. 'zrefaktoruj tę funkcję, aby była bardziej wydajna'"
 		},
 		"commands": {
-			"generateSuggestions": "Kilo Code: Generuj Sugerowane Edycje",
+			"generateSuggestions": "Ordinant.ai: Generuj Sugerowane Edycje",
 			"displaySuggestions": "Wyświetl Sugerowane Edycje",
 			"cancelSuggestions": "Anuluj Sugerowane Edycje",
 			"applyCurrentSuggestion": "Zastosuj Bieżącą Sugerowaną Edycję",
 			"applyAllSuggestions": "Zastosuj Wszystkie Sugerowane Edycje",
-			"category": "Kilo Code"
+			"category": "Ordinant.ai"
 		},
 		"codeAction": {
-			"title": "Kilo Code: Sugerowane Edycje"
+			"title": "Ordinant.ai: Sugerowane Edycje"
 		},
 		"chatParticipant": {
-			"fullName": "Kilo Code Agent",
+			"fullName": "Ordinant.ai Agent",
 			"name": "Agent",
 			"description": "Mogę pomóc ci w szybkich zadaniach i sugerowanych edycjach."
 		},
 		"incompatibilityExtensionPopup": {
-			"message": "Kilo Code Autocomplete jest blokowane przez konflikt z GitHub Copilot. Aby to naprawić, musisz wyłączyć sugestie inline Copilot.",
+			"message": "Ordinant.ai Autocomplete jest blokowane przez konflikt z GitHub Copilot. Aby to naprawić, musisz wyłączyć sugestie inline Copilot.",
 			"disableCopilot": "Wyłącz Copilot",
 			"disableInlineAssist": "Wyłącz Autocomplete"
 		}
 	},
 	"terminalCommandGenerator": {
-		"inputPrompt": "Kilo: Opisz polecenie, które chcesz wygenerować",
+		"inputPrompt": "Ordinant.ai: Opisz polecenie, które chcesz wygenerować",
 		"inputPlaceholder": "np. zakończ proces działający na porcie 3001, znajdź duże pliki, itp.",
-		"generatingProgress": "Kilo: Generowanie polecenia terminala...",
-		"generationFailed": "Kilo: Nie udało się wygenerować polecenia: {{error}}",
-		"commandGenerated": "Kilo: Wygenerowane polecenie: {{command}}",
-		"noActiveTerminal": "Kilo: Nie znaleziono aktywnego terminala. Proszę najpierw otworzyć terminal.",
+		"generatingProgress": "Ordinant.ai: Generowanie polecenia terminala...",
+		"generationFailed": "Ordinant.ai: Nie udało się wygenerować polecenia: {{error}}",
+		"commandGenerated": "Ordinant.ai: Wygenerowane polecenie: {{command}}",
+		"noActiveTerminal": "Ordinant.ai: Nie znaleziono aktywnego terminala. Proszę najpierw otworzyć terminal.",
 		"warningDialog": {
 			"title": "Ostrzeżenie o Bezpieczeństwie Terminala",
 			"okButton": "Rozumiem",
 			"message": "Dokładnie sprawdzaj wszystkie wygenerowane polecenia przed ich uruchomieniem. Działań wykonanych w terminalu nie zawsze można cofnąć – uruchamianie niezweryfikowanych poleceń może spowodować nieodwracalną utratę danych lub uszkodzenie systemu. Przejrzyj i zrozum polecenie w całości zanim przejdziesz dalej!",
 			"cancelButton": "Anuluj"
 		},
-		"tipMessage": "Kilo: Naciśnij {{shortcut}}, aby wygenerować polecenia terminala"
+		"tipMessage": "Ordinant.ai: Naciśnij {{shortcut}}, aby wygenerować polecenia terminala"
 	},
 	"speechToText": {
 		"errors": {
@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Kilo Code: Dodano {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"added": "Ordinant.ai: Dodano {{source}} {{configType}}: {{name}}{{modeStr}}",
 		"removed": "Kilo Kod: Usunięto {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

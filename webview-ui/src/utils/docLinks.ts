@@ -1,5 +1,5 @@
 /**
- * Utility for building Roo Code documentation links with UTM telemetry.
+ * Utility for building Ordinant.ai documentation links with UTM telemetry.
  *
  * @param path - The path after the docs root (no leading slash)
  * @param campaign - The UTM campaign context (e.g. "welcome", "provider_docs", "tips", "error_tooltip")
@@ -12,6 +12,6 @@ export function buildDocLink(path: string, _campaign: string): string {
 		.replace(/^\//, "")
 		.replace("troubleshooting/shell-integration/", "features/shell-integration") // kilocode_change
 	const [basePath, hash] = cleanPath.split("#")
-	const baseUrl = `https://kilo.ai/docs/${basePath}`
+	const baseUrl = `https://ordinant.ai/docs/${basePath}`
 	return hash ? `${baseUrl}#${hash}` : baseUrl
 }

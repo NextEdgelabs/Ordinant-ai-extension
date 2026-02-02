@@ -1,8 +1,8 @@
 {
 	"welcome": {
-		"greeting": "歡迎使用 Kilo Code！",
-		"introText1": "Kilo Code 是一個免費的開源 AI 程式設計代理。",
-		"introText2": "它適用於最新的 AI 模型，如 Claude Opus 4.5、Gemini 3 Pro、GPT-5.2 以及 450 多個其他模型。",
+		"greeting": "歡迎使用 Ordinant.ai！",
+		"introText1": "Ordinant.ai 是一個免費的開源 AI 程式設計代理。",
+		"introText2": "它適用於最新的 AI 模型，如 Claude Sonnet 4.5、Gemini 2.5 Pro、GPT-5 以及 450 多個其他模型。",
 		"introText3": "建立免費帳戶，首次儲值即可獲得 20 美元獎勵額度。",
 		"ctaButton": "開始使用",
 		"manualModeButton": "使用你自己的 API 金鑰",
@@ -11,7 +11,7 @@
 	},
 	"lowCreditWarning": {
 		"addCredit": "增加額度",
-		"lowBalance": "你的 Kilo Code 餘額不足",
+		"lowBalance": "你的 Ordinant.ai 餘額不足",
 		"switchToFreeModel": "切換到免費模型"
 	},
 	"invalidModel": {
@@ -40,27 +40,26 @@
 		"contextManagement": {
 			"allowVeryLargeReads": {
 				"label": "允許超大檔案讀取",
-				"description": "啟用後，Kilo Code 將執行超大檔案或 MCP 輸出讀取，即使存在高機率溢出上下文視窗（內容大小 >80% 的上下文視窗）。"
+				"description": "啟用後，Ordinant.ai 將執行超大檔案或 MCP 輸出讀取，即使存在高機率溢出上下文視窗（內容大小 >80% 的上下文視窗）。"
 			}
 		},
 		"systemNotifications": {
 			"label": "啟用系統通知",
-			"description": "啟用後 Kilo Code 將發送系統通知，提醒工作完成或錯誤等重要事件。",
+			"description": "啟用後 Ordinant.ai 將發送系統通知，提醒工作完成或錯誤等重要事件。",
 			"testButton": "測試通知",
-			"testTitle": "Kilo Code",
-			"testMessage": "這是來自 Kilo Code 的測試通知。"
+			"testTitle": "Ordinant.ai",
+			"testMessage": "這是來自 Ordinant.ai 的測試通知。"
 		},
 		"provider": {
-			"account": "Kilo Code 帳戶",
-			"apiKey": "Kilo Code API 金鑰",
-			"login": "登入 Kilo Code",
-			"logout": "登出 Kilo Code",
-			"loginForPremiumModels": "登入以存取進階模型和功能",
+			"account": "Ordinant.ai 帳戶",
+			"apiKey": "Ordinant.ai API 金鑰",
+			"login": "登入 Ordinant.ai",
+			"logout": "登出 Ordinant.ai",
 			"providerRouting": {
 				"title": "供應商路由",
 				"managedByOrganization": "管理組織層級供應商路由",
 				"createOrganization": "建立組織以管理供應商路由",
-				"description": "Kilo Code 將請求路由到您模型的最佳可用供應商。預設情況下，請求會在頂級供應商之間進行負載平衡，以最大化正常執行時間。但是，您可以選擇要用於此模型的特定供應商。",
+				"description": "Ordinant.ai 將請求路由到您模型的最佳可用供應商。預設情況下，請求會在頂級供應商之間進行負載平衡，以最大化正常執行時間。但是，您可以選擇要用於此模型的特定供應商。",
 				"sorting": {
 					"default": "預設供應商排序",
 					"price": "偏好較低價格的供應商",
@@ -79,7 +78,7 @@
 		"modelInfo": {
 			"contextWindow": "上下文視窗",
 			"providerBreakdown": "供應商價格與功能明細",
-			"averageKiloCodeCost": "這是過去一週 Kilo Code 使用此模型的平均實際花費。由於提示詞快取的使用，可能低於列出的價格。",
+			"averageKiloCodeCost": "這是過去一週 Ordinant.ai 使用此模型的平均實際花費。由於提示詞快取的使用，可能低於列出的價格。",
 			"table": {
 				"provider": "供應商",
 				"context": "端點可以處理這個數量的 Token（輸入 + 輸出）。",
@@ -109,13 +108,13 @@
 	"toolCallStyle": {
 		"title": "工具呼叫樣式",
 		"description": "選擇系統提示中工具呼叫的格式化方式。JSON 目前為實驗性功能，主要供有興趣參與開發的使用者使用。",
-		"automatic": "讓 Kilo 決定",
+		"automatic": "讓 Ordinant.ai 決定",
 		"xml": "XML",
 		"json": "JSON"
 	},
 	"chat": {
 		"condense": {
-			"wantsToCondense": "Kilo Code 想要壓縮你的對話",
+			"wantsToCondense": "Ordinant.ai 想要壓縮你的對話",
 			"condenseConversation": "壓縮對話"
 		},
 		"seeNewChanges": "顯示新變更",
@@ -154,14 +153,14 @@
 			"modes": "模式",
 			"skills": "技能"
 		},
-		"ariaLabel": "Kilo Code 規則",
+		"ariaLabel": "Ordinant.ai 規則",
 		"tabs": {
 			"rules": "規則",
 			"workflows": "工作流程"
 		},
 		"description": {
-			"rules": "規則允許你為 Kilo Code 提供在所有模式和所有提示中都應遵循的指令。它們是在你的工作空間或全域範圍內為所有對話包含上下文和偏好的持久方式。",
-			"workflows": "工作流程是為對話準備的範本。工作流程允許你定義經常使用的提示，並可以包含一系列步驟來指導 Kilo Code 完成重複性任務，如部署服務或提交 PR。要調用工作流程，請輸入",
+			"rules": "規則允許你為 Ordinant.ai 提供在所有模式和所有提示中都應遵循的指令。它們是在你的工作空間或全域範圍內為所有對話包含上下文和偏好的持久方式。",
+			"workflows": "工作流程是為對話準備的範本。工作流程允許你定義經常使用的提示，並可以包含一系列步驟來指導 Ordinant.ai 完成重複性任務，如部署服務或提交 PR。要調用工作流程，請輸入",
 			"workflowsInChat": "在聊天中。"
 		},
 		"sections": {
@@ -269,7 +268,7 @@
 			},
 			"noCredits": {
 				"title": "你的帳戶沒有額度",
-				"description": "你的 Kilo Code 帳戶沒有額度。若要使用自動補全，請為你的帳戶儲值。",
+				"description": "你的 Ordinant.ai 帳戶沒有額度。若要使用自動補全，請為你的帳戶儲值。",
 				"buyCredits": "購買額度 →"
 			},
 			"configureAutocompleteProfile": "前往設定檔並設定自動補全類型的設定檔即可使用任意模型。"
@@ -325,7 +324,7 @@
 		"shareModesNewBanner": "新功能：通过创建组织共享模式"
 	},
 	"deviceAuth": {
-		"title": "登入 Kilo Code",
+		"title": "登入 Ordinant.ai",
 		"step1": "在瀏覽器中開啟以下 URL",
 		"step2": "驗證代碼並在瀏覽器中授權此裝置",
 		"scanQr": "或用手機掃描此 QR 碼",
@@ -350,7 +349,7 @@
 			"title": "语音转文字",
 			"openAiReason": "您需要一个有效的 OpenAI 提供商和 API 密钥才能使用语音转录功能。",
 			"description": "语音转文字功能不可用。语音转文字需要同时配置 FFmpeg 和有效的 OpenAI 提供商。<moreInfoLink>点击此处了解更多信息</moreInfoLink>。",
-			"ffmpegReason": "您需要安装 FFmpeg。<ffmpegLink>点击这里</ffmpegLink>让 Kilo 帮助您安装 FFmpeg。",
+			"ffmpegReason": "您需要安装 FFmpeg。<ffmpegLink>点击这里</ffmpegLink>让 Ordinant.ai 帮助您安装 FFmpeg。",
 			"ffmpegMessage": "帮我安装 FFmpeg"
 		},
 		"misconfiguredState": "因配置问题而不可用",

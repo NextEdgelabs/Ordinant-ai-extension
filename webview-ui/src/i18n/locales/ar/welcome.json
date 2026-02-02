@@ -1,6 +1,6 @@
 {
-	"greeting": "مرحبًا، أنا Kilo Code!",
-	"introduction": "<strong>Kilo Code هو وكيل البرمجة الذاتي الأفضل على الإطلاق.</strong> استعد للتصميم والبرمجة وتصحيح الأخطاء وزيادة إنتاجيتك بشكل غير مسبوق. للمتابعة، يحتاج Kilo Code إلى مفتاح API.",
+	"greeting": "مرحبًا، أنا Ordinant.ai!",
+	"introduction": "<strong>Ordinant.ai هو وكيل البرمجة الذاتي الأفضل على الإطلاق.</strong> استعد للتصميم والبرمجة وتصحيح الأخطاء وزيادة إنتاجيتك بشكل غير مسبوق. للمتابعة، يحتاج Ordinant.ai إلى مفتاح API.",
 	"notice": "عشان تبدأ، هذي الإضافة تحتاج مزوّد API.",
 	"start": "يلا نبدأ!",
 	"routers": {
@@ -13,46 +13,46 @@
 		},
 		"roo": {
 			"description": "أفضل النماذج المجانية للبدء",
-			"incentive": "جرب Roo مجاناً"
+			"incentive": "جرب Ordinant مجاناً"
 		}
 	},
-	"chooseProvider": "عشان يشتغل سحر Kilo Code، يلزم مفتاح API.",
+	"chooseProvider": "عشان يشتغل سحر Ordinant.ai، يلزم مفتاح API.",
 	"landing": {
-		"greeting": "مرحباً بك في Roo Code!",
-		"introduction": "مع مجموعة من Modes المدمجة والقابلة للتوسيع، Roo Code يتيح لك التخطيط والتصميم والبرمجة وتصحيح الأخطاء وزيادة إنتاجيتك بشكل لم تشهده من قبل.",
-		"accountMention": "للبدء، أنشئ حساب Roo Code Cloud الخاص بك. احصل على نماذج قوية والتحكم بالويب والتحليلات والدعم والمزيد.",
-		"getStarted": "إنشاء حساب Roo",
+		"greeting": "مرحباً بك في Ordinant!",
+		"introduction": "مع مجموعة من Modes المدمجة والقابلة للتوسيع، Ordinant يتيح لك التخطيط والتصميم والبرمجة وتصحيح الأخطاء وزيادة إنتاجيتك بشكل لم تشهده من قبل.",
+		"accountMention": "للبدء، أنشئ حساب Ordinant Cloud الخاص بك. احصل على نماذج قوية والتحكم بالويب والتحليلات والدعم والمزيد.",
+		"getStarted": "إنشاء حساب Ordinant.ai",
 		"noAccount": "أو الاستخدام بدون حساب"
 	},
 	"providerSignup": {
 		"heading": "اختر المزوّد",
-		"chooseProvider": "Roo يحتاج مزوّد LLM للعمل. اختر واحد للبدء، تقدر تضيف أكثر لاحقاً.",
-		"rooCloudProvider": "مزوّد Roo Code Cloud",
-		"rooCloudDescription": "أبسط طريقة لاستخدام Roo. مزيج مختار من النماذج المجانية والمدفوعة بتكلفة منخفضة",
+		"chooseProvider": "Ordinant يحتاج مزوّد LLM للعمل. اختر واحد للبدء، تقدر تضيف أكثر لاحقاً.",
+		"rooCloudProvider": "مزوّد Ordinant Cloud",
+		"rooCloudDescription": "أبسط طريقة لاستخدام Ordinant. مزيج مختار من النماذج المجانية والمدفوعة بتكلفة منخفضة",
 		"learnMore": "اعرف أكثر",
 		"useAnotherProvider": "استخدم مزوّد آخر",
 		"useAnotherProviderDescription": "أدخل مفتاح API وانطلق.",
-		"noApiKeys": "ما تبي تتعامل مع المفاتيح؟ استخدم مزوّد Roo Code Cloud.",
-		"backToRoo": "اذهب مع مزوّد Roo Code Cloud.",
+		"noApiKeys": "ما تبي تتعامل مع المفاتيح؟ استخدم مزوّد Ordinant Cloud.",
+		"backToRoo": "اذهب مع مزوّد Ordinant Cloud.",
 		"goBack": "ارجع",
 		"finish": "انتهى",
 		"getStarted": "ابدأ"
 	},
 	"waitingForCloud": {
-		"heading": "نأخذك إلى Roo Code Cloud...",
+		"heading": "نأخذك إلى Ordinant Cloud...",
 		"description": "أكمل التسجيل في المتصفح، وبعدها سترجع هنا تلقائياً.",
 		"noPrompt": "إذا ما طلع لك رابط للفتح، <clickHere>اضغط هنا</clickHere>.",
 		"havingTrouble": "إذا خلصت التسجيل بس عندك مشاكل، <clickHere>اضغط هنا</clickHere>.",
 		"pasteUrl": "الصق رابط الاستدعاء من المتصفح:",
 		"docsLink": "ما يشتغل؟ <DocsLink>راجع التوثيق</DocsLink>.",
-		"invalidURL": "هذا ما يبدو رابط استدعاء صحيح. الرجاء نسخ ما يعرضه Roo Code Cloud في المتصفح.",
+		"invalidURL": "هذا ما يبدو رابط استدعاء صحيح. الرجاء نسخ ما يعرضه Ordinant Cloud في المتصفح.",
 		"goBack": "ارجع"
 	},
 	"startRouter": "نوصي باستخدام موجّه LLM:",
 	"startCustom": "أو تقدر تستخدم مفتاح مزوّدك الخاص:",
 	"telemetry": {
-		"helpImprove": "ساهم في تحسين Kilo Code",
-		"helpImproveMessage": "يجمع Kilo Code بيانات الأخطاء والاستخدام لمساعدتنا في إصلاح الأخطاء وتحسين الإضافة. هذه البيانات التشخيصية لا تجمع الكود أو المطالبات أو المعلومات الشخصية. يمكنك إيقاف هذا في <settingsLink>الإعدادات</settingsLink>."
+		"helpImprove": "ساهم في تحسين Ordinant.ai",
+		"helpImproveMessage": "يجمع Ordinant.ai بيانات الأخطاء والاستخدام لمساعدتنا في إصلاح الأخطاء وتحسين الإضافة. هذه البيانات التشخيصية لا تجمع الكود أو المطالبات أو المعلومات الشخصية. يمكنك إيقاف هذا في <settingsLink>الإعدادات</settingsLink>."
 	},
 	"importSettings": "استيراد الإعدادات"
 }

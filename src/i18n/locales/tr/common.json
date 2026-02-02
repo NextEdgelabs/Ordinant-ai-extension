@@ -1,6 +1,6 @@
 {
 	"extension": {
-		"name": "Kilo Code",
+		"name": "Ordinant.ai",
 		"description": "Doğal dilden kod üreten, görevleri otomatikleştiren ve terminal komutlarını çalıştıran açık kaynaklı AI kodlama ajanı. Satır içi otomatik tamamlama, tarayıcı otomasyonu, otomatik yeniden düzenleme ve planlama, kodlama ve hata ayıklama için özel modlar içerir. Claude (Anthropic), Gemini, Grok, GPT, Codex ve GLM dahil 500'den fazla AI modelini destekler."
 	},
 	"number_format": {
@@ -132,7 +132,7 @@
 			"completionError": "Cerebras tamamlama hatası: {{error}}"
 		},
 		"roo": {
-			"authenticationRequired": "Roo sağlayıcısı bulut kimlik doğrulaması gerektirir. Lütfen Roo Code Cloud'a giriş yapın."
+			"authenticationRequired": "Roo sağlayıcısı bulut kimlik doğrulaması gerektirir. Lütfen Ordinant Cloud'a giriş yapın."
 		},
 		"api": {
 			"invalidKeyInvalidChars": "API anahtarı geçersiz karakterler içeriyor.",
@@ -165,7 +165,7 @@
 	"warnings": {
 		"no_terminal_content": "Seçili terminal içeriği yok",
 		"missing_task_files": "Bu görevin dosyaları eksik. Görev listesinden kaldırmak istiyor musunuz?",
-		"auto_import_failed": "Kilo Code ayarları otomatik olarak içe aktarılamadı: {{error}}"
+		"auto_import_failed": "Ordinant.ai ayarları otomatik olarak içe aktarılamadı: {{error}}"
 	},
 	"info": {
 		"no_changes": "Değişiklik bulunamadı.",
@@ -174,7 +174,7 @@
 		"custom_storage_path_set": "Özel depolama yolu ayarlandı: {{path}}",
 		"default_storage_path": "Varsayılan depolama yoluna geri dönüldü",
 		"settings_imported": "Ayarlar başarıyla içe aktarıldı.",
-		"auto_import_success": "Kilo Code ayarları {{filename}} dosyasından otomatik olarak içe aktarıldı",
+		"auto_import_success": "Ordinant.ai ayarları {{filename}} dosyasından otomatik olarak içe aktarıldı",
 		"share_link_copied": "Paylaşım bağlantısı panoya kopyalandı",
 		"image_copied_to_clipboard": "Resim veri URI'si panoya kopyalandı",
 		"image_saved": "Resim {{path}} konumuna kaydedildi",
@@ -208,12 +208,12 @@
 	},
 	"storage": {
 		"prompt_custom_path": "Konuşma geçmişi için özel depolama yolunu girin, varsayılan konumu kullanmak için boş bırakın",
-		"path_placeholder": "D:\\KiloCodeStorage",
-		"enter_absolute_path": "Lütfen mutlak bir yol girin (örn. D:\\KiloCodeStorage veya /home/user/storage)",
+		"path_placeholder": "D:\\OrdinantStorage",
+		"enter_absolute_path": "Lütfen mutlak bir yol girin (örn. D:\\OrdinantStorage veya /home/user/storage)",
 		"enter_valid_path": "Lütfen geçerli bir yol girin"
 	},
 	"input": {
-		"task_prompt": "Kilo Code ne yapsın?",
+		"task_prompt": "Ordinant.ai ne yapsın?",
 		"task_placeholder": "Görevini buraya yaz"
 	},
 	"settings": {
@@ -246,8 +246,8 @@
 	},
 	"mdm": {
 		"errors": {
-			"cloud_auth_required": "Kuruluşunuz Roo Code Cloud kimlik doğrulaması gerektiriyor. Devam etmek için giriş yapın.",
-			"organization_mismatch": "Kuruluşunuzun Roo Code Cloud hesabıyla kimlik doğrulaması yapmalısınız.",
+			"cloud_auth_required": "Kuruluşunuz Ordinant Cloud kimlik doğrulaması gerektiriyor. Devam etmek için giriş yapın.",
+			"organization_mismatch": "Kuruluşunuzun Ordinant Cloud hesabıyla kimlik doğrulaması yapmalısınız.",
 			"manual_url_empty": "Lütfen geçerli bir callback URL'si girin",
 			"manual_url_no_query": "Geçersiz callback URL'si: sorgu parametreleri eksik",
 			"manual_url_missing_params": "Geçersiz callback URL'si: gerekli parametreler eksik (code ve state)",

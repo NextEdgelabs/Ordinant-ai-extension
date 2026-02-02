@@ -1,5 +1,5 @@
 {
-	"greeting": "Selamat datang di Kilo Code",
+	"greeting": "Selamat datang di Ordinant.ai",
 	"task": {
 		"title": "Tugas",
 		"expand": "Perluas tugas",
@@ -22,12 +22,12 @@
 		"sharePublicly": "Bagikan secara publik",
 		"sharePubliclyDescription": "Siapa pun dengan tautan dapat mengakses",
 		"connectToCloud": "Hubungkan ke Cloud",
-		"connectToCloudDescription": "Masuk ke Kilo Code Cloud untuk berbagi tugas",
+		"connectToCloudDescription": "Masuk ke Ordinant.ai Cloud untuk berbagi tugas",
 		"sharingDisabledByOrganization": "Berbagi dinonaktifkan oleh organisasi",
 		"shareSuccessOrganization": "Tautan organisasi disalin ke clipboard",
 		"shareSuccessPublic": "Tautan publik disalin ke clipboard",
-		"openInCloud": "Buka tugas di Roo Code Cloud",
-		"openInCloudIntro": "Terus pantau atau berinteraksi dengan Roo dari mana saja. Pindai, klik atau salin untuk membuka.",
+		"openInCloud": "Buka tugas di Ordinant Cloud",
+		"openInCloudIntro": "Terus pantau atau berinteraksi dengan Ordinant dari mana saja. Pindai, klik atau salin untuk membuka.",
 		"openApiHistory": "Buka Riwayat API",
 		"openUiHistory": "Buka Riwayat UI"
 	},
@@ -129,7 +129,7 @@
 		"title": "Mode",
 		"marketplace": "Marketplace Mode",
 		"settings": "Pengaturan Mode",
-		"description": "Persona khusus yang menyesuaikan perilaku Kilo Code.",
+		"description": "Persona khusus yang menyesuaikan perilaku Ordinant.ai.",
 		"searchPlaceholder": "Cari mode...",
 		"noResults": "Tidak ada hasil yang ditemukan",
 		"organizationModes": "Mode Organisasi"
@@ -206,52 +206,52 @@
 		}
 	},
 	"instructions": {
-		"wantsToFetch": "Kilo Code ingin mengambil instruksi detail untuk membantu tugas saat ini"
+		"wantsToFetch": "Ordinant.ai ingin mengambil instruksi detail untuk membantu tugas saat ini"
 	},
 	"fileOperations": {
-		"wantsToRead": "Kilo Code ingin membaca file ini",
-		"wantsToReadMultiple": "Kilo Code ingin membaca beberapa file",
-		"wantsToReadAndXMore": "Kilo Code ingin membaca file ini dan {{count}} lainnya",
-		"wantsToReadOutsideWorkspace": "Kilo Code ingin membaca file ini di luar workspace",
-		"didRead": "Kilo Code membaca file ini",
-		"wantsToEdit": "Kilo Code ingin mengedit file ini",
-		"wantsToEditOutsideWorkspace": "Kilo Code ingin mengedit file ini di luar workspace",
-		"wantsToEditProtected": "Kilo Code ingin mengedit file konfigurasi yang dilindungi",
-		"wantsToApplyBatchChanges": "Kilo Code ingin menerapkan perubahan ke beberapa file",
-		"wantsToGenerateImage": "Kilo Code ingin menghasilkan gambar",
-		"wantsToGenerateImageOutsideWorkspace": "Kilo Code ingin menghasilkan gambar di luar workspace",
-		"wantsToGenerateImageProtected": "Kilo Code ingin menghasilkan gambar di lokasi yang dilindungi",
-		"didGenerateImage": "Kilo Code telah menghasilkan gambar",
-		"wantsToCreate": "Kilo Code ingin membuat file baru",
-		"wantsToSearchReplace": "Kilo Code ingin mencari dan mengganti di file ini",
-		"didSearchReplace": "Kilo Code melakukan pencarian dan penggantian pada file ini",
-		"wantsToInsert": "Kilo Code ingin menyisipkan konten ke file ini",
-		"wantsToInsertWithLineNumber": "Kilo Code ingin menyisipkan konten ke file ini di baris {{lineNumber}}",
-		"wantsToInsertAtEnd": "Kilo Code ingin menambahkan konten ke akhir file ini",
-		"wantsToDelete": "Kilo Code ingin menghapus file ini",
-		"wantsToDeleteDirectory": "Kilo Code ingin menghapus direktori ini"
+		"wantsToRead": "Ordinant.ai ingin membaca file ini",
+		"wantsToReadMultiple": "Ordinant.ai ingin membaca beberapa file",
+		"wantsToReadAndXMore": "Ordinant.ai ingin membaca file ini dan {{count}} lainnya",
+		"wantsToReadOutsideWorkspace": "Ordinant.ai ingin membaca file ini di luar workspace",
+		"didRead": "Ordinant.ai membaca file ini",
+		"wantsToEdit": "Ordinant.ai ingin mengedit file ini",
+		"wantsToEditOutsideWorkspace": "Ordinant.ai ingin mengedit file ini di luar workspace",
+		"wantsToEditProtected": "Ordinant.ai ingin mengedit file konfigurasi yang dilindungi",
+		"wantsToApplyBatchChanges": "Ordinant.ai ingin menerapkan perubahan ke beberapa file",
+		"wantsToGenerateImage": "Ordinant.ai ingin menghasilkan gambar",
+		"wantsToGenerateImageOutsideWorkspace": "Ordinant.ai ingin menghasilkan gambar di luar workspace",
+		"wantsToGenerateImageProtected": "Ordinant.ai ingin menghasilkan gambar di lokasi yang dilindungi",
+		"didGenerateImage": "Ordinant.ai telah menghasilkan gambar",
+		"wantsToCreate": "Ordinant.ai ingin membuat file baru",
+		"wantsToSearchReplace": "Ordinant.ai ingin mencari dan mengganti di file ini",
+		"didSearchReplace": "Ordinant.ai melakukan pencarian dan penggantian pada file ini",
+		"wantsToInsert": "Ordinant.ai ingin menyisipkan konten ke file ini",
+		"wantsToInsertWithLineNumber": "Ordinant.ai ingin menyisipkan konten ke file ini di baris {{lineNumber}}",
+		"wantsToInsertAtEnd": "Ordinant.ai ingin menambahkan konten ke akhir file ini",
+		"wantsToDelete": "Ordinant.ai ingin menghapus file ini",
+		"wantsToDeleteDirectory": "Ordinant.ai ingin menghapus direktori ini"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Kilo Code ingin melihat file tingkat atas di direktori ini",
-		"didViewTopLevel": "Kilo Code melihat file tingkat atas di direktori ini",
-		"wantsToViewRecursive": "Kilo Code ingin melihat semua file secara rekursif di direktori ini",
-		"didViewRecursive": "Kilo Code melihat semua file secara rekursif di direktori ini",
-		"wantsToViewDefinitions": "Kilo Code ingin melihat nama definisi source code yang digunakan di direktori ini",
-		"didViewDefinitions": "Kilo Code melihat nama definisi source code yang digunakan di direktori ini",
-		"wantsToSearch": "Kilo Code ingin mencari direktori ini untuk <code>{{regex}}</code>",
-		"didSearch": "Kilo Code mencari direktori ini untuk <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Kilo Code ingin mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Kilo Code mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
-		"wantsToViewTopLevelOutsideWorkspace": "Kilo Code ingin melihat file tingkat atas di direktori ini (di luar workspace)",
-		"didViewTopLevelOutsideWorkspace": "Kilo Code melihat file tingkat atas di direktori ini (di luar workspace)",
-		"wantsToViewRecursiveOutsideWorkspace": "Kilo Code ingin melihat semua file secara rekursif di direktori ini (di luar workspace)",
-		"didViewRecursiveOutsideWorkspace": "Kilo Code melihat semua file secara rekursif di direktori ini (di luar workspace)",
-		"wantsToViewDefinitionsOutsideWorkspace": "Kilo Code ingin melihat nama definisi source code yang digunakan di direktori ini (di luar workspace)",
-		"didViewDefinitionsOutsideWorkspace": "Kilo Code melihat nama definisi source code yang digunakan di direktori ini (di luar workspace)"
+		"wantsToViewTopLevel": "Ordinant.ai ingin melihat file tingkat atas di direktori ini",
+		"didViewTopLevel": "Ordinant.ai melihat file tingkat atas di direktori ini",
+		"wantsToViewRecursive": "Ordinant.ai ingin melihat semua file secara rekursif di direktori ini",
+		"didViewRecursive": "Ordinant.ai melihat semua file secara rekursif di direktori ini",
+		"wantsToViewDefinitions": "Ordinant.ai ingin melihat nama definisi source code yang digunakan di direktori ini",
+		"didViewDefinitions": "Ordinant.ai melihat nama definisi source code yang digunakan di direktori ini",
+		"wantsToSearch": "Ordinant.ai ingin mencari direktori ini untuk <code>{{regex}}</code>",
+		"didSearch": "Ordinant.ai mencari direktori ini untuk <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "Ordinant.ai ingin mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "Ordinant.ai mencari direktori ini (di luar workspace) untuk <code>{{regex}}</code>",
+		"wantsToViewTopLevelOutsideWorkspace": "Ordinant.ai ingin melihat file tingkat atas di direktori ini (di luar workspace)",
+		"didViewTopLevelOutsideWorkspace": "Ordinant.ai melihat file tingkat atas di direktori ini (di luar workspace)",
+		"wantsToViewRecursiveOutsideWorkspace": "Ordinant.ai ingin melihat semua file secara rekursif di direktori ini (di luar workspace)",
+		"didViewRecursiveOutsideWorkspace": "Ordinant.ai melihat semua file secara rekursif di direktori ini (di luar workspace)",
+		"wantsToViewDefinitionsOutsideWorkspace": "Ordinant.ai ingin melihat nama definisi source code yang digunakan di direktori ini (di luar workspace)",
+		"didViewDefinitionsOutsideWorkspace": "Ordinant.ai melihat nama definisi source code yang digunakan di direktori ini (di luar workspace)"
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Kilo Code ingin mencari codebase untuk <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Kilo Code ingin mencari codebase untuk <code>{{query}}</code> di <code>{{path}}</code>",
+		"wantsToSearch": "Ordinant.ai ingin mencari codebase untuk <code>{{query}}</code>",
+		"wantsToSearchWithPath": "Ordinant.ai ingin mencari codebase untuk <code>{{query}}</code> di <code>{{path}}</code>",
 		"didSearch_one": "Ditemukan 1 hasil",
 		"didSearch_other": "Ditemukan {{count}} hasil",
 		"resultTooltip": "Skor kemiripan: {{score}} (klik untuk membuka file)"
@@ -276,24 +276,24 @@
 	"response": "Respons",
 	"arguments": "Argumen",
 	"text": {
-		"rooSaid": "Kilo berkata"
+		"rooSaid": "Ordinant.ai berkata"
 	},
 	"feedback": {
 		"youSaid": "Anda bilang"
 	},
 	"mcp": {
-		"wantsToUseTool": "Kilo Code ingin menggunakan tool di server MCP {{serverName}}",
-		"wantsToAccessResource": "Kilo Code ingin mengakses resource di server MCP {{serverName}}"
+		"wantsToUseTool": "Ordinant.ai ingin menggunakan tool di server MCP {{serverName}}",
+		"wantsToAccessResource": "Ordinant.ai ingin mengakses resource di server MCP {{serverName}}"
 	},
 	"modes": {
-		"wantsToSwitch": "Kilo Code ingin beralih ke mode {{mode}}",
-		"wantsToSwitchWithReason": "Kilo Code ingin beralih ke mode {{mode}} karena: {{reason}}",
-		"didSwitch": "Kilo Code beralih ke mode {{mode}}",
-		"didSwitchWithReason": "Kilo Code beralih ke mode {{mode}} karena: {{reason}}"
+		"wantsToSwitch": "Ordinant.ai ingin beralih ke mode {{mode}}",
+		"wantsToSwitchWithReason": "Ordinant.ai ingin beralih ke mode {{mode}} karena: {{reason}}",
+		"didSwitch": "Ordinant.ai beralih ke mode {{mode}}",
+		"didSwitchWithReason": "Ordinant.ai beralih ke mode {{mode}} karena: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Kilo Code ingin membuat subtugas baru dalam mode {{mode}}",
-		"wantsToFinish": "Kilo Code ingin menyelesaikan subtugas ini",
+		"wantsToCreate": "Ordinant.ai ingin membuat subtugas baru dalam mode {{mode}}",
+		"wantsToFinish": "Ordinant.ai ingin menyelesaikan subtugas ini",
 		"newTaskContent": "Instruksi Subtugas",
 		"completionContent": "Subtugas Selesai",
 		"resultContent": "Hasil Subtugas",
@@ -301,7 +301,7 @@
 		"completionInstructions": "Subtugas selesai! Kamu bisa meninjau hasilnya dan menyarankan koreksi atau langkah selanjutnya. Jika semuanya terlihat baik, konfirmasi untuk mengembalikan hasil ke tugas induk."
 	},
 	"questions": {
-		"hasQuestion": "Kilo Code punya pertanyaan"
+		"hasQuestion": "Ordinant.ai punya pertanyaan"
 	},
 	"taskCompleted": "Tugas Selesai",
 	"error": "Error",
@@ -315,14 +315,14 @@
 	"diffError": {
 		"title": "Edit Tidak Berhasil"
 	},
-	"troubleMessage": "Kilo Code mengalami masalah...",
+	"troubleMessage": "Ordinant.ai mengalami masalah...",
 	"errorDetails": {
 		"link": "Detail",
 		"title": "Detail Kesalahan",
 		"copyToClipboard": "Salin ke Clipboard",
 		"copied": "Disalin!",
 		"diagnostics": "Dapatkan informasi kesalahan terperinci",
-		"proxyProvider": "Tampaknya kamu menggunakan penyedia berbasis proxy. Pastikan untuk memeriksa log-nya dan memastikan tidak menulis ulang permintaan Roo."
+		"proxyProvider": "Tampaknya kamu menggunakan penyedia berbasis proxy. Pastikan untuk memeriksa log-nya dan memastikan tidak menulis ulang permintaan Ordinant."
 	},
 	"powershell": {
 		"issues": "Sepertinya kamu mengalami masalah Windows PowerShell, silakan lihat ini"
@@ -346,19 +346,19 @@
 		"triggerLabelAll": "BRRR"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} Dirilis",
-		"support": "Dukung Roo Code dengan memberi kami bintang di <githubLink>GitHub</githubLink>.",
+		"title": "Ordinant {{version}} Dirilis",
+		"support": "Dukung Ordinant dengan memberi kami bintang di <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
-			"feature": "<bold>Model stealth GRATIS waktu terbatas</bold> - Code Supernova: Sekarang diupgrade dengan <bold>jendela konteks 1M token</bold>! Model coding agentik serbaguna yang mendukung input gambar, tersedia melalui Roo Code Cloud.",
+			"feature": "<bold>Model stealth GRATIS waktu terbatas</bold> - Code Supernova: Sekarang diupgrade dengan <bold>jendela konteks 1M token</bold>! Model coding agentik serbaguna yang mendukung input gambar, tersedia melalui Ordinant Cloud.",
 			"note": "(Catatan: prompt dan completion dicatat oleh pembuat model dan digunakan untuk meningkatkan model)",
-			"connectButton": "Hubungkan ke Roo Code Cloud",
-			"selectModel": "Pilih <code>roo/code-supernova</code> dari penyedia Roo Code Cloud di Pengaturan untuk memulai.",
+			"connectButton": "Hubungkan ke Ordinant Cloud",
+			"selectModel": "Pilih <code>roo/code-supernova</code> dari penyedia Ordinant Cloud di Pengaturan untuk memulai.",
 			"goToSettingsButton": "Pergi ke Pengaturan"
 		},
 		"release": {
 			"heading": "Yang Baru:",
 			"openaiCodexProvider": "OpenAI - ChatGPT Plus/Pro Provider ditambahkan yang memberikan akses berbasis langganan ke model Codex tanpa biaya per-token.",
-			"gpt52codexModel": "Model gpt-5.2-codex baru ditambahkan ke Roo Code Router, provider OpenAI standar, dan lebih banyak lagi.",
+			"gpt52codexModel": "Model gpt-5.2-codex baru ditambahkan ke Ordinant Router, provider OpenAI standar, dan lebih banyak lagi.",
 			"bugFixes": "Memperbaiki kebocoran memori yang menyebabkan layar abu-abu, masalah tanda tangan pemikiran Gemini, dan peningkatan stabilitas lainnya."
 		},
 		"cloudAgents": {
@@ -386,7 +386,7 @@
 	"browser": {
 		"session": "Sesi Browser",
 		"active": "Aktif",
-		"rooWantsToUse": "Kilo Code ingin menggunakan browser",
+		"rooWantsToUse": "Ordinant.ai ingin menggunakan browser",
 		"consoleLogs": "Log Konsol",
 		"noNewLogs": "(Tidak ada log baru)",
 		"screenshot": "Screenshot browser",
@@ -434,18 +434,18 @@
 	"profileViolationWarning": "Profil saat ini tidak kompatibel dengan pengaturan organisasi kamu",
 	"shellIntegration": {
 		"title": "Peringatan Eksekusi Perintah",
-		"description": "Perintah kamu dijalankan tanpa integrasi shell terminal VSCode. Untuk menekan peringatan ini kamu bisa menonaktifkan integrasi shell di bagian <strong>Terminal</strong> dari <settingsLink>pengaturan Kilo Code</settingsLink> atau troubleshoot integrasi terminal VSCode menggunakan link di bawah.",
+		"description": "Perintah kamu dijalankan tanpa integrasi shell terminal VSCode. Untuk menekan peringatan ini kamu bisa menonaktifkan integrasi shell di bagian <strong>Terminal</strong> dari <settingsLink>pengaturan Ordinant.ai</settingsLink> atau troubleshoot integrasi terminal VSCode menggunakan link di bawah.",
 		"troubleshooting": "Klik di sini untuk dokumentasi integrasi shell."
 	},
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Batas Permintaan yang Disetujui Otomatis Tercapai",
-			"description": "Kilo Code telah mencapai batas {{count}} permintaan API yang disetujui otomatis. Apakah Anda ingin mengatur ulang hitungan dan melanjutkan tugas?",
+			"description": "Ordinant.ai telah mencapai batas {{count}} permintaan API yang disetujui otomatis. Apakah Anda ingin mengatur ulang hitungan dan melanjutkan tugas?",
 			"button": "Setel Ulang dan Lanjutkan"
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "Batas Biaya yang Disetujui Otomatis Tercapai",
-			"description": "Kilo Code telah mencapai batas biaya yang disetujui otomatis sebesar ${{count}}. Apakah Anda ingin mengatur ulang biaya dan melanjutkan tugas?",
+			"description": "Ordinant.ai telah mencapai batas biaya yang disetujui otomatis sebesar ${{count}}. Apakah Anda ingin mengatur ulang biaya dan melanjutkan tugas?",
 			"button": "Setel Ulang dan Lanjutkan"
 		}
 	},
@@ -460,7 +460,7 @@
 		"ariaLabel": "Versi {{version}} - Klik untuk melihat catatan rilis"
 	},
 	"rooCloudCTA": {
-		"title": "Roo Code Cloud sedang berkembang!",
+		"title": "Ordinant Cloud sedang berkembang!",
 		"description": "Jalankan agen jarak jauh di cloud, akses tugas Anda dari mana saja, berkolaborasi dengan orang lain, dan banyak lagi.",
 		"joinWaitlist": "Daftar untuk mendapatkan pembaruan terbaru."
 	},
@@ -501,8 +501,8 @@
 		"clickToEdit": "Klik untuk mengedit pesan"
 	},
 	"slashCommand": {
-		"wantsToRun": "Kilo Code ingin menjalankan perintah slash",
-		"didRun": "Kilo Code telah menjalankan perintah slash"
+		"wantsToRun": "Ordinant.ai ingin menjalankan perintah slash",
+		"didRun": "Ordinant.ai telah menjalankan perintah slash"
 	},
 	"todo": {
 		"partial": "{{completed}} dari {{total}} to-do selesai",

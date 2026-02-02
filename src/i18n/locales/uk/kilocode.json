@@ -52,19 +52,19 @@
 		}
 	},
 	"commitMessage": {
-		"activated": "Генератор повідомлень коммітів Kilo Code активовано",
+		"activated": "Генератор повідомлень коммітів Ordinant.ai активовано",
 		"gitNotFound": "⚠️ Репозиторій Git не знайдено або git недоступний",
 		"gitInitError": "⚠️ Помилка ініціалізації Git: {{error}}",
-		"generating": "Kilo: Генерування повідомлення комміту...",
-		"noChanges": "Kilo: Змін для аналізу не знайдено",
-		"generated": "Kilo: Повідомлення комміту згенеровано!",
-		"generationFailed": "Kilo: Помилка генерації повідомлення комміту: {{errorMessage}}",
-		"generatingFromUnstaged": "Kilo: Генерація повідомлення з використанням незафіксованих змін",
-		"activationFailed": "Kilo: Не вдалося активувати генератор повідомлень: {{error}}",
-		"providerRegistered": "Kilo: Постачальник повідомлень коммітів зареєстровано",
+		"generating": "Ordinant.ai: Генерування повідомлення комміту...",
+		"noChanges": "Ordinant.ai: Змін для аналізу не знайдено",
+		"generated": "Ordinant.ai: Повідомлення комміту згенеровано!",
+		"generationFailed": "Ordinant.ai: Помилка генерації повідомлення комміту: {{errorMessage}}",
+		"generatingFromUnstaged": "Ordinant.ai: Генерація повідомлення з використанням незафіксованих змін",
+		"activationFailed": "Ordinant.ai: Не вдалося активувати генератор повідомлень: {{error}}",
+		"providerRegistered": "Ordinant.ai: Постачальник повідомлень коммітів зареєстровано",
 		"errors": {
 			"noProject": "Проєкти відсутні",
-			"connectionFailed": "Не вдалося підключитися до розширення Kilo Code",
+			"connectionFailed": "Не вдалося підключитися до розширення Ordinant.ai",
 			"timeout": "Запит завершився після 30 секунд очікування",
 			"noWorkspacePath": "Не вдалося визначити шлях робочої області для Git-репозиторію",
 			"invalidResponse": "Отримано недійсний формат відповіді від розширення",
@@ -88,7 +88,7 @@
 		},
 		"progress": {
 			"analyzing": "Аналіз змін...",
-			"connecting": "Підключення до Kilo Code...",
+			"connecting": "Підключення до Ordinant.ai...",
 			"generating": "Створення повідомлення коміту...",
 			"title": "Генерація Повідомлення Коміту"
 		},
@@ -99,13 +99,13 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(kilo-logo) Autocomplete",
+			"enabled": "$(ordinant-logo) Autocomplete",
 			"snoozed": "призупинено",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
-				"basic": "Kilo Code Autocomplete",
-				"disabled": "Kilo Code Autocomplete (вимкнено)",
-				"noCredits": "**На вашому рахунку немає кредитів**\n\nНа вашому рахунку Kilo Code немає кредитів. Щоб використовувати автодоповнення, будь ласка, поповніть рахунок.\n\n[Відкрити Налаштування](command:kilo-code.settingsButtonClicked)",
+				"basic": "Ordinant.ai Autocomplete",
+				"disabled": "Ordinant.ai Autocomplete (вимкнено)",
+				"noCredits": "**На вашому рахунку немає кредитів**\n\nНа вашому рахунку Ordinant.ai немає кредитів. Щоб використовувати автодоповнення, будь ласка, поповніть рахунок.\n\n[Відкрити Налаштування](command:kilo-code.settingsButtonClicked)",
 				"noUsableProvider": "**Модель автодоповнення не налаштована**\n\nЩоб увімкнути автодоповнення, додайте профіль з одним із підтримуваних провайдерів: {{providers}}.\n\n[Відкрити Налаштування](command:kilo-code.settingsButtonClicked)",
 				"sessionTotal": "Загальна вартість сесії:",
 				"provider": "Провайдер:",
@@ -120,54 +120,54 @@
 				"lessThanCent": "<$0.01"
 			}
 		},
-		"toggleMessage": "Kilo Code Autocomplete {{status}}",
+		"toggleMessage": "Ordinant.ai Autocomplete {{status}}",
 		"progress": {
-			"title": "Kilo Code",
+			"title": "Ordinant.ai",
 			"analyzing": "Аналізую твій код...",
 			"generating": "Генерую запропоновані правки...",
 			"processing": "Обробляю запропоновані правки...",
 			"showing": "Показую запропоновані правки..."
 		},
 		"input": {
-			"title": "Kilo Code: Швидке Завдання",
+			"title": "Ordinant.ai: Швидке Завдання",
 			"placeholder": "напр., 'рефактори цю функцію для більшої ефективності'"
 		},
 		"commands": {
-			"generateSuggestions": "Kilo Code: Генерувати Запропоновані Правки",
+			"generateSuggestions": "Ordinant.ai: Генерувати Запропоновані Правки",
 			"displaySuggestions": "Показати Запропоновані Правки",
 			"cancelSuggestions": "Скасувати Запропоновані Правки",
 			"applyCurrentSuggestion": "Застосувати Поточну Запропоновану Правку",
 			"applyAllSuggestions": "Застосувати Всі Запропоновані Правки",
-			"category": "Kilo Code"
+			"category": "Ordinant.ai"
 		},
 		"codeAction": {
-			"title": "Kilo Code: Запропоновані Правки"
+			"title": "Ordinant.ai: Запропоновані Правки"
 		},
 		"chatParticipant": {
-			"fullName": "Kilo Code Agent",
+			"fullName": "Ordinant.ai Agent",
 			"name": "Agent",
 			"description": "Я можу допомогти тобі зі швидкими завданнями та запропонованими правками."
 		},
 		"incompatibilityExtensionPopup": {
-			"message": "Kilo Code Autocomplete блокується конфліктом з GitHub Copilot. Щоб виправити це, ти повинен вимкнути вбудовані пропозиції Copilot.",
+			"message": "Ordinant.ai Autocomplete блокується конфліктом з GitHub Copilot. Щоб виправити це, ти повинен вимкнути вбудовані пропозиції Copilot.",
 			"disableCopilot": "Вимкнути Copilot",
 			"disableInlineAssist": "Вимкнути Autocomplete"
 		}
 	},
 	"terminalCommandGenerator": {
-		"inputPrompt": "Kilo: Опишіть команду, яку ви хочете згенерувати",
+		"inputPrompt": "Ordinant.ai: Опишіть команду, яку ви хочете згенерувати",
 		"inputPlaceholder": "напр., завершити процес на порту 3001, знайти великі файли і т.д.",
-		"noActiveTerminal": "Kilo: Не знайдено активного терміналу. Будь ласка, спочатку відкрийте термінал.",
-		"generatingProgress": "Kilo: Генерування команди терміналу...",
-		"commandGenerated": "Kilo: Згенерована команда: {{command}}",
-		"generationFailed": "Kilo: Не вдалося згенерувати команду: {{error}}",
+		"noActiveTerminal": "Ordinant.ai: Не знайдено активного терміналу. Будь ласка, спочатку відкрийте термінал.",
+		"generatingProgress": "Ordinant.ai: Генерування команди терміналу...",
+		"commandGenerated": "Ordinant.ai: Згенерована команда: {{command}}",
+		"generationFailed": "Ordinant.ai: Не вдалося згенерувати команду: {{error}}",
 		"warningDialog": {
 			"title": "Попередження щодо Безпеки Терміналу",
 			"okButton": "Я розумію",
 			"message": "Перевіряйте двічі всі згенеровані команди перед їх запуском. Дії в терміналі не завжди можна скасувати — запуск неперевірених команд може призвести до незворотної втрати даних або пошкодження системи. Перегляньте та повністю зрозумійте команду перед тим, як продовжити!",
 			"cancelButton": "Скасувати"
 		},
-		"tipMessage": "Kilo: Натисніть {{shortcut}}, щоб генерувати команди терміналу"
+		"tipMessage": "Ordinant.ai: Натисніть {{shortcut}}, щоб генерувати команди терміналу"
 	},
 	"seeNewChanges": {
 		"title": "Показ нових змін",
@@ -177,8 +177,8 @@
 	},
 	"agentManager": {
 		"errors": {
-			"cliOutdated": "Твоя версія Kilocode CLI застаріла і не підтримує Agent Manager. Будь ласка, оновись до останньої версії.",
-			"cliMisconfigured": "Kilocode CLI не налаштовано. Виконай 'kilocode auth' для входу або 'kilocode config' для налаштування.",
+			"cliOutdated": "Твоя версія Ordinant CLI застаріла і не підтримує Agent Manager. Будь ласка, оновись до останньої версії.",
+			"cliMisconfigured": "Ordinant CLI не налаштовано. Виконай 'ordinant auth' для входу або 'ordinant config' для налаштування.",
 			"sessionFailed": "Не вдалося запустити сесію агента",
 			"sessionFailedWithMessage": "Не вдалося запустити сесію агента: {{message}}"
 		},
@@ -187,16 +187,16 @@
 			"installInstructions": "Інструкції з Встановлення",
 			"getHelp": "Отримати Допомогу",
 			"runInTerminal": "Запустити в Терміналі",
-			"loginCli": "Run kilocode auth",
-			"configureCli": "Run kilocode config",
+			"loginCli": "Run ordinant auth",
+			"configureCli": "Run ordinant config",
 			"updateGlobal": "Оновити Глобально",
 			"updateLocal": "Оновити Локально",
 			"installGlobal": "Встановити Глобально",
 			"installLocal": "Встановити Локально"
 		},
 		"terminal": {
-			"installMessage": "Виконання npm install для встановлення Kilocode CLI. Після завершення можеш закрити цей термінал і спробувати запустити Agent Manager знову.",
-			"authReminder": "If this is your first install, run `kilocode auth` to sign in before starting the Agent Manager."
+			"installMessage": "Виконання npm install для встановлення Ordinant CLI. Після завершення можеш закрити цей термінал і спробувати запустити Agent Manager знову.",
+			"authReminder": "If this is your first install, run `ordinant auth` to sign in before starting the Agent Manager."
 		}
 	},
 	"speechToText": {

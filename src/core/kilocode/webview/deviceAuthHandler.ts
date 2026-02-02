@@ -62,7 +62,7 @@ export class DeviceAuthHandler {
 				})
 
 				this.callbacks.showInformationMessage(
-					`Kilo Code successfully configured! Authenticated as ${userEmail}`,
+					`Ordinant.ai successfully configured! Authenticated as ${userEmail}`,
 				)
 
 				// Clean up

@@ -183,8 +183,8 @@ describe("extractTextFromXLSX", () => {
 			// Create a hyperlink cell
 			worksheet["A1"] = {
 				t: "s",
-				v: "Roo Code",
-				w: "Roo Code",
+				v: "Ordinant.ai",
+				w: "Ordinant.ai",
 				l: { Target: "https://roocode.com/" },
 			}
 			worksheet["!ref"] = "A1"
@@ -193,7 +193,7 @@ describe("extractTextFromXLSX", () => {
 
 			const result = await extractTextFromXLSX(workbook)
 
-			expect(result).toContain("Roo Code (https://roocode.com/)")
+			expect(result).toContain("Ordinant.ai (https://ordinant.ai/)")
 		})
 
 		it("should handle formulas with and without results", async () => {

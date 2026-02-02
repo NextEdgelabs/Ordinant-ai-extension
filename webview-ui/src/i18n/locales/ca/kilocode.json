@@ -1,8 +1,8 @@
 {
 	"welcome": {
-		"greeting": "Benvingut a Kilo Code!",
-		"introText1": "Kilo Code és un agent de codificació d'IA gratuït i de codi obert.",
-		"introText2": "Funciona amb els models d'IA més recents com Claude Opus 4.5, Gemini 3 Pro, GPT-5.2, i més de 450 més.",
+		"greeting": "Benvingut a Ordinant.ai!",
+		"introText1": "Ordinant.ai és un agent de codificació d'IA gratuït i de codi obert.",
+		"introText2": "Funciona amb els models d'IA més recents com Claude Sonnet 4.5, Gemini 2.5 Pro, GPT-5, i més de 450 més.",
 		"introText3": "Crea un compte gratuït i obtén $20 en crèdits de bonificació quan recarreguis per primera vegada.",
 		"ctaButton": "Comença",
 		"manualModeButton": "Utilitza la teva pròpia clau API",
@@ -11,7 +11,7 @@
 	},
 	"lowCreditWarning": {
 		"addCredit": "Afegir crèdit",
-		"lowBalance": "El teu saldo de Kilo Code és baix",
+		"lowBalance": "El teu saldo de Ordinant.ai és baix",
 		"switchToFreeModel": "Canvia a un model gratuït"
 	},
 	"pagination": {
@@ -36,16 +36,15 @@
 			"skills": "Habilitats"
 		},
 		"provider": {
-			"account": "Compte de Kilo Code",
-			"apiKey": "Clau API de Kilo Code",
-			"login": "Iniciar sessió a Kilo Code",
-			"logout": "Tancar sessió de Kilo Code",
-			"loginForPremiumModels": "Inicia sessió per accedir a models i funcions premium",
+			"account": "Compte de Ordinant.ai",
+			"apiKey": "Clau API de Ordinant.ai",
+			"login": "Iniciar sessió a Ordinant.ai",
+			"logout": "Tancar sessió de Ordinant.ai",
 			"providerRouting": {
 				"title": "Encaminament de proveïdors",
 				"managedByOrganization": "Gestionar encaminament de proveïdors a nivell d'organització",
 				"createOrganization": "Crear organització per gestionar encaminament de proveïdors",
-				"description": "Kilo Code encamina les sol·licituds als millors proveïdors disponibles per al vostre model. Per defecte, les sol·licituds es distribueixen entre els principals proveïdors per maximitzar el temps de funcionament. No obstant això, podeu triar un proveïdor específic per a aquest model.",
+				"description": "Ordinant.ai encamina les sol·licituds als millors proveïdors disponibles per al vostre model. Per defecte, les sol·licituds es distribueixen entre els principals proveïdors per maximitzar el temps de funcionament. No obstant això, podeu triar un proveïdor específic per a aquest model.",
 				"sorting": {
 					"default": "Ordenació de proveïdors per defecte",
 					"price": "Preferir proveïdors amb preu més baix",
@@ -64,7 +63,7 @@
 		"modelInfo": {
 			"contextWindow": "Finestra de context",
 			"providerBreakdown": "Desglossament de preus i capacitats del proveïdor",
-			"averageKiloCodeCost": "Aquest és el cost real mitjà gastat per Kilo Code utilitzant aquest model durant la darrera setmana. Pot ser inferior al preu llistat a causa de la utilització de la memòria cau de prompts.",
+			"averageKiloCodeCost": "Aquest és el cost real mitjà gastat per Ordinant.ai utilitzant aquest model durant la darrera setmana. Pot ser inferior al preu llistat a causa de la utilització de la memòria cau de prompts.",
 			"table": {
 				"provider": "Proveïdor",
 				"context": "L'endpoint pot processar aquest nombre de tokens (entrada + sortida).",
@@ -77,7 +76,7 @@
 		"contextManagement": {
 			"allowVeryLargeReads": {
 				"label": "Permet lectures de fitxers molt grans",
-				"description": "Quan està activat, Kilo Code realitzarà lectures de fitxers o sortides MCP molt grans encara que hi hagi una alta probabilitat de desbordar la finestra de context (mida del contingut >80% de la finestra de context)."
+				"description": "Quan està activat, Ordinant.ai realitzarà lectures de fitxers o sortides MCP molt grans encara que hi hagi una alta probabilitat de desbordar la finestra de context (mida del contingut >80% de la finestra de context)."
 			}
 		},
 		"codeIndex": {
@@ -88,10 +87,10 @@
 		},
 		"systemNotifications": {
 			"label": "Activar notificacions del sistema",
-			"description": "Quan està activat, Kilo Code enviarà notificacions del sistema per a esdeveniments importants com la finalització de tasques o errors.",
+			"description": "Quan està activat, Ordinant.ai enviarà notificacions del sistema per a esdeveniments importants com la finalització de tasques o errors.",
 			"testButton": "Provar notificació",
-			"testTitle": "Kilo Code",
-			"testMessage": "Aquesta és una notificació de prova de Kilo Code."
+			"testTitle": "Ordinant.ai",
+			"testMessage": "Aquesta és una notificació de prova de Ordinant.ai."
 		},
 		"terminal": {
 			"commandGenerator": {
@@ -124,7 +123,7 @@
 	},
 	"chat": {
 		"condense": {
-			"wantsToCondense": "Kilo Code vol condensar la teva conversa",
+			"wantsToCondense": "Ordinant.ai vol condensar la teva conversa",
 			"condenseConversation": "Condensar Conversa"
 		},
 		"seeNewChanges": "Mostrar Nous Canvis",
@@ -145,14 +144,14 @@
 			"modes": "Modes",
 			"skills": "Habilitats"
 		},
-		"ariaLabel": "Regles de Kilo Code",
+		"ariaLabel": "Regles de Ordinant.ai",
 		"tabs": {
 			"rules": "Regles",
 			"workflows": "Fluxos de Treball"
 		},
 		"description": {
-			"rules": "Les regles et permeten proporcionar a Kilo Code instruccions que ha de seguir en tots els modes i per a tots els prompts. Són una manera persistent d'incloure context i preferències per a totes les converses al teu espai de treball o globalment.",
-			"workflows": "Els fluxos de treball són una plantilla preparada per a una conversa. Els fluxos de treball et permeten definir prompts que uses freqüentment, i poden incloure una sèrie de passos per guiar Kilo Code a través de tasques repetitives, com desplegar un servei o enviar una PR. Per invocar un flux de treball, escriu",
+			"rules": "Les regles et permeten proporcionar a Ordinant.ai instruccions que ha de seguir en tots els modes i per a tots els prompts. Són una manera persistent d'incloure context i preferències per a totes les converses al teu espai de treball o globalment.",
+			"workflows": "Els fluxos de treball són una plantilla preparada per a una conversa. Els fluxos de treball et permeten definir prompts que uses freqüentment, i poden incloure una sèrie de passos per guiar Ordinant.ai a través de tasques repetitives, com desplegar un servei o enviar una PR. Per invocar un flux de treball, escriu",
 			"workflowsInChat": "al xat."
 		},
 		"sections": {
@@ -227,7 +226,7 @@
 			},
 			"autoTriggerDelay": {
 				"label": "Retard d'Activació Automàtica",
-				"description": "El retard en segons abans que Kilo Code activi Autocomplete després que deixis d'escriure. Un retard més curt significa suggeriments més ràpids, però pot ser més intensiu en recursos."
+				"description": "El retard en segons abans que Ordinant.ai activi Autocomplete després que deixis d'escriure. Un retard més curt significa suggeriments més ràpids, però pot ser més intensiu en recursos."
 			},
 			"enableSmartInlineTaskKeybinding": {
 				"label": "Activar amb Drecera ({{keybinding}})",
@@ -262,7 +261,7 @@
 			},
 			"noCredits": {
 				"title": "No hi ha crèdits al teu compte",
-				"description": "El teu compte de Kilo Code no té crèdits. Per utilitzar l'autocompletat, si us plau afegeix crèdits al teu compte.",
+				"description": "El teu compte de Ordinant.ai no té crèdits. Per utilitzar l'autocompletat, si us plau afegeix crèdits al teu compte.",
 				"buyCredits": "Comprar crèdits →"
 			}
 		}
@@ -300,7 +299,7 @@
 	"toolCallStyle": {
 		"title": "Estil de Crida d'Eina",
 		"description": "Tria com es formaten les crides d'eina al prompt del sistema. JSON és actualment experimental i està principalment destinat a usuaris interessats a contribuir al seu desenvolupament.",
-		"automatic": "Deixa que Kilo decideixi",
+		"automatic": "Deixa que Ordinant.ai decideixi",
 		"xml": "XML",
 		"json": "JSON"
 	},
@@ -326,7 +325,7 @@
 		"shareModesNewBanner": "Nou: Comparteix modes creant una organització"
 	},
 	"deviceAuth": {
-		"title": "Inicia sessió a Kilo Code",
+		"title": "Inicia sessió a Ordinant.ai",
 		"step1": "Obre la següent URL al teu navegador",
 		"step2": "Verifica el codi i autoritza aquest dispositiu al teu navegador",
 		"scanQr": "O escaneja aquest codi QR amb el teu telèfon",
@@ -351,7 +350,7 @@
 			"title": "Veu a text",
 			"description": "La conversió de veu a text no està disponible. La conversió de veu a text requereix tant FFmpeg com un proveïdor d'OpenAI vàlid configurat. <moreInfoLink>Feu clic aquí per a més informació</moreInfoLink>.",
 			"openAiReason": "Necessiteu un proveïdor d'OpenAI vàlid amb una clau API per utilitzar la transcripció de veu.",
-			"ffmpegReason": "Necessites tenir instal·lat FFmpeg. <ffmpegLink>Fes clic aquí</ffmpegLink> perquè Kilo t'ajudi a instal·lar FFmpeg.",
+			"ffmpegReason": "Necessites tenir instal·lat FFmpeg. <ffmpegLink>Fes clic aquí</ffmpegLink> perquè Ordinant.ai t'ajudi a instal·lar FFmpeg.",
 			"ffmpegMessage": "Ajuda'm a instal·lar FFmpeg"
 		},
 		"misconfiguredState": "No disponible per la configuració",

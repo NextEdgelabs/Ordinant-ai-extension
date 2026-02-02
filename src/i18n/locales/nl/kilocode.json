@@ -52,20 +52,20 @@
 		}
 	},
 	"commitMessage": {
-		"activated": "Kilo Code commit bericht generator geactiveerd",
+		"activated": "Ordinant.ai commit bericht generator geactiveerd",
 		"gitNotFound": "⚠️ Git-repository niet gevonden of git niet beschikbaar",
 		"gitInitError": "⚠️ Git-initialisatiefout: {{error}}",
-		"generating": "Kilo: Commit bericht genereren...",
-		"noChanges": "Kilo: Geen wijzigingen gevonden om te analyseren",
-		"generated": "Kilo: Commit bericht gegenereerd!",
-		"generationFailed": "Kilo: Fout bij het genereren van commit bericht: {{errorMessage}}",
-		"generatingFromUnstaged": "Kilo: Bericht genereren met niet-gestage wijzigingen",
-		"activationFailed": "Kilo: Fout bij het activeren van berichtgenerator: {{error}}",
-		"providerRegistered": "Kilo: Commit bericht provider geregistreerd",
+		"generating": "Ordinant.ai: Commit bericht genereren...",
+		"noChanges": "Ordinant.ai: Geen wijzigingen gevonden om te analyseren",
+		"generated": "Ordinant.ai: Commit bericht gegenereerd!",
+		"generationFailed": "Ordinant.ai: Fout bij het genereren van commit bericht: {{errorMessage}}",
+		"generatingFromUnstaged": "Ordinant.ai: Bericht genereren met niet-gestage wijzigingen",
+		"activationFailed": "Ordinant.ai: Fout bij het activeren van berichtgenerator: {{error}}",
+		"providerRegistered": "Ordinant.ai: Commit bericht provider geregistreerd",
 		"errors": {
 			"noProject": "Geen project beschikbaar",
 			"timeout": "Verzoek is verlopen na 30 seconden",
-			"connectionFailed": "Verbinding maken met Kilo Code-extensie mislukt",
+			"connectionFailed": "Verbinding maken met Ordinant.ai-extensie mislukt",
 			"invalidResponse": "Ongeldig responsformaat ontvangen van extensie",
 			"missingMessage": "Geen commit-bericht ontvangen van extensie",
 			"noChanges": "Geen wijzigingen gevonden om te committen",
@@ -90,7 +90,7 @@
 			"title": "Commit-bericht genereren",
 			"analyzing": "Wijzigingen analyseren...",
 			"generating": "Commit-bericht genereren...",
-			"connecting": "Verbinding maken met Kilo Code..."
+			"connecting": "Verbinding maken met Ordinant.ai..."
 		},
 		"ui": {
 			"generateButton": "Commit Bericht Genereren",
@@ -99,13 +99,13 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(kilo-logo) Autocomplete",
+			"enabled": "$(ordinant-logo) Autocomplete",
 			"snoozed": "gepauzeerd",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
-				"basic": "Kilo Code Autocomplete",
-				"disabled": "Kilo Code Autocomplete (uitgeschakeld)",
-				"noCredits": "**Geen tegoed op je account**\n\nJe Kilo Code account heeft geen tegoed. Om autocomplete te gebruiken, voeg tegoed toe aan je account.\n\n[Instellingen openen](command:kilo-code.settingsButtonClicked)",
+				"basic": "Ordinant.ai Autocomplete",
+				"disabled": "Ordinant.ai Autocomplete (uitgeschakeld)",
+				"noCredits": "**Geen tegoed op je account**\n\nJe Ordinant.ai account heeft geen tegoed. Om autocomplete te gebruiken, voeg tegoed toe aan je account.\n\n[Instellingen openen](command:kilo-code.settingsButtonClicked)",
 				"noUsableProvider": "**Geen autocomplete model geconfigureerd**\n\nOm autocomplete in te schakelen, voeg een profiel toe met een van deze ondersteunde providers: {{providers}}.\n\n[Instellingen openen](command:kilo-code.settingsButtonClicked)",
 				"sessionTotal": "Totale sessiekosten:",
 				"provider": "Provider:",
@@ -120,54 +120,54 @@
 				"lessThanCent": "<$0.01"
 			}
 		},
-		"toggleMessage": "Kilo Code Autocomplete {{status}}",
+		"toggleMessage": "Ordinant.ai Autocomplete {{status}}",
 		"progress": {
-			"title": "Kilo Code",
+			"title": "Ordinant.ai",
 			"analyzing": "Je code analyseren...",
 			"generating": "Voorgestelde bewerkingen genereren...",
 			"processing": "Voorgestelde bewerkingen verwerken...",
 			"showing": "Voorgestelde bewerkingen tonen..."
 		},
 		"input": {
-			"title": "Kilo Code: Snelle Taak",
+			"title": "Ordinant.ai: Snelle Taak",
 			"placeholder": "bijv., 'refactor deze functie om efficiënter te zijn'"
 		},
 		"commands": {
-			"generateSuggestions": "Kilo Code: Voorgestelde Bewerkingen Genereren",
+			"generateSuggestions": "Ordinant.ai: Voorgestelde Bewerkingen Genereren",
 			"displaySuggestions": "Voorgestelde Bewerkingen Tonen",
 			"cancelSuggestions": "Voorgestelde Bewerkingen Annuleren",
 			"applyCurrentSuggestion": "Huidige Voorgestelde Bewerking Toepassen",
 			"applyAllSuggestions": "Alle Voorgestelde Bewerkingen Toepassen",
-			"category": "Kilo Code"
+			"category": "Ordinant.ai"
 		},
 		"codeAction": {
-			"title": "Kilo Code: Voorgestelde Bewerkingen"
+			"title": "Ordinant.ai: Voorgestelde Bewerkingen"
 		},
 		"chatParticipant": {
-			"fullName": "Kilo Code Agent",
+			"fullName": "Ordinant.ai Agent",
 			"name": "Agent",
 			"description": "Ik kan je helpen met snelle taken en voorgestelde bewerkingen."
 		},
 		"incompatibilityExtensionPopup": {
-			"message": "De Kilo Code Autocomplete wordt geblokkeerd door een conflict met GitHub Copilot. Om dit op te lossen, moet je Copilot's inline suggesties uitschakelen.",
+			"message": "De Ordinant.ai Autocomplete wordt geblokkeerd door een conflict met GitHub Copilot. Om dit op te lossen, moet je Copilot's inline suggesties uitschakelen.",
 			"disableCopilot": "Copilot Uitschakelen",
 			"disableInlineAssist": "Autocomplete Uitschakelen"
 		}
 	},
 	"terminalCommandGenerator": {
-		"inputPrompt": "Kilo: Beschrijf het commando dat je wilt genereren",
-		"noActiveTerminal": "Kilo: Geen actieve terminal gevonden. Open eerst een terminal.",
+		"inputPrompt": "Ordinant.ai: Beschrijf het commando dat je wilt genereren",
+		"noActiveTerminal": "Ordinant.ai: Geen actieve terminal gevonden. Open eerst een terminal.",
 		"inputPlaceholder": "bijv., dood het proces dat draait op poort 3001, zoek grote bestanden, enz",
-		"generatingProgress": "Kilo: Terminal opdracht genereren...",
-		"commandGenerated": "Kilo: Gegenereerd commando: {{command}}",
-		"generationFailed": "Kilo: Opdracht genereren mislukt: {{error}}",
+		"generatingProgress": "Ordinant.ai: Terminal opdracht genereren...",
+		"commandGenerated": "Ordinant.ai: Gegenereerd commando: {{command}}",
+		"generationFailed": "Ordinant.ai: Opdracht genereren mislukt: {{error}}",
 		"warningDialog": {
 			"title": "Waarschuwing Terminalveiligheid",
 			"okButton": "Ik begrijp",
 			"message": "Controleer alle gegenereerde commando's dubbel voordat je ze uitvoert. Acties in de terminal kunnen niet altijd worden teruggedraaid— het uitvoeren van niet-geverifieerde commando's kan resulteren in onherstelbaar dataverlies of beschadiging van het systeem. Bekijk en begrijp het commando volledig voordat je verdergaat!",
 			"cancelButton": "Annuleren"
 		},
-		"tipMessage": "Kilo: Druk op {{shortcut}} om terminalopdrachten te genereren"
+		"tipMessage": "Ordinant.ai: Druk op {{shortcut}} om terminalopdrachten te genereren"
 	},
 	"seeNewChanges": {
 		"title": "Nieuwe wijzigingen weergeven",
@@ -177,8 +177,8 @@
 	},
 	"agentManager": {
 		"errors": {
-			"cliOutdated": "Je Kilocode CLI-versie is verouderd en ondersteunt de Agent Manager niet. Update naar de nieuwste versie.",
-			"cliMisconfigured": "Kilocode CLI is niet geconfigureerd. Voer 'kilocode auth' uit om in te loggen of 'kilocode config' om te configureren.",
+			"cliOutdated": "Je Ordinant CLI-versie is verouderd en ondersteunt de Agent Manager niet. Update naar de nieuwste versie.",
+			"cliMisconfigured": "Ordinant CLI is niet geconfigureerd. Voer 'ordinant auth' uit om in te loggen of 'ordinant config' om te configureren.",
 			"sessionFailed": "Kon agentsessie niet starten",
 			"sessionFailedWithMessage": "Kon agentsessie niet starten: {{message}}"
 		},
@@ -187,16 +187,16 @@
 			"installInstructions": "Installatie-instructies",
 			"getHelp": "Hulp krijgen",
 			"runInTerminal": "Uitvoeren in Terminal",
-			"loginCli": "Run kilocode auth",
-			"configureCli": "Run kilocode config",
+			"loginCli": "Run ordinant auth",
+			"configureCli": "Run ordinant config",
 			"updateGlobal": "Globaal Bijwerken",
 			"updateLocal": "Lokaal Bijwerken",
 			"installGlobal": "Globaal Installeren",
 			"installLocal": "Lokaal Installeren"
 		},
 		"terminal": {
-			"installMessage": "npm install uitvoeren om Kilocode CLI te installeren. Zodra voltooid, kun je dit terminal sluiten en proberen de Agent Manager opnieuw te starten.",
-			"authReminder": "If this is your first install, run `kilocode auth` to sign in before starting the Agent Manager."
+			"installMessage": "npm install uitvoeren om Ordinant CLI te installeren. Zodra voltooid, kun je dit terminal sluiten en proberen de Agent Manager opnieuw te starten.",
+			"authReminder": "If this is your first install, run `ordinant auth` to sign in before starting the Agent Manager."
 		}
 	},
 	"speechToText": {
@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Kilo Code: Toegevoegd {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"added": "Ordinant.ai: Toegevoegd {{source}} {{configType}}: {{name}}{{modeStr}}",
 		"removed": "Kilo code: Verwijderd {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

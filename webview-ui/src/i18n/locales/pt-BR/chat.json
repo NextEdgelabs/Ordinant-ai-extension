@@ -1,5 +1,5 @@
 {
-	"greeting": "O que o Kilo Code pode fazer por você?",
+	"greeting": "O que o Ordinant.ai pode fazer por você?",
 	"task": {
 		"title": "Tarefa",
 		"expand": "Expandir tarefa",
@@ -22,12 +22,12 @@
 		"sharePublicly": "Compartilhar publicamente",
 		"sharePubliclyDescription": "Qualquer pessoa com o link pode acessar",
 		"connectToCloud": "Conectar ao Cloud",
-		"connectToCloudDescription": "Entre no Kilo Code Cloud para compartilhar tarefas",
+		"connectToCloudDescription": "Entre no Ordinant.ai Cloud para compartilhar tarefas",
 		"sharingDisabledByOrganization": "Compartilhamento desabilitado pela organização",
 		"shareSuccessOrganization": "Link da organização copiado para a área de transferência",
 		"shareSuccessPublic": "Link público copiado para a área de transferência",
-		"openInCloud": "Abrir tarefa no Roo Code Cloud",
-		"openInCloudIntro": "Continue monitorando ou interagindo com Roo de qualquer lugar. Escaneie, clique ou copie para abrir.",
+		"openInCloud": "Abrir tarefa no Ordinant Cloud",
+		"openInCloudIntro": "Continue monitorando ou interagindo com Ordinant de qualquer lugar. Escaneie, clique ou copie para abrir.",
 		"openApiHistory": "Abrir histórico da API",
 		"openUiHistory": "Abrir histórico da UI"
 	},
@@ -101,7 +101,7 @@
 	"scrollToBottom": "Rolar para o final do chat",
 	"about": "Gere, refatore e depure código com assistência de IA. Confira nossa <DocsLink>documentação</DocsLink> para aprender mais.",
 	"docs": "Confira nossa <DocsLink>documentação</DocsLink> para saber mais.",
-	"onboarding": "<strong>Sua lista de tarefas neste espaço de trabalho está vazia.</strong> Comece digitando uma tarefa abaixo. Não sabe como começar? Leia mais sobre o que o Kilo Code pode fazer por você nos <DocsLink>documentos</DocsLink>.",
+	"onboarding": "<strong>Sua lista de tarefas neste espaço de trabalho está vazia.</strong> Comece digitando uma tarefa abaixo. Não sabe como começar? Leia mais sobre o que o Ordinant.ai pode fazer por você nos <DocsLink>documentos</DocsLink>.",
 	"rooTips": {
 		"customizableModes": {
 			"title": "Modos personalizáveis",
@@ -130,7 +130,7 @@
 		"title": "Modos",
 		"marketplace": "Marketplace de Modos",
 		"settings": "Configurações de Modos",
-		"description": "Personas especializadas que adaptam o comportamento do Roo.",
+		"description": "Personas especializadas que adaptam o comportamento do Ordinant.",
 		"searchPlaceholder": "Pesquisar modos...",
 		"noResults": "Nenhum resultado encontrado",
 		"organizationModes": "Modos da organização"
@@ -145,7 +145,7 @@
 	"diffError": {
 		"title": "Edição mal-sucedida"
 	},
-	"troubleMessage": "Kilo Code está tendo problemas...",
+	"troubleMessage": "Ordinant.ai está tendo problemas...",
 	"apiRequest": {
 		"title": "Requisição API",
 		"failed": "Requisição API falhou",
@@ -188,48 +188,48 @@
 		"current": "Atual"
 	},
 	"instructions": {
-		"wantsToFetch": "Kilo Code quer buscar instruções detalhadas para ajudar com a tarefa atual"
+		"wantsToFetch": "Ordinant.ai quer buscar instruções detalhadas para ajudar com a tarefa atual"
 	},
 	"fileOperations": {
-		"wantsToRead": "Kilo Code quer ler este arquivo",
-		"wantsToReadOutsideWorkspace": "Kilo Code quer ler este arquivo fora do espaço de trabalho",
-		"didRead": "Kilo Code leu este arquivo",
-		"wantsToEdit": "Kilo Code quer editar este arquivo",
-		"wantsToEditOutsideWorkspace": "Kilo Code quer editar este arquivo fora do espaço de trabalho",
-		"wantsToEditProtected": "Kilo Code quer editar um arquivo de configuração protegido",
-		"wantsToCreate": "Kilo Code quer criar um novo arquivo",
-		"wantsToSearchReplace": "Kilo Code quer realizar busca e substituição neste arquivo",
-		"didSearchReplace": "Kilo Code realizou busca e substituição neste arquivo",
-		"wantsToInsert": "Kilo Code quer inserir conteúdo neste arquivo",
-		"wantsToInsertWithLineNumber": "Kilo Code quer inserir conteúdo neste arquivo na linha {{lineNumber}}",
-		"wantsToInsertAtEnd": "Kilo Code quer adicionar conteúdo ao final deste arquivo",
-		"wantsToReadAndXMore": "Kilo Code quer ler este arquivo e mais {{count}}",
-		"wantsToReadMultiple": "Kilo Code deseja ler múltiplos arquivos",
-		"wantsToApplyBatchChanges": "Kilo Code quer aplicar alterações a múltiplos arquivos",
-		"wantsToGenerateImage": "Kilo Code quer gerar uma imagem",
-		"wantsToGenerateImageOutsideWorkspace": "Kilo Code quer gerar uma imagem fora do espaço de trabalho",
-		"wantsToGenerateImageProtected": "Kilo Code quer gerar uma imagem em um local protegido",
-		"didGenerateImage": "Kilo Code gerou uma imagem",
-		"wantsToDelete": "Kilo Code quer excluir este arquivo",
-		"wantsToDeleteDirectory": "Kilo Code quer excluir este diretório"
+		"wantsToRead": "Ordinant.ai quer ler este arquivo",
+		"wantsToReadOutsideWorkspace": "Ordinant.ai quer ler este arquivo fora do espaço de trabalho",
+		"didRead": "Ordinant.ai leu este arquivo",
+		"wantsToEdit": "Ordinant.ai quer editar este arquivo",
+		"wantsToEditOutsideWorkspace": "Ordinant.ai quer editar este arquivo fora do espaço de trabalho",
+		"wantsToEditProtected": "Ordinant.ai quer editar um arquivo de configuração protegido",
+		"wantsToCreate": "Ordinant.ai quer criar um novo arquivo",
+		"wantsToSearchReplace": "Ordinant.ai quer realizar busca e substituição neste arquivo",
+		"didSearchReplace": "Ordinant.ai realizou busca e substituição neste arquivo",
+		"wantsToInsert": "Ordinant.ai quer inserir conteúdo neste arquivo",
+		"wantsToInsertWithLineNumber": "Ordinant.ai quer inserir conteúdo neste arquivo na linha {{lineNumber}}",
+		"wantsToInsertAtEnd": "Ordinant.ai quer adicionar conteúdo ao final deste arquivo",
+		"wantsToReadAndXMore": "Ordinant.ai quer ler este arquivo e mais {{count}}",
+		"wantsToReadMultiple": "Ordinant.ai deseja ler múltiplos arquivos",
+		"wantsToApplyBatchChanges": "Ordinant.ai quer aplicar alterações a múltiplos arquivos",
+		"wantsToGenerateImage": "Ordinant.ai quer gerar uma imagem",
+		"wantsToGenerateImageOutsideWorkspace": "Ordinant.ai quer gerar uma imagem fora do espaço de trabalho",
+		"wantsToGenerateImageProtected": "Ordinant.ai quer gerar uma imagem em um local protegido",
+		"didGenerateImage": "Ordinant.ai gerou uma imagem",
+		"wantsToDelete": "Ordinant.ai quer excluir este arquivo",
+		"wantsToDeleteDirectory": "Ordinant.ai quer excluir este diretório"
 	},
 	"directoryOperations": {
-		"wantsToViewTopLevel": "Kilo Code quer visualizar os arquivos de nível superior neste diretório",
-		"didViewTopLevel": "Kilo Code visualizou os arquivos de nível superior neste diretório",
-		"wantsToViewRecursive": "Kilo Code quer visualizar recursivamente todos os arquivos neste diretório",
-		"didViewRecursive": "Kilo Code visualizou recursivamente todos os arquivos neste diretório",
-		"wantsToViewDefinitions": "Kilo Code quer visualizar nomes de definição de código-fonte usados neste diretório",
-		"didViewDefinitions": "Kilo Code visualizou nomes de definição de código-fonte usados neste diretório",
-		"wantsToSearch": "Kilo Code quer pesquisar neste diretório por <code>{{regex}}</code>",
-		"didSearch": "Kilo Code pesquisou neste diretório por <code>{{regex}}</code>",
-		"wantsToSearchOutsideWorkspace": "Kilo Code quer pesquisar neste diretório (fora do espaço de trabalho) por <code>{{regex}}</code>",
-		"didSearchOutsideWorkspace": "Kilo Code pesquisou neste diretório (fora do espaço de trabalho) por <code>{{regex}}</code>",
-		"wantsToViewTopLevelOutsideWorkspace": "Kilo Code quer visualizar os arquivos de nível superior neste diretório (fora do espaço de trabalho)",
-		"didViewTopLevelOutsideWorkspace": "Kilo Code visualizou os arquivos de nível superior neste diretório (fora do espaço de trabalho)",
-		"wantsToViewRecursiveOutsideWorkspace": "Kilo Code quer visualizar recursivamente todos os arquivos neste diretório (fora do espaço de trabalho)",
-		"didViewRecursiveOutsideWorkspace": "Kilo Code visualizou recursivamente todos os arquivos neste diretório (fora do espaço de trabalho)",
-		"wantsToViewDefinitionsOutsideWorkspace": "Kilo Code quer visualizar nomes de definição de código-fonte usados neste diretório (fora do espaço de trabalho)",
-		"didViewDefinitionsOutsideWorkspace": "Kilo Code visualizou nomes de definição de código-fonte usados neste diretório (fora do espaço de trabalho)"
+		"wantsToViewTopLevel": "Ordinant.ai quer visualizar os arquivos de nível superior neste diretório",
+		"didViewTopLevel": "Ordinant.ai visualizou os arquivos de nível superior neste diretório",
+		"wantsToViewRecursive": "Ordinant.ai quer visualizar recursivamente todos os arquivos neste diretório",
+		"didViewRecursive": "Ordinant.ai visualizou recursivamente todos os arquivos neste diretório",
+		"wantsToViewDefinitions": "Ordinant.ai quer visualizar nomes de definição de código-fonte usados neste diretório",
+		"didViewDefinitions": "Ordinant.ai visualizou nomes de definição de código-fonte usados neste diretório",
+		"wantsToSearch": "Ordinant.ai quer pesquisar neste diretório por <code>{{regex}}</code>",
+		"didSearch": "Ordinant.ai pesquisou neste diretório por <code>{{regex}}</code>",
+		"wantsToSearchOutsideWorkspace": "Ordinant.ai quer pesquisar neste diretório (fora do espaço de trabalho) por <code>{{regex}}</code>",
+		"didSearchOutsideWorkspace": "Ordinant.ai pesquisou neste diretório (fora do espaço de trabalho) por <code>{{regex}}</code>",
+		"wantsToViewTopLevelOutsideWorkspace": "Ordinant.ai quer visualizar os arquivos de nível superior neste diretório (fora do espaço de trabalho)",
+		"didViewTopLevelOutsideWorkspace": "Ordinant.ai visualizou os arquivos de nível superior neste diretório (fora do espaço de trabalho)",
+		"wantsToViewRecursiveOutsideWorkspace": "Ordinant.ai quer visualizar recursivamente todos os arquivos neste diretório (fora do espaço de trabalho)",
+		"didViewRecursiveOutsideWorkspace": "Ordinant.ai visualizou recursivamente todos os arquivos neste diretório (fora do espaço de trabalho)",
+		"wantsToViewDefinitionsOutsideWorkspace": "Ordinant.ai quer visualizar nomes de definição de código-fonte usados neste diretório (fora do espaço de trabalho)",
+		"didViewDefinitionsOutsideWorkspace": "Ordinant.ai visualizou nomes de definição de código-fonte usados neste diretório (fora do espaço de trabalho)"
 	},
 	"commandOutput": "Saída do comando",
 	"commandExecution": {
@@ -251,24 +251,24 @@
 	"response": "Resposta",
 	"arguments": "Argumentos",
 	"text": {
-		"rooSaid": "Kilo disse"
+		"rooSaid": "Ordinant.ai disse"
 	},
 	"feedback": {
 		"youSaid": "Você disse"
 	},
 	"mcp": {
-		"wantsToUseTool": "Kilo Code quer usar uma ferramenta no servidor MCP {{serverName}}",
-		"wantsToAccessResource": "Kilo Code quer acessar um recurso no servidor MCP {{serverName}}"
+		"wantsToUseTool": "Ordinant.ai quer usar uma ferramenta no servidor MCP {{serverName}}",
+		"wantsToAccessResource": "Ordinant.ai quer acessar um recurso no servidor MCP {{serverName}}"
 	},
 	"modes": {
-		"wantsToSwitch": "Kilo Code quer mudar para o modo <code>{{mode}}</code>",
-		"wantsToSwitchWithReason": "Kilo Code quer mudar para o modo <code>{{mode}}</code> porque: {{reason}}",
-		"didSwitch": "Kilo Code mudou para o modo <code>{{mode}}</code>",
-		"didSwitchWithReason": "Kilo Code mudou para o modo <code>{{mode}}</code> porque: {{reason}}"
+		"wantsToSwitch": "Ordinant.ai quer mudar para o modo <code>{{mode}}</code>",
+		"wantsToSwitchWithReason": "Ordinant.ai quer mudar para o modo <code>{{mode}}</code> porque: {{reason}}",
+		"didSwitch": "Ordinant.ai mudou para o modo <code>{{mode}}</code>",
+		"didSwitchWithReason": "Ordinant.ai mudou para o modo <code>{{mode}}</code> porque: {{reason}}"
 	},
 	"subtasks": {
-		"wantsToCreate": "Kilo Code quer criar uma nova subtarefa no modo <code>{{mode}}</code>",
-		"wantsToFinish": "Kilo Code quer finalizar esta subtarefa",
+		"wantsToCreate": "Ordinant.ai quer criar uma nova subtarefa no modo <code>{{mode}}</code>",
+		"wantsToFinish": "Ordinant.ai quer finalizar esta subtarefa",
 		"newTaskContent": "Instruções da subtarefa",
 		"completionContent": "Subtarefa concluída",
 		"resultContent": "Resultados da subtarefa",
@@ -276,7 +276,7 @@
 		"completionInstructions": "Subtarefa concluída! Você pode revisar os resultados e sugerir correções ou próximos passos. Se tudo parecer bom, confirme para retornar o resultado à tarefa principal."
 	},
 	"questions": {
-		"hasQuestion": "Kilo Code tem uma pergunta"
+		"hasQuestion": "Ordinant.ai tem uma pergunta"
 	},
 	"taskCompleted": "Tarefa concluída",
 	"modelResponseIncomplete": "Resposta do modelo incompleta",
@@ -292,7 +292,7 @@
 		"copyToClipboard": "Copiar para área de transferência",
 		"copied": "Copiado!",
 		"diagnostics": "Obter informações detalhadas do erro",
-		"proxyProvider": "Parece que você está usando um provedor baseado em proxy. Certifique-se de verificar seus registros e garantir que não está reescrevendo as solicitações do Roo."
+		"proxyProvider": "Parece que você está usando um provedor baseado em proxy. Certifique-se de verificar seus registros e garantir que não está reescrevendo as solicitações do Ordinant."
 	},
 	"powershell": {
 		"issues": "Parece que você está tendo problemas com o Windows PowerShell, por favor veja este"
@@ -339,19 +339,19 @@
 		"timerPrefix": "Aprovação automática ativada. Selecionando em {{seconds}}s…"
 	},
 	"announcement": {
-		"title": "Roo Code {{version}} Lançado",
-		"support": "Apoie o Roo Code nos dando uma estrela no <githubLink>GitHub</githubLink>.",
+		"title": "Ordinant {{version}} Lançado",
+		"support": "Apoie o Ordinant nos dando uma estrela no <githubLink>GitHub</githubLink>.",
 		"stealthModel": {
-			"feature": "<bold>Modelo stealth GRATUITO por tempo limitado</bold> - Code Supernova: Agora atualizado com uma <bold>janela de contexto de 1M tokens</bold>! Um modelo de codificação agêntica versátil que suporta entradas de imagem, acessível através do Roo Code Cloud.",
+			"feature": "<bold>Modelo stealth GRATUITO por tempo limitado</bold> - Code Supernova: Agora atualizado com uma <bold>janela de contexto de 1M tokens</bold>! Um modelo de codificação agêntica versátil que suporta entradas de imagem, acessível através do Ordinant Cloud.",
 			"note": "(Nota: prompts e completações são registrados pelo criador do modelo e usados para melhorá-lo)",
-			"connectButton": "Conectar ao Roo Code Cloud",
-			"selectModel": "Selecione <code>roo/code-supernova</code> do provedor Roo Code Cloud em Configurações para começar.",
+			"connectButton": "Conectar ao Ordinant Cloud",
+			"selectModel": "Selecione <code>roo/code-supernova</code> do provedor Ordinant Cloud em Configurações para começar.",
 			"goToSettingsButton": "Ir para Configurações"
 		},
 		"release": {
 			"heading": "Novidades:",
 			"openaiCodexProvider": "Adicionado o provedor OpenAI - ChatGPT Plus/Pro que oferece acesso baseado em assinatura aos modelos Codex sem custos por token.",
-			"gpt52codexModel": "O novo modelo gpt-5.2-codex foi adicionado ao Roo Code Router, ao provedor OpenAI padrão e muito mais.",
+			"gpt52codexModel": "O novo modelo gpt-5.2-codex foi adicionado ao Ordinant Router, ao provedor OpenAI padrão e muito mais.",
 			"bugFixes": "Corrigidos vazamentos de memória causando telas cinza, problemas de assinatura de pensamento do Gemini e outras melhorias de estabilidade."
 		},
 		"cloudAgents": {
@@ -371,7 +371,7 @@
 	"browser": {
 		"session": "Sessão do Navegador",
 		"active": "Ativo",
-		"rooWantsToUse": "Kilo Code quer usar o navegador",
+		"rooWantsToUse": "Ordinant.ai quer usar o navegador",
 		"consoleLogs": "Logs do console",
 		"noNewLogs": "(Sem novos logs)",
 		"screenshot": "Captura de tela do navegador",
@@ -419,24 +419,24 @@
 	"profileViolationWarning": "O perfil atual não é compatível com as configurações da sua organização",
 	"shellIntegration": {
 		"title": "Aviso de execução de comando",
-		"description": "Seu comando está sendo executado sem a integração de shell do terminal VSCode. Para suprimir este aviso, você pode desativar a integração de shell na seção <strong>Terminal</strong> das <settingsLink>configurações do Kilo Code</settingsLink> ou solucionar problemas de integração do terminal VSCode usando o link abaixo.",
+		"description": "Seu comando está sendo executado sem a integração de shell do terminal VSCode. Para suprimir este aviso, você pode desativar a integração de shell na seção <strong>Terminal</strong> das <settingsLink>configurações do Ordinant.ai</settingsLink> ou solucionar problemas de integração do terminal VSCode usando o link abaixo.",
 		"troubleshooting": "Clique aqui para a documentação de integração de shell."
 	},
 	"ask": {
 		"autoApprovedRequestLimitReached": {
 			"title": "Limite de Solicitações Auto-aprovadas Atingido",
-			"description": "Kilo Code atingiu o limite auto-aprovado de {{count}} solicitação(ões) de API. Deseja redefinir a contagem e prosseguir com a tarefa?",
+			"description": "Ordinant.ai atingiu o limite auto-aprovado de {{count}} solicitação(ões) de API. Deseja redefinir a contagem e prosseguir com a tarefa?",
 			"button": "Redefinir e Continuar"
 		},
 		"autoApprovedCostLimitReached": {
 			"title": "Limite de Custo com Aprovação Automática Atingido",
-			"description": "Kilo Code atingiu o limite de custo com aprovação automática de US${{count}}. Você gostaria de redefinir o custo e prosseguir com a tarefa?",
+			"description": "Ordinant.ai atingiu o limite de custo com aprovação automática de US${{count}}. Você gostaria de redefinir o custo e prosseguir com a tarefa?",
 			"button": "Redefinir e Continuar"
 		}
 	},
 	"codebaseSearch": {
-		"wantsToSearch": "Kilo Code quer pesquisar na base de código por <code>{{query}}</code>",
-		"wantsToSearchWithPath": "Kilo Code quer pesquisar na base de código por <code>{{query}}</code> em <code>{{path}}</code>",
+		"wantsToSearch": "Ordinant.ai quer pesquisar na base de código por <code>{{query}}</code>",
+		"wantsToSearchWithPath": "Ordinant.ai quer pesquisar na base de código por <code>{{query}}</code> em <code>{{path}}</code>",
 		"didSearch_one": "Encontrado 1 resultado",
 		"didSearch_other": "Encontrados {{count}} resultados",
 		"resultTooltip": "Pontuação de similaridade: {{score}} (clique para abrir o arquivo)"
@@ -460,7 +460,7 @@
 		"ariaLabel": "Versão {{version}} - Clique para ver as notas de lançamento"
 	},
 	"rooCloudCTA": {
-		"title": "Roo Code Cloud está evoluindo!",
+		"title": "Ordinant Cloud está evoluindo!",
 		"description": "Execute agentes remotos na nuvem, acesse suas tarefas de qualquer lugar, colabore com outros e muito mais.",
 		"joinWaitlist": "Cadastre-se para receber as últimas atualizações."
 	},
@@ -501,8 +501,8 @@
 		"clickToEdit": "Clique para editar a mensagem"
 	},
 	"slashCommand": {
-		"wantsToRun": "Kilo Code quer executar um comando slash",
-		"didRun": "Kilo Code executou um comando slash"
+		"wantsToRun": "Ordinant.ai quer executar um comando slash",
+		"didRun": "Ordinant.ai executou um comando slash"
 	},
 	"todo": {
 		"partial": "{{completed}} de {{total}} tarefas concluídas",

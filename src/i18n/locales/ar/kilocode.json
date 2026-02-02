@@ -52,23 +52,23 @@
 		}
 	},
 	"commitMessage": {
-		"activated": "تم تفعيل منشئ رسائل التزام Kilo Code",
+		"activated": "تم تفعيل منشئ رسائل التزام Ordinant.ai",
 		"gitNotFound": "⚠️ مستودع Git غير موجود أو Git غير متاح",
 		"gitInitError": "⚠️ خطأ في تهيئة Git: {{error}}",
-		"generating": "Kilo: جارٍ إنشاء رسالة الالتزام...",
-		"noChanges": "Kilo: لم يتم العثور على تغييرات للتحليل",
-		"generated": "Kilo: تم إنشاء رسالة الالتزام!",
-		"generationFailed": "Kilo: فشل في إنشاء رسالة الالتزام: {{errorMessage}}",
-		"generatingFromUnstaged": "Kilo: إنشاء رسالة باستخدام التغييرات غير المرحلة",
-		"analyzingChanges": "Kilo: جاري تحليل التعديلات الجاهزة...",
-		"noStagedChangesRepo": "Kilo: ما فيه تعديلات مضافة في مستودع git",
-		"noStagedChanges": "Kilo: ما فيه تعديلات مضافة لتحليلها",
-		"tokenRequired": "يتطلب توليد الرسالة رمز Kilo Code",
-		"activationFailed": "Kilo: فشل تفعيل مولّد الرسائل: {{error}}",
-		"providerRegistered": "Kilo: تم تسجيل موفر رسائل الاعتماد",
+		"generating": "Ordinant.ai: جارٍ إنشاء رسالة الالتزام...",
+		"noChanges": "Ordinant.ai: لم يتم العثور على تغييرات للتحليل",
+		"generated": "Ordinant.ai: تم إنشاء رسالة الالتزام!",
+		"generationFailed": "Ordinant.ai: فشل في إنشاء رسالة الالتزام: {{errorMessage}}",
+		"generatingFromUnstaged": "Ordinant.ai: إنشاء رسالة باستخدام التغييرات غير المرحلة",
+		"analyzingChanges": "Ordinant.ai: جاري تحليل التعديلات الجاهزة...",
+		"noStagedChangesRepo": "Ordinant.ai: ما فيه تعديلات مضافة في مستودع git",
+		"noStagedChanges": "Ordinant.ai: ما فيه تعديلات مضافة لتحليلها",
+		"tokenRequired": "يتطلب توليد الرسالة رمز Ordinant.ai",
+		"activationFailed": "Ordinant.ai: فشل تفعيل مولّد الرسائل: {{error}}",
+		"providerRegistered": "Ordinant.ai: تم تسجيل موفر رسائل الاعتماد",
 		"errors": {
 			"noProject": "لا يوجد مشروع متاح",
-			"connectionFailed": "فشل الاتصال بملحق Kilo Code",
+			"connectionFailed": "فشل الاتصال بملحق Ordinant.ai",
 			"invalidResponse": "تم استلام صيغة استجابة غير صالحة من الملحق",
 			"noChanges": "لا توجد تغييرات للإرسال",
 			"timeout": "انتهت مهلة الطلب بعد 30 ثانية",
@@ -103,13 +103,13 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(kilo-logo) Autocomplete",
+			"enabled": "$(ordinant-logo) Autocomplete",
 			"snoozed": "متوقف مؤقتاً",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
-				"basic": "Kilo Code Autocomplete",
-				"disabled": "Kilo Code Autocomplete (معطل)",
-				"noCredits": "**لا يوجد رصيد في حسابك**\n\nحساب Kilo Code الخاص بك لا يحتوي على رصيد. لاستخدام الإكمال التلقائي، يرجى إضافة رصيد إلى حسابك.\n\n[فتح الإعدادات](command:kilo-code.settingsButtonClicked)",
+				"basic": "Ordinant.ai Autocomplete",
+				"disabled": "Ordinant.ai Autocomplete (معطل)",
+				"noCredits": "**لا يوجد رصيد في حسابك**\n\nحساب Ordinant.ai الخاص بك لا يحتوي على رصيد. لاستخدام الإكمال التلقائي، يرجى إضافة رصيد إلى حسابك.\n\n[فتح الإعدادات](command:kilo-code.settingsButtonClicked)",
 				"noUsableProvider": "**لم يتم تكوين نموذج الإكمال التلقائي**\n\nلتمكين الإكمال التلقائي، أضف ملفًا شخصيًا مع أحد هذه المزودين المدعومين: {{providers}}.\n\n[فتح الإعدادات](command:kilo-code.settingsButtonClicked)",
 				"sessionTotal": "إجمالي تكلفة الجلسة:",
 				"provider": "المزود:",
@@ -124,54 +124,54 @@
 				"lessThanCent": "<$0.01"
 			}
 		},
-		"toggleMessage": "Kilo Code Autocomplete {{status}}",
+		"toggleMessage": "Ordinant.ai Autocomplete {{status}}",
 		"progress": {
-			"title": "Kilo Code",
+			"title": "Ordinant.ai",
 			"analyzing": "تحليل الكود الخاص بك...",
 			"generating": "إنشاء التعديلات المقترحة...",
 			"processing": "معالجة التعديلات المقترحة...",
 			"showing": "عرض التعديلات المقترحة..."
 		},
 		"input": {
-			"title": "Kilo Code: مهمة سريعة",
+			"title": "Ordinant.ai: مهمة سريعة",
 			"placeholder": "مثال، 'أعد هيكلة هذه الدالة لتكون أكثر كفاءة'"
 		},
 		"commands": {
-			"generateSuggestions": "Kilo Code: إنشاء التعديلات المقترحة",
+			"generateSuggestions": "Ordinant.ai: إنشاء التعديلات المقترحة",
 			"displaySuggestions": "عرض التعديلات المقترحة",
 			"cancelSuggestions": "إلغاء التعديلات المقترحة",
 			"applyCurrentSuggestion": "تطبيق التعديل المقترح الحالي",
 			"applyAllSuggestions": "تطبيق جميع التعديلات المقترحة",
-			"category": "Kilo Code"
+			"category": "Ordinant.ai"
 		},
 		"codeAction": {
-			"title": "Kilo Code: التعديلات المقترحة"
+			"title": "Ordinant.ai: التعديلات المقترحة"
 		},
 		"chatParticipant": {
-			"fullName": "Kilo Code Agent",
+			"fullName": "Ordinant.ai Agent",
 			"name": "Agent",
 			"description": "يمكنني مساعدتك في المهام السريعة والتعديلات المقترحة."
 		},
 		"incompatibilityExtensionPopup": {
-			"message": "يتم حظر Kilo Code Autocomplete بسبب تعارض مع GitHub Copilot. لإصلاح هذا، يجب عليك تعطيل اقتراحات Copilot المضمنة.",
+			"message": "يتم حظر Ordinant.ai Autocomplete بسبب تعارض مع GitHub Copilot. لإصلاح هذا، يجب عليك تعطيل اقتراحات Copilot المضمنة.",
 			"disableCopilot": "تعطيل Copilot",
 			"disableInlineAssist": "تعطيل الإكمال التلقائي"
 		}
 	},
 	"terminalCommandGenerator": {
-		"inputPrompt": "Kilo: وصف الأمر الذي ترغب في توليده",
-		"generatingProgress": "Kilo: جاري توليد الأمر الطرفي...",
-		"noActiveTerminal": "Kilo: لا يوجد طرفية نشطة. يرجى فتح طرفية أولاً.",
-		"commandGenerated": "Kilo: الأمر الذي تم إنشاؤه: {{command}}",
+		"inputPrompt": "Ordinant.ai: وصف الأمر الذي ترغب في توليده",
+		"generatingProgress": "Ordinant.ai: جاري توليد الأمر الطرفي...",
+		"noActiveTerminal": "Ordinant.ai: لا يوجد طرفية نشطة. يرجى فتح طرفية أولاً.",
+		"commandGenerated": "Ordinant.ai: الأمر الذي تم إنشاؤه: {{command}}",
 		"inputPlaceholder": "مثلًا، إنهاء العملية التي تعمل على المنفذ 3001، إيجاد الملفات الكبيرة، إلخ",
-		"generationFailed": "Kilo: فشل في إنشاء الأمر: {{error}}",
+		"generationFailed": "Ordinant.ai: فشل في إنشاء الأمر: {{error}}",
 		"warningDialog": {
 			"okButton": "أفهم",
 			"title": "تحذير أمان للمحطة",
 			"message": "تحقق مرة أخرى من جميع الأوامر التي تم إنشاؤها قبل تنفيذها. لا يمكن دائمًا التراجع عن الإجراءات التي تتم في نافذة الطرفية - فتنفيذ أوامر غير موثوقة قد يؤدي إلى فقدان البيانات بشكل لا رجعة فيه أو تلف النظام. راجع وافهم الأمر بشكل كامل قبل المتابعة!",
 			"cancelButton": "إلغاء"
 		},
-		"tipMessage": "Kilo: اضغط {{shortcut}} لإنشاء أوامر الطرفية"
+		"tipMessage": "Ordinant.ai: اضغط {{shortcut}} لإنشاء أوامر الطرفية"
 	},
 	"seeNewChanges": {
 		"title": "عرض التغييرات الجديدة",
@@ -181,8 +181,8 @@
 	},
 	"agentManager": {
 		"errors": {
-			"cliOutdated": "إصدار Kilocode CLI لديك قديم ولا يدعم مدير الوكلاء. يرجى التحديث إلى أحدث إصدار.",
-			"cliMisconfigured": "Kilocode CLI غير مُهيأ. قم بتشغيل 'kilocode auth' لتسجيل الدخول أو 'kilocode config' للإعداد.",
+			"cliOutdated": "إصدار Ordinant CLI لديك قديم ولا يدعم مدير الوكلاء. يرجى التحديث إلى أحدث إصدار.",
+			"cliMisconfigured": "Ordinant CLI غير مُهيأ. قم بتشغيل 'ordinant auth' لتسجيل الدخول أو 'ordinant config' للإعداد.",
 			"sessionFailed": "فشل بدء جلسة الوكيل",
 			"sessionFailedWithMessage": "فشل بدء جلسة الوكيل: {{message}}"
 		},
@@ -191,16 +191,16 @@
 			"installInstructions": "تعليمات التثبيت",
 			"getHelp": "الحصول على المساعدة",
 			"runInTerminal": "تشغيل في الطرفية",
-			"loginCli": "Run kilocode auth",
-			"configureCli": "Run kilocode config",
+			"loginCli": "Run ordinant auth",
+			"configureCli": "Run ordinant config",
 			"updateGlobal": "تحديث عام",
 			"updateLocal": "تحديث محلي",
 			"installGlobal": "تثبيت عام",
 			"installLocal": "تثبيت محلي"
 		},
 		"terminal": {
-			"installMessage": "تشغيل npm install لتثبيت Kilocode CLI. بمجرد الانتهاء، يمكنك إغلاق هذه الطرفية ومحاولة بدء Agent Manager مرة أخرى.",
-			"authReminder": "If this is your first install, run `kilocode auth` to sign in before starting the Agent Manager."
+			"installMessage": "تشغيل npm install لتثبيت Ordinant CLI. بمجرد الانتهاء، يمكنك إغلاق هذه الطرفية ومحاولة بدء Agent Manager مرة أخرى.",
+			"authReminder": "If this is your first install, run `ordinant auth` to sign in before starting the Agent Manager."
 		}
 	},
 	"speechToText": {
