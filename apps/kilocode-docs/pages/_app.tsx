@@ -119,8 +119,8 @@ export default function MyApp({ Component, pageProps }: AppProps<MyAppProps>) {
 				<meta name="referrer" content="strict-origin" />
 				<meta name="title" content={title} />
 				<meta name="description" content={description} />
-				<link rel="shortcut icon" href="/docs/img/logo.svg" />
-				<link rel="icon" href="/docs/img/logo.svg" type="image/svg+xml" />
+				<link rel="shortcut icon" href="/docs/img/ordinant.png" />
+				<link rel="icon" href="/docs/img/ordinant.png" type="image/png" />
 				{/* Preconnect to Algolia for better performance */}
 				<link rel="preconnect" href="https://PMZUYBQDAK-dsn.algolia.net" crossOrigin="anonymous" />
 				{/* Script to prevent flash of wrong theme */}

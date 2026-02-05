@@ -1666,7 +1666,7 @@ export const webviewMessageHandler = async (
 			break
 		// kilocode_change begin
 		case "openGlobalKeybindings":
-			vscode.commands.executeCommand("workbench.action.openGlobalKeybindings", message.text ?? "kilo-code.")
+			vscode.commands.executeCommand("workbench.action.openGlobalKeybindings", message.text ?? "ordinant-ai.")
 			break
 		case "showSystemNotification":
 			const isSystemNotificationsEnabled = getGlobalState("systemNotificationsEnabled") ?? true
@@ -1995,7 +1995,7 @@ export const webviewMessageHandler = async (
 			const ghostServiceSettings = ghostServiceSettingsSchema.parse(message.values)
 			await updateGlobalState("ghostServiceSettings", ghostServiceSettings)
 			await provider.postStateToWebview()
-			vscode.commands.executeCommand("kilo-code.ghost.reload")
+			vscode.commands.executeCommand("ordinant-ai.ghost.reload")
 			break
 		case "snoozeAutocomplete":
 			if (typeof message.value === "number" && message.value > 0) {
@@ -2245,7 +2245,7 @@ export const webviewMessageHandler = async (
 					await provider.providerSettingsManager.saveConfig(message.text, message.apiConfiguration)
 					const listApiConfig = await provider.providerSettingsManager.listConfig()
 					await updateGlobalState("listApiConfigMeta", listApiConfig)
-					vscode.commands.executeCommand("kilo-code.ghost.reload") // kilocode_change: Reload ghost model when API provider settings change
+					vscode.commands.executeCommand("ordinant-ai.ghost.reload") // kilocode_change: Reload ghost model when API provider settings change
 				} catch (error) {
 					provider.log(
 						`Error save api configuration: ${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}`,
@@ -2308,7 +2308,7 @@ export const webviewMessageHandler = async (
 				const currentApiConfigName = getGlobalState("currentApiConfigName")
 				const isActiveProfile = message.text === currentApiConfigName
 				await provider.upsertProviderProfile(message.text, configToSave, isActiveProfile) // Activate if it's the current active profile
-				vscode.commands.executeCommand("kilo-code.ghost.reload")
+				vscode.commands.executeCommand("ordinant-ai.ghost.reload")
 				// kilocode_change end
 
 				// Ensure state is posted to webview after profile update to reflect organization mode changes
@@ -2317,7 +2317,7 @@ export const webviewMessageHandler = async (
 				}
 
 				// kilocode_change: Reload ghost model when API provider settings change
-				vscode.commands.executeCommand("kilo-code.ghost.reload")
+				vscode.commands.executeCommand("ordinant-ai.ghost.reload")
 			}
 			// kilocode_change end: check for kilocodeToken change to remove organizationId and fetch organization modes
 			break
@@ -2344,7 +2344,7 @@ export const webviewMessageHandler = async (
 					await provider.activateProviderProfile({ name: newName })
 
 					// kilocode_change: Reload ghost model when API provider settings change
-					vscode.commands.executeCommand("kilo-code.ghost.reload")
+					vscode.commands.executeCommand("ordinant-ai.ghost.reload")
 				} catch (error) {
 					provider.log(
 						`Error rename api configuration: ${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}`,
@@ -2421,7 +2421,7 @@ export const webviewMessageHandler = async (
 					await provider.activateProviderProfile({ name: newName })
 
 					// kilocode_change: Reload ghost model when API provider settings change
-					vscode.commands.executeCommand("kilo-code.ghost.reload")
+					vscode.commands.executeCommand("ordinant-ai.ghost.reload")
 				} catch (error) {
 					provider.log(
 						`Error delete api configuration: ${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}`,

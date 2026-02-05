@@ -129,14 +129,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "หยุดชั่วคราว",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (ปิดใช้งาน)",
-				"noCredits": "**ไม่มีเครดิตในบัญชีของคุณ**\n\nบัญชี Ordinant.ai ของคุณไม่มีเครดิต หากต้องการใช้การเติมข้อความอัตโนมัติ กรุณาเพิ่มเครดิตในบัญชีของคุณ\n\n[เปิดการตั้งค่า](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**ไม่ได้กำหนดค่าโมเดลการเติมข้อความอัตโนมัติ**\n\nหากต้องการเปิดใช้งานการเติมข้อความอัตโนมัติ ให้เพิ่มโปรไฟล์กับผู้ให้บริการที่รองรับเหล่านี้: {{providers}}\n\n[เปิดการตั้งค่า](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**ไม่มีเครดิตในบัญชีของคุณ**\n\nบัญชี Ordinant.ai ของคุณไม่มีเครดิต หากต้องการใช้การเติมข้อความอัตโนมัติ กรุณาเพิ่มเครดิตในบัญชีของคุณ\n\n[เปิดการตั้งค่า](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**ไม่ได้กำหนดค่าโมเดลการเติมข้อความอัตโนมัติ**\n\nหากต้องการเปิดใช้งานการเติมข้อความอัตโนมัติ ให้เพิ่มโปรไฟล์กับผู้ให้บริการที่รองรับเหล่านี้: {{providers}}\n\n[เปิดการตั้งค่า](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "ค่าใช้จ่ายรวมของเซสชัน:",
 				"provider": "ผู้ให้บริการ:",
 				"model": "โมเดล:",

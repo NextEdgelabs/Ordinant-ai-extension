@@ -185,7 +185,7 @@ describe("extractTextFromXLSX", () => {
 				t: "s",
 				v: "Ordinant.ai",
 				w: "Ordinant.ai",
-				l: { Target: "https://roocode.com/" },
+				l: { Target: "https://ordinant.ai/" },
 			}
 			worksheet["!ref"] = "A1"
 

@@ -355,7 +355,7 @@ export class GhostServiceManager {
 		if (response === disableCopilot) {
 			await vscode.commands.executeCommand<any>("github.copilot.completions.disable")
 		} else if (response === disableInlineAssist) {
-			await vscode.commands.executeCommand<any>("kilo-code.ghost.disable")
+			await vscode.commands.executeCommand<any>("ordinant-ai.ghost.disable")
 		}
 	}
 

@@ -1,0 +1,8 @@
+.ordinant-logo {
+	background-image: url("../../../assets/logo-light-theme.png");
+}
+
+body.vscode-dark .ordinant-logo,
+body.vscode-high-contrast .ordinant-logo {
+	background-image: url("../../../assets/logo-dark-theme.png");
+}

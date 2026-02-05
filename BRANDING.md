@@ -12,14 +12,28 @@
 
 The extension now uses **Ordinant** assets:
 
-| File                                    | Use                                                                        |
-| --------------------------------------- | -------------------------------------------------------------------------- |
-| `src/assets/icons/ordinant.png`         | Extension icon, activity bar (light and dark), command icon, notifications |
-| `src/assets/icons/kilo-light.svg`       | Commit message / editor title (light) — overwrite file to rebrand          |
-| `src/assets/icons/kilo-dark.svg`        | Commit message / editor title (dark) — overwrite file to rebrand           |
-| `src/assets/icons/kilo-icon-font.woff2` | Icon font (contribution id: `ordinant-logo`) — overwrite to rebrand        |
+| File                                    | Use                                                                 |
+| --------------------------------------- | ------------------------------------------------------------------- |
+| `src/assets/icons/ordinant.png`         | Extension icon (marketplace), notifications                         |
+| `src/assets/icons/ordinant-light.png`   | Activity bar, sidebar, commands (for dark theme)                    |
+| `src/assets/icons/ordinant-dark.png`    | Commands (for light theme)                                          |
+| `src/assets/icons/kilo-icon-font.woff2` | Icon font (contribution id: `ordinant-logo`) — overwrite to rebrand |
 
-Paths in `src/package.json`, `registerCommands.ts`, and `notifications/index.ts` point to `ordinant.png`. To use a different dark icon, add e.g. `ordinant-dark.png` and update the `darkIcon` paths.
+Paths in `src/package.json`, `registerCommands.ts`, `AgentManagerProvider.ts`, and `notifications/index.ts` point to the appropriate Ordinant icons.
+
+## JetBrains Plugin
+
+| File                                                          | Use                                     |
+| ------------------------------------------------------------- | --------------------------------------- |
+| `jetbrains/plugin/src/main/resources/icons/ordinant.png`      | Tool window icon, commit message, menus |
+| `jetbrains/plugin/src/main/resources/icons/ordinant_dark.png` | Dark theme variant                      |
+
+## Webview UI
+
+The webview components use CSS-based theme switching to display the appropriate logo:
+
+- `webview-ui/src/assets/logo-light-theme.png` (for light VS Code themes)
+- `webview-ui/src/assets/logo-dark-theme.png` (for dark VS Code themes)
 
 ## Remaining "Kilo" / "Roo Code" in the repo
 

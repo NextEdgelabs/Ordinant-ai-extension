@@ -103,14 +103,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "snoozed",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (disabled)",
-				"noCredits": "**No credits in your account**\n\nYour Ordinant.ai account has no credits. To use autocomplete, please add credits to your account.\n\n[Open Settings](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**No autocomplete model configured**\n\nTo enable autocomplete, add a profile with one of these supported providers: {{providers}}.\n\n[Open Settings](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**No credits in your account**\n\nYour Ordinant.ai account has no credits. To use autocomplete, please add credits to your account.\n\n[Open Settings](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**No autocomplete model configured**\n\nTo enable autocomplete, add a profile with one of these supported providers: {{providers}}.\n\n[Open Settings](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "Session total cost:",
 				"provider": "Provider:",
 				"model": "Model:",

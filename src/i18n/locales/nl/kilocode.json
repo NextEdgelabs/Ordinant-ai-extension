@@ -99,14 +99,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "gepauzeerd",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (uitgeschakeld)",
-				"noCredits": "**Geen tegoed op je account**\n\nJe Ordinant.ai account heeft geen tegoed. Om autocomplete te gebruiken, voeg tegoed toe aan je account.\n\n[Instellingen openen](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**Geen autocomplete model geconfigureerd**\n\nOm autocomplete in te schakelen, voeg een profiel toe met een van deze ondersteunde providers: {{providers}}.\n\n[Instellingen openen](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**Geen tegoed op je account**\n\nJe Ordinant.ai account heeft geen tegoed. Om autocomplete te gebruiken, voeg tegoed toe aan je account.\n\n[Instellingen openen](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**Geen autocomplete model geconfigureerd**\n\nOm autocomplete in te schakelen, voeg een profiel toe met een van deze ondersteunde providers: {{providers}}.\n\n[Instellingen openen](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "Totale sessiekosten:",
 				"provider": "Provider:",
 				"model": "Model:",

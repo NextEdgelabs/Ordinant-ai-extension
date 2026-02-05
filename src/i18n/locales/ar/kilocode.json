@@ -103,14 +103,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "متوقف مؤقتاً",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (معطل)",
-				"noCredits": "**لا يوجد رصيد في حسابك**\n\nحساب Ordinant.ai الخاص بك لا يحتوي على رصيد. لاستخدام الإكمال التلقائي، يرجى إضافة رصيد إلى حسابك.\n\n[فتح الإعدادات](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**لم يتم تكوين نموذج الإكمال التلقائي**\n\nلتمكين الإكمال التلقائي، أضف ملفًا شخصيًا مع أحد هذه المزودين المدعومين: {{providers}}.\n\n[فتح الإعدادات](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**لا يوجد رصيد في حسابك**\n\nحساب Ordinant.ai الخاص بك لا يحتوي على رصيد. لاستخدام الإكمال التلقائي، يرجى إضافة رصيد إلى حسابك.\n\n[فتح الإعدادات](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**لم يتم تكوين نموذج الإكمال التلقائي**\n\nلتمكين الإكمال التلقائي، أضف ملفًا شخصيًا مع أحد هذه المزودين المدعومين: {{providers}}.\n\n[فتح الإعدادات](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "إجمالي تكلفة الجلسة:",
 				"provider": "المزود:",
 				"model": "النموذج:",

@@ -99,14 +99,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "一時停止中",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete（無効）",
-				"noCredits": "**アカウントにクレジットがありません**\n\nOrdinant.ai アカウントにクレジットがありません。オートコンプリートを使用するには、アカウントにクレジットを追加してください。\n\n[設定を開く](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**オートコンプリートモデルが設定されていません**\n\nオートコンプリートを有効にするには、これらのサポートされているプロバイダーのいずれかでプロファイルを追加してください: {{providers}}。\n\n[設定を開く](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**アカウントにクレジットがありません**\n\nOrdinant.ai アカウントにクレジットがありません。オートコンプリートを使用するには、アカウントにクレジットを追加してください。\n\n[設定を開く](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**オートコンプリートモデルが設定されていません**\n\nオートコンプリートを有効にするには、これらのサポートされているプロバイダーのいずれかでプロファイルを追加してください: {{providers}}。\n\n[設定を開く](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "セッション合計コスト:",
 				"provider": "プロバイダー:",
 				"model": "モデル:",

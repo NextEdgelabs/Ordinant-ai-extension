@@ -5,7 +5,7 @@ import { extractCodeGlossary, formatGlossaryAsPrompt } from "../codeGlossaryExtr
 import type { VisibleCodeContext } from "../../../ghost/types"
 
 describe("extractCodeGlossary", () => {
-	it("always includes core Kilocode terms", () => {
+	it("always includes core Ordinant terms", () => {
 		const visibleCode: VisibleCodeContext = {
 			timestamp: Date.now(),
 			editors: [],
@@ -14,7 +14,7 @@ describe("extractCodeGlossary", () => {
 		const glossary = extractCodeGlossary(visibleCode)
 
 		// Core terms should always be present
-		expect(glossary.identifiers).toContain("Kilocode")
+		expect(glossary.identifiers).toContain("Ordinant")
 		expect(glossary.identifiers).toContain("Ordinant.ai")
 		expect(glossary.identifiers).toContain("VSCode")
 		expect(glossary.identifiers).toContain("MCP")
@@ -46,7 +46,7 @@ describe("extractCodeGlossary", () => {
 		const glossary = extractCodeGlossary(visibleCode)
 
 		// Core terms are present
-		expect(glossary.identifiers).toContain("Kilocode")
+		expect(glossary.identifiers).toContain("Ordinant")
 
 		// Meaningful identifiers (4+ chars) are included
 		expect(glossary.identifiers).toContain("userName")
@@ -121,7 +121,7 @@ describe("extractCodeGlossary", () => {
 		expect(glossary.identifiers).not.toContain("deg")
 
 		// Core terms should still be present
-		expect(glossary.identifiers).toContain("Kilocode")
+		expect(glossary.identifiers).toContain("Ordinant")
 		expect(glossary.identifiers).toContain("VSCode")
 	})
 
@@ -135,7 +135,7 @@ describe("extractCodeGlossary", () => {
 
 		// Should have core terms even without visible code
 		expect(glossary.identifiers.length).toBeGreaterThan(0)
-		expect(glossary.identifiers).toContain("Kilocode")
+		expect(glossary.identifiers).toContain("Ordinant")
 	})
 })
 
@@ -178,7 +178,7 @@ describe("formatGlossaryAsPrompt", () => {
 		const prompt = formatGlossaryAsPrompt(glossary)
 
 		// Core terms should be present
-		expect(prompt).toContain("Kilocode")
+		expect(prompt).toContain("Ordinant")
 		expect(prompt).toContain("VSCode")
 
 		// Count total comma-separated terms

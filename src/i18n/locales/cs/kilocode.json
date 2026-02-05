@@ -129,14 +129,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "pozastaveno",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (zakázáno)",
-				"noCredits": "**Na tvém účtu nejsou žádné kredity**\n\nTvůj účet Ordinant.ai nemá žádné kredity. Pro použití automatického doplňování prosím přidej kredity na svůj účet.\n\n[Otevřít Nastavení](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**Není nakonfigurován žádný model automatického doplňování**\n\nPro povolení automatického doplňování přidej profil s jedním z těchto podporovaných poskytovatelů: {{providers}}.\n\n[Otevřít Nastavení](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**Na tvém účtu nejsou žádné kredity**\n\nTvůj účet Ordinant.ai nemá žádné kredity. Pro použití automatického doplňování prosím přidej kredity na svůj účet.\n\n[Otevřít Nastavení](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**Není nakonfigurován žádný model automatického doplňování**\n\nPro povolení automatického doplňování přidej profil s jedním z těchto podporovaných poskytovatelů: {{providers}}.\n\n[Otevřít Nastavení](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "Celkové náklady relace:",
 				"provider": "Poskytovatel:",
 				"model": "Model:",

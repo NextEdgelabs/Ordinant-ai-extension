@@ -2611,7 +2611,7 @@ export function createVSCodeAPIMock(
 			all: [],
 			getExtension: (extensionId: string) => {
 				// Mock the extension object with extensionUri for theme loading
-				if (extensionId === "kilocode.kilo-code") {
+				if (extensionId === "ordinant-ai.ordinant-ai") {
 					return {
 						id: extensionId,
 						extensionUri: context.extensionUri,

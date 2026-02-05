@@ -51,7 +51,7 @@ function getGlobalModesPath(): string {
 			"Code",
 			"User",
 			"globalStorage",
-			"kilocode.kilo-code",
+			"ordinant-ai.ordinant-ai",
 			"settings",
 			"custom_modes.yaml",
 		)
@@ -64,7 +64,7 @@ function getGlobalModesPath(): string {
 			"Code",
 			"User",
 			"globalStorage",
-			"kilocode.kilo-code",
+			"ordinant-ai.ordinant-ai",
 			"settings",
 			"custom_modes.yaml",
 		)
@@ -76,7 +76,7 @@ function getGlobalModesPath(): string {
 			"Code",
 			"User",
 			"globalStorage",
-			"kilocode.kilo-code",
+			"ordinant-ai.ordinant-ai",
 			"settings",
 			"custom_modes.yaml",
 		)

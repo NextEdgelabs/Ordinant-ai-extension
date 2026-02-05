@@ -129,14 +129,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "रोका गया",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (अक्षम)",
-				"noCredits": "**आपके खाते में कोई क्रेडिट नहीं है**\n\nआपके Ordinant.ai खाते में कोई क्रेडिट नहीं है। ऑटोकम्प्लीट का उपयोग करने के लिए, कृपया अपने खाते में क्रेडिट जोड़ें।\n\n[सेटिंग्स खोलें](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**कोई ऑटोकम्प्लीट मॉडल कॉन्फ़िगर नहीं किया गया**\n\nऑटोकम्प्लीट सक्षम करने के लिए, इन समर्थित प्रदाताओं में से एक के साथ एक प्रोफ़ाइल जोड़ें: {{providers}}।\n\n[सेटिंग्स खोलें](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**आपके खाते में कोई क्रेडिट नहीं है**\n\nआपके Ordinant.ai खाते में कोई क्रेडिट नहीं है। ऑटोकम्प्लीट का उपयोग करने के लिए, कृपया अपने खाते में क्रेडिट जोड़ें।\n\n[सेटिंग्स खोलें](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**कोई ऑटोकम्प्लीट मॉडल कॉन्फ़िगर नहीं किया गया**\n\nऑटोकम्प्लीट सक्षम करने के लिए, इन समर्थित प्रदाताओं में से एक के साथ एक प्रोफ़ाइल जोड़ें: {{providers}}।\n\n[सेटिंग्स खोलें](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "सत्र की कुल लागत:",
 				"provider": "प्रदाता:",
 				"model": "मॉडल:",

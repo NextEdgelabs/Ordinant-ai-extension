@@ -67,7 +67,7 @@ export async function run() {
 	})
 
 	await vscode.workspace
-		.getConfiguration("kilo-code")
+		.getConfiguration("ordinant-ai")
 		.update("allowedCommands", ["*"], vscode.ConfigurationTarget.Global)
 
 	await sleep(2_000)

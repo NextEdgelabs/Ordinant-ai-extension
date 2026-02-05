@@ -1,0 +1,13 @@
+.ordinant-kilo-logo {
+	background-image: url("../../../assets/logo-light-theme.png");
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+body.vscode-dark .ordinant-kilo-logo,
+body.vscode-high-contrast .ordinant-kilo-logo {
+	background-image: url("../../../assets/logo-dark-theme.png");
+}

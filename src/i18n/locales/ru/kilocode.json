@@ -94,14 +94,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "приостановлено",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (отключено)",
-				"noCredits": "**На вашем счёте нет кредитов**\n\nНа вашем счёте Ordinant.ai нет кредитов. Чтобы использовать автодополнение, пожалуйста, пополните счёт.\n\n[Открыть Настройки](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**Модель автодополнения не настроена**\n\nЧтобы включить автодополнение, добавьте профиль с одним из поддерживаемых провайдеров: {{providers}}.\n\n[Открыть Настройки](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**На вашем счёте нет кредитов**\n\nНа вашем счёте Ordinant.ai нет кредитов. Чтобы использовать автодополнение, пожалуйста, пополните счёт.\n\n[Открыть Настройки](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**Модель автодополнения не настроена**\n\nЧтобы включить автодополнение, добавьте профиль с одним из поддерживаемых провайдеров: {{providers}}.\n\n[Открыть Настройки](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "Общая стоимость сессии:",
 				"provider": "Провайдер:",
 				"model": "Модель:",

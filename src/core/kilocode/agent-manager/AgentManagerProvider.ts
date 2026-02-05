@@ -66,7 +66,7 @@ interface StdinAskResponseMessage {
  * Each agent runs as a CLI process using `kilocode --auto --json`.
  */
 export class AgentManagerProvider implements vscode.Disposable {
-	public static readonly viewType = "kilo-code.AgentManagerPanel"
+	public static readonly viewType = "ordinant-ai.AgentManagerPanel"
 
 	private panel: vscode.WebviewPanel | undefined
 	private disposables: vscode.Disposable[] = []
@@ -280,8 +280,8 @@ export class AgentManagerProvider implements vscode.Disposable {
 		)
 
 		this.panel.iconPath = {
-			light: vscode.Uri.joinPath(this.context.extensionUri, "assets", "icons", "kilo-light.svg"),
-			dark: vscode.Uri.joinPath(this.context.extensionUri, "assets", "icons", "kilo-dark.svg"),
+			light: vscode.Uri.joinPath(this.context.extensionUri, "assets", "icons", "ordinant-dark.png"),
+			dark: vscode.Uri.joinPath(this.context.extensionUri, "assets", "icons", "ordinant-light.png"),
 		}
 
 		this.panel.webview.html =

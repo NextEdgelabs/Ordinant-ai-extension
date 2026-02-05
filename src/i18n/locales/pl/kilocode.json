@@ -129,14 +129,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "wstrzymane",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (wyłączone)",
-				"noCredits": "**Brak środków na koncie**\n\nTwoje konto Ordinant.ai nie ma środków. Aby korzystać z autouzupełniania, dodaj środki do swojego konta.\n\n[Otwórz Ustawienia](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**Nie skonfigurowano modelu autouzupełniania**\n\nAby włączyć autouzupełnianie, dodaj profil z jednym z tych obsługiwanych dostawców: {{providers}}.\n\n[Otwórz Ustawienia](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**Brak środków na koncie**\n\nTwoje konto Ordinant.ai nie ma środków. Aby korzystać z autouzupełniania, dodaj środki do swojego konta.\n\n[Otwórz Ustawienia](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**Nie skonfigurowano modelu autouzupełniania**\n\nAby włączyć autouzupełnianie, dodaj profil z jednym z tych obsługiwanych dostawców: {{providers}}.\n\n[Otwórz Ustawienia](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "Całkowity koszt sesji:",
 				"provider": "Dostawca:",
 				"model": "Model:",

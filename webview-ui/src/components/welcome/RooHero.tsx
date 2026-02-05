@@ -14,17 +14,10 @@ const RooHero = () => {
 			onMouseLeave={() => setIsHovered(false)}>
 			<div
 				style={{
-					backgroundColor: "var(--vscode-foreground)",
-					WebkitMaskImage: `url('${imagesBaseUri}/roo-logo.svg')`,
-					WebkitMaskRepeat: "no-repeat",
-					WebkitMaskSize: "contain",
-					maskImage: `url('${imagesBaseUri}/roo-logo.svg')`,
-					maskRepeat: "no-repeat",
-					maskSize: "contain",
 					animation: isHovered ? "smooth-bounce 1s ease-in-out infinite" : "none",
 				}}
 				className="z-5 mr-auto translate-y-0 transition-transform duration-500">
-				<img src={imagesBaseUri + "/roo-logo.svg"} alt="Roo logo" className="h-8 opacity-0" />
+				<img src={imagesBaseUri + "/ordinant-logo.png"} alt="Ordinant logo" className="h-8" />
 			</div>
 			<div
 				className="w-[200%] -mt-0.25 h-0.5 overflow-hidden opacity-0 group-hover:opacity-70 transition-opacity duration-300"

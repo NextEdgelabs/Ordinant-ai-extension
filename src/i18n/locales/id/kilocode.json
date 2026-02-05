@@ -99,14 +99,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "dijeda",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (dinonaktifkan)",
-				"noCredits": "**Tidak ada kredit di akun kamu**\n\nAkun Ordinant.ai kamu tidak memiliki kredit. Untuk menggunakan autocomplete, silakan tambahkan kredit ke akun kamu.\n\n[Buka Pengaturan](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**Tidak ada model autocomplete yang dikonfigurasi**\n\nUntuk mengaktifkan autocomplete, tambahkan profil dengan salah satu penyedia yang didukung ini: {{providers}}.\n\n[Buka Pengaturan](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**Tidak ada kredit di akun kamu**\n\nAkun Ordinant.ai kamu tidak memiliki kredit. Untuk menggunakan autocomplete, silakan tambahkan kredit ke akun kamu.\n\n[Buka Pengaturan](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**Tidak ada model autocomplete yang dikonfigurasi**\n\nUntuk mengaktifkan autocomplete, tambahkan profil dengan salah satu penyedia yang didukung ini: {{providers}}.\n\n[Buka Pengaturan](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "Total biaya sesi:",
 				"provider": "Penyedia:",
 				"model": "Model:",

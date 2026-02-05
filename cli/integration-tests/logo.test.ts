@@ -14,7 +14,7 @@ describe("CLI Logo Display", () => {
 
 	it("should display the logo on startup with valid config", async () => {
 		const run = await rig.runInteractive([])
-		expect(run.getStrippedOutput()).toContain("⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶")
+		expect(run.getStrippedOutput()).toContain("⣠⣾⣿⣿⣿⣿⣿⣿⣿⣷⣄")
 		await run.sendCtrlC()
 	})
 

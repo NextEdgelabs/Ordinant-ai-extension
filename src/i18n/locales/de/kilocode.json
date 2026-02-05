@@ -99,14 +99,14 @@
 	},
 	"ghost": {
 		"statusBar": {
-			"enabled": "$(ordinant-logo) Autocomplete",
+			"enabled": "$(sparkle) Autocomplete",
 			"snoozed": "pausiert",
 			"warning": "$(warning) Autocomplete",
 			"tooltip": {
 				"basic": "Ordinant.ai Autocomplete",
 				"disabled": "Ordinant.ai Autocomplete (deaktiviert)",
-				"noCredits": "**Kein Guthaben auf deinem Konto**\n\nDein Ordinant.ai Konto hat kein Guthaben. Um Autocomplete zu nutzen, füge bitte Guthaben zu deinem Konto hinzu.\n\n[Einstellungen öffnen](command:kilo-code.settingsButtonClicked)",
-				"noUsableProvider": "**Kein Autocomplete-Modell konfiguriert**\n\nUm Autocomplete zu aktivieren, füge ein Profil mit einem dieser unterstützten Anbieter hinzu: {{providers}}.\n\n[Einstellungen öffnen](command:kilo-code.settingsButtonClicked)",
+				"noCredits": "**Kein Guthaben auf deinem Konto**\n\nDein Ordinant.ai Konto hat kein Guthaben. Um Autocomplete zu nutzen, füge bitte Guthaben zu deinem Konto hinzu.\n\n[Einstellungen öffnen](command:ordinant-ai.settingsButtonClicked)",
+				"noUsableProvider": "**Kein Autocomplete-Modell konfiguriert**\n\nUm Autocomplete zu aktivieren, füge ein Profil mit einem dieser unterstützten Anbieter hinzu: {{providers}}.\n\n[Einstellungen öffnen](command:ordinant-ai.settingsButtonClicked)",
 				"sessionTotal": "Sitzungsgesamtkosten:",
 				"provider": "Anbieter:",
 				"model": "Modell:",

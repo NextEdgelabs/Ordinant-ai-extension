@@ -13,27 +13,27 @@ export const registerGhostProvider = (context: vscode.ExtensionContext, cline: C
 
 	// Register GhostServiceManager Commands
 	context.subscriptions.push(
-		vscode.commands.registerCommand("kilo-code.ghost.reload", async () => {
+		vscode.commands.registerCommand("ordinant-ai.ghost.reload", async () => {
 			await ghost.load()
 		}),
 	)
 	context.subscriptions.push(
-		vscode.commands.registerCommand("kilo-code.ghost.codeActionQuickFix", async () => {
+		vscode.commands.registerCommand("ordinant-ai.ghost.codeActionQuickFix", async () => {
 			return
 		}),
 	)
 	context.subscriptions.push(
-		vscode.commands.registerCommand("kilo-code.ghost.generateSuggestions", async () => {
+		vscode.commands.registerCommand("ordinant-ai.ghost.generateSuggestions", async () => {
 			ghost.codeSuggestion()
 		}),
 	)
 	context.subscriptions.push(
-		vscode.commands.registerCommand("kilo-code.ghost.showIncompatibilityExtensionPopup", async () => {
+		vscode.commands.registerCommand("ordinant-ai.ghost.showIncompatibilityExtensionPopup", async () => {
 			await ghost.showIncompatibilityExtensionPopup()
 		}),
 	)
 	context.subscriptions.push(
-		vscode.commands.registerCommand("kilo-code.ghost.disable", async () => {
+		vscode.commands.registerCommand("ordinant-ai.ghost.disable", async () => {
 			await ghost.disable()
 		}),
 	)

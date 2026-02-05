@@ -16,10 +16,10 @@ import { RouterProvider } from "./router-provider"
 import { getModelParams } from "../transform/model-params"
 import { getModels } from "./fetchers/modelCache"
 
-const ORIGIN_APP = "kilo-code"
+const ORIGIN_APP = "ordinant-ai"
 
 const DEFAULT_HEADERS = {
-	"X-Unbound-Metadata": JSON.stringify({ labels: [{ key: "app", value: "kilo-code" }] }),
+	"X-Unbound-Metadata": JSON.stringify({ labels: [{ key: "app", value: "ordinant-ai" }] }),
 }
 
 interface UnboundUsage extends OpenAI.CompletionUsage {
