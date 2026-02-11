@@ -109,21 +109,21 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "kilo-code-ActivityBar",
+					"id": "ordinant-ai-ActivityBar",
 					"title": "%views.activitybar.title%",
-					"icon": "assets/icons/ordinant-light.png",
-					"darkIcon": "assets/icons/ordinant-light.png"
+					"icon": "assets/icons/ordinant.png",
+					"darkIcon": "assets/icons/ordinant.png"
 				}
 			]
 		},
 		"views": {
-			"kilo-code-ActivityBar": [
+			"ordinant-ai-ActivityBar": [
 				{
 					"type": "webview",
 					"id": "ordinant-ai.SidebarProvider",
 					"name": "%views.sidebar.name%",
-					"icon": "assets/icons/ordinant-light.png",
-					"darkIcon": "assets/icons/ordinant-light.png"
+					"icon": "assets/icons/ordinant.png",
+					"darkIcon": "assets/icons/ordinant.png"
 				}
 			]
 		},
@@ -248,8 +248,8 @@
 				"command": "ordinant-ai.vsc.generateCommitMessage",
 				"title": "%command.generateCommitMessage.title%",
 				"icon": {
-					"light": "assets/icons/ordinant-dark.png",
-					"dark": "assets/icons/ordinant-light.png"
+					"light": "assets/icons/ordinant.png",
+					"dark": "assets/icons/ordinant.png"
 				},
 				"category": "%configuration.title%"
 			},
@@ -298,8 +298,8 @@
 				"command": "ordinant-ai.open",
 				"title": "%views.activitybar.title%",
 				"icon": {
-					"light": "assets/icons/ordinant-dark.png",
-					"dark": "assets/icons/ordinant-light.png"
+					"light": "assets/icons/ordinant.png",
+					"dark": "assets/icons/ordinant.png"
 				}
 			}
 		],
@@ -352,37 +352,37 @@
 				{
 					"command": "ordinant-ai.plusButtonClicked",
 					"group": "navigation@0",
-					"when": "view == kilo-code.SidebarProvider"
+					"when": "view == ordinant-ai.SidebarProvider"
 				},
 				{
 					"command": "ordinant-ai.agentManagerOpen",
 					"group": "navigation@1",
-					"when": "view == kilo-code.SidebarProvider"
+					"when": "view == ordinant-ai.SidebarProvider"
 				},
 				{
 					"command": "ordinant-ai.marketplaceButtonClicked",
 					"group": "navigation@3",
-					"when": "view == kilo-code.SidebarProvider"
+					"when": "view == ordinant-ai.SidebarProvider"
 				},
 				{
 					"command": "ordinant-ai.historyButtonClicked",
 					"group": "navigation@4",
-					"when": "view == kilo-code.SidebarProvider"
+					"when": "view == ordinant-ai.SidebarProvider"
 				},
 				{
 					"command": "ordinant-ai.profileButtonClicked",
 					"group": "navigation@5",
-					"when": "view == kilo-code.SidebarProvider"
+					"when": "view == ordinant-ai.SidebarProvider"
 				},
 				{
 					"command": "ordinant-ai.settingsButtonClicked",
 					"group": "navigation@6",
-					"when": "view == kilo-code.SidebarProvider"
+					"when": "view == ordinant-ai.SidebarProvider"
 				},
 				{
 					"command": "ordinant-ai.popoutButtonClicked",
 					"group": "navigation@7",
-					"when": "view == kilo-code.SidebarProvider"
+					"when": "view == ordinant-ai.SidebarProvider"
 				},
 				{
 					"command": "ordinant-ai.helpButtonClicked",
@@ -394,22 +394,22 @@
 				{
 					"command": "ordinant-ai.plusButtonClicked",
 					"group": "navigation@1",
-					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
+					"when": "activeWebviewPanelId == ordinant-ai.TabPanelProvider"
 				},
 				{
 					"command": "ordinant-ai.historyButtonClicked",
 					"group": "navigation@3",
-					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
+					"when": "activeWebviewPanelId == ordinant-ai.TabPanelProvider"
 				},
 				{
 					"command": "ordinant-ai.settingsButtonClicked",
 					"group": "navigation@5",
-					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
+					"when": "activeWebviewPanelId == ordinant-ai.TabPanelProvider"
 				},
 				{
 					"command": "ordinant-ai.helpButtonClicked",
 					"group": "navigation@6",
-					"when": "activeWebviewPanelId == kilo-code.TabPanelProvider"
+					"when": "activeWebviewPanelId == ordinant-ai.TabPanelProvider"
 				},
 				{
 					"command": "ordinant-ai.open",
@@ -441,7 +441,7 @@
 			{
 				"command": "ordinant-ai.ghost.cancelSuggestions",
 				"key": "escape",
-				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && kilocode.ghost.hasSuggestions"
+				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && ordinant.ghost.hasSuggestions"
 			},
 			{
 				"command": "ordinant-ai.ghost.generateSuggestions",
@@ -453,7 +453,7 @@
 				"command": "ordinant-ai.ghost.showIncompatibilityExtensionPopup",
 				"key": "ctrl+l",
 				"mac": "cmd+l",
-				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && kilocode.ghost.enableSmartInlineTaskKeybinding && github.copilot.completions.enabled"
+				"when": "editorTextFocus && !editorTabMovesFocus && !inSnippetMode && ordinant.ghost.enableSmartInlineTaskKeybinding && github.copilot.completions.enabled"
 			},
 			{
 				"command": "ordinant-ai.generateTerminalCommand",

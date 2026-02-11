@@ -12,12 +12,10 @@
 
 The extension now uses **Ordinant** assets:
 
-| File                                    | Use                                                                 |
-| --------------------------------------- | ------------------------------------------------------------------- |
-| `src/assets/icons/ordinant.png`         | Extension icon (marketplace), notifications                         |
-| `src/assets/icons/ordinant-light.png`   | Activity bar, sidebar, commands (for dark theme)                    |
-| `src/assets/icons/ordinant-dark.png`    | Commands (for light theme)                                          |
-| `src/assets/icons/kilo-icon-font.woff2` | Icon font (contribution id: `ordinant-logo`) — overwrite to rebrand |
+| File                                    | Use                                                                          |
+| --------------------------------------- | ---------------------------------------------------------------------------- |
+| `src/assets/icons/ordinant.png`         | Extension icon (marketplace), Activity bar, sidebar, commands, notifications |
+| `src/assets/icons/kilo-icon-font.woff2` | Icon font (contribution id: `ordinant-logo`) — overwrite to rebrand          |
 
 Paths in `src/package.json`, `registerCommands.ts`, `AgentManagerProvider.ts`, and `notifications/index.ts` point to the appropriate Ordinant icons.
 
