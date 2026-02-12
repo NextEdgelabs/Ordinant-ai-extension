@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"removed": "Kilo Codi: Eliminat {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"added": "Codi Kilo: Afegit {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"removed": "Ordinant.ai: Eliminat {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"added": "Ordinant.ai: Afegit {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

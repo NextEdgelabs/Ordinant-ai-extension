@@ -28,7 +28,7 @@ describe("TaskChannel", () => {
 		appVersion: "1.0.0",
 		vscodeVersion: "1.0.0",
 		platform: "darwin",
-		editorName: "Roo Code",
+		editorName: "Ordinant.ai",
 		// kilocode_change start
 		wrapped: false,
 		wrapper: null,

@@ -287,6 +287,7 @@ export interface ExtensionMessage {
 		| "focusInput"
 		| "switchTab"
 		| "focusChatInput" // kilocode_change
+		| "taskStatusButtonClicked" // kilocode_change
 		| "toggleAutoApprove"
 	invoke?: "newChat" | "sendMessage" | "primaryButtonClick" | "secondaryButtonClick" | "setChatBoxMessage"
 	state?: ExtensionState

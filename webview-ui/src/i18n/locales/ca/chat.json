@@ -361,7 +361,7 @@
 			"tryButton": "Prova els Agents al Núvol"
 		},
 		"careers": "A més, <careersLink>estem contractant!</careersLink>",
-		"socialLinks": "Uneix-te a nosaltres a <xLink>X</xLink>, <discordLink>Discord</discordLink>, o <redditLink>r/KiloCode</redditLink> 🚀"
+		"socialLinks": "Uneix-te a nosaltres a <xLink>X</xLink>, <discordLink>Discord</discordLink>, o <redditLink>r/OrdinantAI</redditLink> 🚀"
 	},
 	"costs": {
 		"totalWithSubtasks": "Cost total (subtasques incloses): ${{cost}}",

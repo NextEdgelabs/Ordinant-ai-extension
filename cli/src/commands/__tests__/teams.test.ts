@@ -125,7 +125,7 @@ describe("/teams command", () => {
 
 			const message = addMessageMock.mock.calls[0][0]
 			expect(message.type).toBe("system")
-			expect(message.content).toContain("https://app.kilo.ai/get-started/teams")
+			expect(message.content).toContain("https://app.ordinant.ai/get-started/teams")
 		})
 
 		it("should list all teams including organizations", async () => {
@@ -258,7 +258,7 @@ describe("/teams command", () => {
 				organizations: [
 					{
 						id: "org-456",
-						name: "Kilo Code",
+						name: "Ordinant.ai",
 						role: "admin",
 					},
 				],
@@ -277,7 +277,7 @@ describe("/teams command", () => {
 			expect(successMessage).toBeDefined()
 			if (successMessage) {
 				const msg = successMessage[0] as { content: string }
-				expect(msg.content).toContain("Kilo Code")
+				expect(msg.content).toContain("Ordinant.ai")
 			}
 		})
 

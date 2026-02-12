@@ -99,7 +99,7 @@ let userInfoHandler: ((data: { userInfo: CloudUserInfo }) => Promise<void>) | un
 // Your extension is activated the very first time the command is executed.
 export async function activate(context: vscode.ExtensionContext) {
 	extensionContext = context
-	outputChannel = vscode.window.createOutputChannel("Kilo-Code")
+	outputChannel = vscode.window.createOutputChannel("Ordinant-AI")
 	context.subscriptions.push(outputChannel)
 	outputChannel.appendLine(`${Package.name} extension activated - ${JSON.stringify(Package)}`)
 
@@ -247,7 +247,7 @@ export async function activate(context: vscode.ExtensionContext) {
 						: undefined
 					await refreshModels({
 						provider: "roo",
-						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy",
+						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.ordinant.ai/proxy",
 						apiKey: sessionToken,
 					})
 				} else {

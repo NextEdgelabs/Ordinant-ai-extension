@@ -23,7 +23,7 @@ async function fetchKilocodeDefaultModel(
 ): Promise<Defaults> {
 	try {
 		const path = organizationId ? `/organizations/${organizationId}/defaults` : `/defaults`
-		const url = getKiloUrlFromToken(`https://api.kilo.ai/api${path}`, kilocodeToken ?? "")
+		const url = getKiloUrlFromToken(`https://api.ordinant.ai/api${path}`, kilocodeToken ?? "")
 
 		const headers: Record<string, string> = {
 			...DEFAULT_HEADERS,

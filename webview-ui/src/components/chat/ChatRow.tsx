@@ -1239,7 +1239,7 @@ export const ChatRowContent = ({
 						// Check for Claude Code authentication error first
 						if (message.text.includes("Not authenticated with Claude Code")) {
 							body = t("chat:apiRequest.errorMessage.claudeCodeNotAuthenticated")
-							docsURL = "roocode://settings?provider=claude-code"
+							docsURL = "ordinant://settings?provider=claude-code"
 						} else {
 							// Try to show richer error message for that code, if available
 							const potentialCode = parseInt(message.text.substring(0, 3))
@@ -1258,14 +1258,14 @@ export const ChatRowContent = ({
 								} else {
 									body = t("chat:apiRequest.errorMessage.unknown")
 									docsURL =
-										"mailto:support@roocode.com?subject=Unknown API Error&body=[Please include full error details]"
+										"mailto:support@ordinant.ai?subject=Unknown API Error&body=[Please include full error details]"
 								}
 							} else if (message.text.indexOf("Connection error") === 0) {
 								body = t("chat:apiRequest.errorMessage.connection")
 							} else {
 								// Non-HTTP-status-code error message - store full text as errorDetails
 								body = t("chat:apiRequest.errorMessage.unknown")
-								docsURL = "https://kilo.ai/support"
+								docsURL = "https://ordinant.ai/support"
 							}
 						}
 

@@ -1,11 +1,11 @@
 ---
 title: "Using Modes"
-description: "Understanding and using different modes in Kilo Code"
+description: "Understanding and using different modes in Ordinant.ai"
 ---
 
 # Using Modes
 
-Modes in Kilo Code are specialized personas that tailor the assistant's behavior to your current task. Each mode offers different capabilities, expertise, and access levels to help you accomplish specific goals.
+Modes in Ordinant.ai are specialized personas that tailor the assistant's behavior to your current task. Each mode offers different capabilities, expertise, and access levels to help you accomplish specific goals.
 
 ## Why Use Different Modes?
 
@@ -14,7 +14,7 @@ Modes in Kilo Code are specialized personas that tailor the assistant's behavior
 - **Focused interactions:** Receive responses optimized for your current activity
 - **Workflow optimization:** Seamlessly transition between planning, implementing, debugging, and learning
 
-{% youtube url="https://youtu.be/cS4vQfX528w" caption="Explaining the different modes in Kilo Code" /%}
+{% youtube url="https://youtu.be/cS4vQfX528w" caption="Explaining the different modes in Ordinant.ai" /%}
 
 ## Switching Between Modes
 
@@ -36,9 +36,9 @@ Four ways to switch modes:
     | Windows          | Ctrl + . |
     | Linux            | Ctrl + . |
 
-4. **Accept suggestions:** Click on mode switch suggestions that Kilo Code offers when appropriate
+4. **Accept suggestions:** Click on mode switch suggestions that Ordinant.ai offers when appropriate
 
-    {% image src="/docs/img/modes/modes-2.png" alt="Accepting a mode switch suggestion from Kilo Code" width="400" /%}
+    {% image src="/docs/img/modes/modes-2.png" alt="Accepting a mode switch suggestion from Ordinant.ai" width="400" /%}
 
 ## Built-in Modes
 
@@ -89,12 +89,12 @@ Four ways to switch modes:
 
 ### Review Mode
 
-| Aspect               | Details                                                                                                                  |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Aspect               | Details                                                                                                                           |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | **Description**      | An expert code reviewer specializing in analyzing changes to provide structured feedback on quality, security, and best practices |
-| **Tool Access**      | Access to `read`, `browser`, `mcp`, and when permitted, `edit`                                                           |
-| **Ideal For**        | Catching issues early, enforcing code standards, accelerating PR turnaround                                              |
-| **Special Features** | Code review before committing, surfacing feedback across performance, security, style, and test coverage                 |
+| **Tool Access**      | Access to `read`, `browser`, `mcp`, and when permitted, `edit`                                                                    |
+| **Ideal For**        | Catching issues early, enforcing code standards, accelerating PR turnaround                                                       |
+| **Special Features** | Code review before committing, surfacing feedback across performance, security, style, and test coverage                          |
 
 ## Custom Modes
 

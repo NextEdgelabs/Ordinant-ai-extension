@@ -334,7 +334,7 @@ module.exports = [
 	},
 
 	// ============================================
-	// COLLABORATE - Kilo for Teams
+	// COLLABORATE - Ordinant.ai for Teams
 	// ============================================
 	{
 		source: "/docs/plans/about",
@@ -474,7 +474,7 @@ module.exports = [
 	},
 
 	// ============================================
-	// AUTOMATE - Extending Kilo
+	// AUTOMATE - Extending Ordinant.ai
 	// ============================================
 	{
 		source: "/docs/advanced-usage/local-models",

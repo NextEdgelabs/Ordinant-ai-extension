@@ -15,9 +15,9 @@ vi.mock("vscode", () => ({
 vi.mock("../../../shared/package", () => ({
 	Package: {
 		name: "ordinant-ai",
-		publisher: "Kilo-Org",
+		publisher: "Ordinant-ai",
 		version: "1.0.0",
-		outputChannel: "Kilo-Code",
+		outputChannel: "Ordinant-AI",
 	},
 }))
 

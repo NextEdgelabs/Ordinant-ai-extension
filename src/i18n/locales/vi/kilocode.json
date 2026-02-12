@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Mã Kilo: Đã thêm {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "Mã Kilo: Đã xóa {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: Đã thêm {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: Đã xóa {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

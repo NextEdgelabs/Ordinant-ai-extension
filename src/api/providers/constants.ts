@@ -4,8 +4,8 @@ import { Package } from "../../shared/package"
 export const DEFAULT_HEADERS = {
 	// DO NOT ADJUST HTTP-Referer, OpenRouter uses this as an identifier
 	// This needs coordination with them if adjustment is needed
-	"HTTP-Referer": "https://kilocode.ai",
+	"HTTP-Referer": "https://ordinant.ai",
 	"X-Title": "Ordinant.ai",
 	[X_KILOCODE_VERSION]: Package.version,
-	"User-Agent": `Kilo-Code/${Package.version}`,
+	"User-Agent": `Ordinant-AI/${Package.version}`,
 }

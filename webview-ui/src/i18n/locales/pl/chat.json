@@ -361,7 +361,7 @@
 			"tryButton": "Wypróbuj agentów chmurowych"
 		},
 		"careers": "Dodatkowo, <careersLink>zatrudniamy!</careersLink>",
-		"socialLinks": "Dołącz do nas na <xLink>X</xLink>, <discordLink>Discord</discordLink>, lub <redditLink>r/KiloCode</redditLink> 🚀"
+		"socialLinks": "Dołącz do nas na <xLink>X</xLink>, <discordLink>Discord</discordLink>, lub <redditLink>r/OrdinantAI</redditLink> 🚀"
 	},
 	"costs": {
 		"totalWithSubtasks": "Całkowity koszt (w tym podzadania): ${{cost}}",

@@ -92,7 +92,7 @@ describe.skip("About", () => {
 			</TranslationProvider>,
 		)
 		expect(screen.getByText("settings:about.contact.label")).toBeInTheDocument()
-		expect(screen.getByText("support@roocode.com")).toBeInTheDocument()
+		expect(screen.getByText("support@ordinant.ai")).toBeInTheDocument()
 	})
 
 	it("renders export, import, and reset buttons", () => {

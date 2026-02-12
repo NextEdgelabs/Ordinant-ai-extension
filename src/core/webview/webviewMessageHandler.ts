@@ -1021,7 +1021,7 @@ export const webviewMessageHandler = async (
 					key: "roo",
 					options: {
 						provider: "roo",
-						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy",
+						baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.ordinant.ai/proxy",
 						apiKey: CloudService.hasInstance()
 							? CloudService.instance.authService?.getSessionToken()
 							: undefined,
@@ -1160,7 +1160,7 @@ export const webviewMessageHandler = async (
 			try {
 				const rooOptions = {
 					provider: "roo" as const,
-					baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy",
+					baseUrl: process.env.ROO_CODE_PROVIDER_URL ?? "https://api.ordinant.ai/proxy",
 					apiKey: CloudService.hasInstance()
 						? CloudService.instance.authService?.getSessionToken()
 						: undefined,
@@ -2136,7 +2136,9 @@ export const webviewMessageHandler = async (
 			)
 
 			if (answer === githubIssuesText) {
-				await vscode.env.openExternal(vscode.Uri.parse("https://github.com/Kilo-Org/kilocode/issues"))
+				await vscode.env.openExternal(
+					vscode.Uri.parse("https://github.com/Ordinant-ai/ordinant-ai-extension/issues"),
+				)
 			} else if (answer === discordText) {
 				await vscode.env.openExternal(vscode.Uri.parse("https://discord.gg/fxrhCFGhkP"))
 			} else if (answer === customerSupport) {
@@ -2815,10 +2817,10 @@ export const webviewMessageHandler = async (
 				const kilocodeToken = apiConfiguration?.kilocodeToken
 
 				if (!kilocodeToken) {
-					provider.log("KiloCode token not found in extension state.")
+					provider.log("Ordinant.ai token not found in extension state.")
 					provider.postMessageToWebview({
 						type: "profileDataResponse",
-						payload: { success: false, error: "KiloCode API token not configured." },
+						payload: { success: false, error: "Ordinant.ai API token not configured." },
 					})
 					break
 				}
@@ -2837,7 +2839,7 @@ export const webviewMessageHandler = async (
 					headers["X-KILOCODE-TESTER"] = "SUPPRESS"
 				}
 
-				const url = getKiloUrlFromToken("https://api.kilo.ai/api/profile", kilocodeToken)
+				const url = getKiloUrlFromToken("https://api.ordinant.ai/api/profile", kilocodeToken)
 				const response = await axios.get<Omit<ProfileData, "kilocodeToken">>(url, { headers })
 
 				// Go back to Personal when no longer part of the current set organization
@@ -2910,10 +2912,10 @@ export const webviewMessageHandler = async (
 				const { kilocodeToken, kilocodeOrganizationId } = apiConfiguration ?? {}
 
 				if (!kilocodeToken) {
-					provider.log("KiloCode token not found in extension state for balance data.")
+					provider.log("Ordinant.ai token not found in extension state for balance data.")
 					provider.postMessageToWebview({
 						type: "balanceDataResponse", // New response type
-						payload: { success: false, error: "KiloCode API token not configured." },
+						payload: { success: false, error: "Ordinant.ai API token not configured." },
 					})
 					break
 				}
@@ -2935,7 +2937,7 @@ export const webviewMessageHandler = async (
 					headers["X-KILOCODE-TESTER"] = "SUPPRESS"
 				}
 
-				const url = getKiloUrlFromToken("https://api.kilo.ai/api/profile/balance", kilocodeToken)
+				const url = getKiloUrlFromToken("https://api.ordinant.ai/api/profile/balance", kilocodeToken)
 				const response = await axios.get(url, { headers })
 				provider.postMessageToWebview({
 					type: "balanceDataResponse", // New response type
@@ -2956,7 +2958,7 @@ export const webviewMessageHandler = async (
 				const { apiConfiguration } = await provider.getState()
 				const kilocodeToken = apiConfiguration?.kilocodeToken
 				if (!kilocodeToken) {
-					provider.log("KiloCode token not found in extension state for buy credits.")
+					provider.log("Ordinant.ai token not found in extension state for buy credits.")
 					break
 				}
 				const credits = message.values?.credits || 50
@@ -2965,7 +2967,7 @@ export const webviewMessageHandler = async (
 				const source = uiKind === "Web" ? "web" : uriScheme
 
 				const url = getKiloUrlFromToken(
-					`https://api.kilo.ai/payments/topup?origin=extension&source=${source}&amount=${credits}`,
+					`https://api.ordinant.ai/payments/topup?origin=extension&source=${source}&amount=${credits}`,
 					kilocodeToken,
 				)
 				const response = await axios.post(
@@ -4333,7 +4335,7 @@ export const webviewMessageHandler = async (
 					throw new Error("SessionManager not initialized")
 				}
 
-				const shareUrl = `https://app.kilo.ai/share/${result.share_id}`
+				const shareUrl = `https://app.ordinant.ai/share/${result.share_id}`
 
 				// Copy URL to clipboard and show success notification
 				await vscode.env.clipboard.writeText(shareUrl)
@@ -4364,7 +4366,7 @@ export const webviewMessageHandler = async (
 					throw new Error("SessionManager not initialized")
 				}
 
-				const shareUrl = `https://app.kilo.ai/share/${result.share_id}`
+				const shareUrl = `https://app.ordinant.ai/share/${result.share_id}`
 
 				await vscode.env.clipboard.writeText(shareUrl)
 				vscode.window.showInformationMessage(

@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Código Kilo: Se ha añadido {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "Código Kilo: Removido {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: Se ha añadido {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: Removido {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

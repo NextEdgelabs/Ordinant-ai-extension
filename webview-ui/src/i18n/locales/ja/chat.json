@@ -361,7 +361,7 @@
 			"tryButton": "クラウドエージェントを試す"
 		},
 		"careers": "また、<careersLink>採用中です！</careersLink>",
-		"socialLinks": "<xLink>X</xLink>、<discordLink>Discord</discordLink>、または<redditLink>r/KiloCode</redditLink>でフォローしてください 🚀"
+		"socialLinks": "<xLink>X</xLink>、<discordLink>Discord</discordLink>、または<redditLink>r/OrdinantAI</redditLink>でフォローしてください 🚀"
 	},
 	"costs": {
 		"totalWithSubtasks": "合計コスト（サブタスク含む）: ${{cost}}",

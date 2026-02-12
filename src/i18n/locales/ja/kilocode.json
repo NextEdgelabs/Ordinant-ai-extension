@@ -156,7 +156,7 @@
 	},
 	"terminalCommandGenerator": {
 		"inputPrompt": "Ordinant.ai: 生成したいコマンドを説明してください",
-		"commandGenerated": "Kilo：生成されたコマンド：{{command}}",
+		"commandGenerated": "Ordinant.ai: 生成されたコマンド：{{command}}",
 		"inputPlaceholder": "例えば、ポート3001で実行中のプロセスを終了する、大きなファイルを見つける、など",
 		"generatingProgress": "Ordinant.ai: ターミナルコマンドを生成中...",
 		"noActiveTerminal": "Ordinant.ai: アクティブな端末が見つかりません。まず端末を開いてください。",
@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Kiloコード: {{source}} {{configType}}: {{name}}{{modeStr}} を追加しました。",
-		"removed": "Kiloコード: {{source}} {{configType}}: {{name}}{{modeStr}} を削除しました"
+		"added": "Ordinant.ai: {{source}} {{configType}}: {{name}}{{modeStr}} を追加しました。",
+		"removed": "Ordinant.ai: {{source}} {{configType}}: {{name}}{{modeStr}} を削除しました"
 	}
 }

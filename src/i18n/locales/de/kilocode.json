@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Kilo-Code: Hinzugefügt {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "Kilo-Code: Entfernt {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: Hinzugefügt {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: Entfernt {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

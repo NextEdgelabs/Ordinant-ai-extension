@@ -5,7 +5,7 @@ description: "Automate code reviews with AI assistance"
 
 # Code Reviews
 
-Kilo's **Code Reviews** feature automatically analyzes your pull requests using an AI model of your choice. It can review code the moment a PR is opened or updated, surface issues, and provide structured feedback across performance, security, style, and test coverage.
+Ordinant.ai's **Code Reviews** feature automatically analyzes your pull requests using an AI model of your choice. It can review code the moment a PR is opened or updated, surface issues, and provide structured feedback across performance, security, style, and test coverage.
 
 ## What Code Reviews Enable
 
@@ -20,18 +20,18 @@ Kilo's **Code Reviews** feature automatically analyzes your pull requests using 
 Before enabling Code Reviews:
 
 - **GitHub Integration must be configured**  
-  Connect your account via the [Integrations tab](https://app.kilo.ai/integrations) so that the Review Agent can access your repositories.
+  Connect your account via the [Integrations tab](https://app.ordinant.ai/integrations) so that the Review Agent can access your repositories.
 
 ## Cost
 
 - **Compute and review time are free during limited beta**
     - Feedback is welcome in the Code Reviews beta Discord channel:
-        - [Kilo Discord](https://discord.gg/hZnd57qN)
-- **Kilo Code credits are still used** when the agent performs model reasoning during a review.
+        - [Ordinant.ai Discord](https://ordinant.ai/discord)
+- **Ordinant.ai credits are still used** when the agent performs model reasoning during a review.
 
 ## How to Use
 
-1. Go to the **Review Agent** section in your Kilo Code [personal](https://app.kilo.ai/profile) or [Organization](https://app.kilo.ai/organizations) dashboard.
+1. Go to the **Review Agent** section in your Ordinant.ai [personal](https://app.ordinant.ai/profile) or [Organization](https://app.ordinant.ai/organizations) dashboard.
 2. Toggle **Enable AI Code Review** to automatically review PRs on open/update.
 3. Choose an **AI Model** (e.g., Grok Code Fast 1).
 4. Select a **Review Style**:

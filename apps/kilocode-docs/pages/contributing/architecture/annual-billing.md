@@ -46,7 +46,7 @@ System design is pretty straight-forward as we can _mostly_ leverage existing in
 - change the organization create flow to create organization on submit (it does this now) but instead of redirecting to stripe to pay, redirect to organization page. Do not require an ahead-of-time seat count on either teams or enterprise.
 - update logic for checking & displaying seats to take into consideration the free trial period, and allow invites for an unlimited number of seats while the trial is active.
 - update subscription management page to allow for creating a new subscription from the page.
-- update logic to actually block organizations which are not active on seats (they are either over their paid seat count or do not have an active seats purchases subscription). [a ticket for this already exists](https://github.com/orgs/Kilo-Org/projects/11?pane=issue&itemId=126001076&issue=Kilo-Org%7Ckilocode-backend%7C2167) note: this can wait until the end as by definition no one can have their trial expire for at least 30 days so we have a 30 day buffer to implement this.
+- update logic to actually block organizations which are not active on seats (they are either over their paid seat count or do not have an active seats purchases subscription). [a ticket for this already exists](https://github.com/orgs/Ordinant-ai/projects/11?pane=issue&itemId=126001076&issue=Ordinant-ai%7Ckilocode-backend%7C2167) note: this can wait until the end as by definition no one can have their trial expire for at least 30 days so we have a 30 day buffer to implement this.
 
 ### Marketing Scope
 

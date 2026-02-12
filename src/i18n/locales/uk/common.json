@@ -96,7 +96,7 @@
 			"processExitedWithError": "Процес Claude Code завершився з кодом {{exitCode}}. Вивід помилки: {{output}}",
 			"stoppedWithReason": "Claude Code зупинився з причини: {{reason}}",
 			"apiKeyModelPlanMismatch": "Ключі API та плани підписки дозволяють різні моделі. Переконайся, що вибрана модель включена в твій план.",
-			"notFound": "Виконуваний файл Claude Code '{{claudePath}}' не знайдено.\n\nБудь ласка, встанови Claude Code CLI:\n1. Відвідай {{installationUrl}} для завантаження Claude Code\n2. Дотримуйся інструкцій з встановлення для твоєї операційної системи\n3. Переконайся, що команда 'claude' доступна в твоєму PATH\n4. Альтернативно, налаштуй користувацький шлях у налаштуваннях Roo під 'Claude Code Path'\n\nОригінальна помилка: {{originalError}}"
+			"notFound": "Виконуваний файл Claude Code '{{claudePath}}' не знайдено.\n\nБудь ласка, встанови Claude Code CLI:\n1. Відвідай {{installationUrl}} для завантаження Claude Code\n2. Дотримуйся інструкцій з встановлення для твоєї операційної системи\n3. Переконайся, що команда 'claude' доступна в твоєму PATH\n4. Альтернативно, налаштуй користувацький шлях у налаштуваннях Ordinant.ai під 'Claude Code Path'\n\nОригінальна помилка: {{originalError}}"
 		},
 		"mode_import_failed": "Не вдалося імпортувати режим: {{error}}",
 		"delete_rules_folder_failed": "Не вдалося видалити папку правил: {{rulesFolderPath}}. Помилка: {{error}}",
@@ -270,7 +270,7 @@
 	},
 	"docsLink": {
 		"label": "Документація",
-		"url": "https://kilo.ai/docs"
+		"url": "https://ordinant.ai/docs"
 	},
 	"errorBoundary": {
 		"title": "Помилка",

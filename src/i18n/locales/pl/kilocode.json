@@ -207,6 +207,6 @@
 	},
 	"configDiscovery": {
 		"added": "Ordinant.ai: Dodano {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "Kilo Kod: Usunięto {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"removed": "Ordinant.ai: Usunięto {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

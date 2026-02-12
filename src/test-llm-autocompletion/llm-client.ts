@@ -31,7 +31,7 @@ export function getKiloBaseUriFromToken(kilocodeToken?: string): string {
 			console.warn("Failed to get base URL from Kilo Code token")
 		}
 	}
-	return "https://api.kilo.ai"
+	return "https://api.ordinant.ai"
 }
 
 export class LLMClient {

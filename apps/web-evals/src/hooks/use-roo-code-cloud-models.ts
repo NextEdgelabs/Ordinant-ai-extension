@@ -33,7 +33,7 @@ export const rooCodeCloudModelSchema = z.object({
 export type RooCodeCloudModel = z.infer<typeof rooCodeCloudModelSchema>
 
 export const getRooCodeCloudModels = async (): Promise<RooCodeCloudModel[]> => {
-	const response = await fetch("https://api.roocode.com/proxy/v1/models")
+	const response = await fetch("https://api.ordinant.ai/proxy/v1/models")
 
 	if (!response.ok) {
 		return []

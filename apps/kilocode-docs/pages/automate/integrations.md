@@ -1,41 +1,41 @@
 ---
 title: "Integrations"
-description: "Overview of Kilo Code integrations"
+description: "Overview of Ordinant.ai integrations"
 ---
 
-# Kilo Code Integrations
+# Ordinant.ai Integrations
 
-Kilo Integrations lets you connect your GitHub account (and soon, GitLab and Bitbucket) to enable advanced features inside Kilo Code. Once connected, Kilo can access your repositories securely through the **KiloConnect** GitHub App, enabling features like **Cloud Agents** and **Kilo Deploy**.
+Ordinant.ai Integrations lets you connect your GitHub account (and soon, GitLab and Bitbucket) to enable advanced features inside Ordinant.ai. Once connected, Ordinant.ai can access your repositories securely through the **OrdinantConnect** GitHub App, enabling features like **Cloud Agents** and **Ordinant Deploy**.
 
 ## What You Can Do With Integrations
 
-- **Connect GitHub to Kilo Code** in a few clicks
-- **Authorize the KiloConnect App** for repo access
-- **Enable advanced features** like Cloud Agents and Kilo Deploy
+- **Connect GitHub to Ordinant.ai** in a few clicks
+- **Authorize the OrdinantConnect App** for repo access
+- **Enable advanced features** like Cloud Agents and Ordinant.ai Deploy
 
 ## Prerequisites
 
 Before connecting:
 
 - You must have a **GitHub account**.
-- You need permission to install GitHub Apps for the repositories you want Kilo to access.
+- You need permission to install GitHub Apps for the repositories you want Ordinant.ai to access.
 - (Optional) If you're connecting an organization, you must be an **org admin** or have app installation permissions.
 
-## Connecting GitHub to Kilo
+## Connecting GitHub to Ordinant.ai
 
 ### 1. Open the Integrations Page
 
-Go to your **Personal** or **Organization Dashboard**, and navigate to the [Integrations](https://app.kilo.ai/integrations) tab
+Go to your **Personal** or **Organization Dashboard**, and navigate to the [Integrations](https://app.ordinant.ai/integrations) tab
 
 ### 2. Start the Connection Flow
 
 1. Click **Configure** on the GitHub panel.
-2. You’ll be redirected to GitHub to authorize the **KiloConnect** App.
+2. You’ll be redirected to GitHub to authorize the **OrdinantConnect** App.
 3. Select the GitHub account or organization you want to connect.
 
 ### 3. Choose Repository Access
 
-GitHub will ask which repositories you want Kilo to access:
+GitHub will ask which repositories you want Ordinant.ai to access:
 
 - **All repositories** (recommended if you plan to use Cloud Agents or Deploy across multiple projects)
 - **Only selected repositories** (choose specific repos)
@@ -46,23 +46,23 @@ Click **Install & Authorize** to continue.
 
 Once approved:
 
-- You’ll return to the Kilo Integrations page.
+- You’ll return to the Ordinant.ai Integrations page.
 - Github will show a **Connected** status.
-- Your Kilo workspace can now access GitHub repositories securely.
+- Your Ordinant.ai workspace can now access GitHub repositories securely.
 
 ## What Happens After Connecting
 
-Once GitHub is connected, the following features will be enabled in Kilo:
+Once GitHub is connected, the following features will be enabled in Ordinant.ai:
 
 ### Cloud Agents
 
-- Run Kilo Code in the cloud from any device
+- Run Ordinant.ai in the cloud from any device
 - Auto-create branches and push work continuously
 - Work from anywhere while keeping your repo in sync
 
-### Kilo Deploy
+### Ordinant.ai Deploy
 
-- Deploy Next.js 14 & 15 apps directly from Kilo
+- Deploy Next.js 14 & 15 apps directly from Ordinant.ai
 - Trigger rebuilds automatically on push
 - Manage deployment logs and history
 
@@ -78,7 +78,7 @@ Once GitHub is connected, the following features will be enabled in Kilo:
 From the same **Integrations** page, you can click "Manage on Github" to:
 
 - View the GitHub account you connected
-- Update which repositories Kilo has access to
+- Update which repositories Ordinant.ai has access to
 - Disconnect GitHub entirely
 - Reauthorize the app if permissions change
 
@@ -87,7 +87,7 @@ From the same **Integrations** page, you can click "Manage on Github" to:
 ## Troubleshooting
 
 **“I don’t see my repositories.”**  
-Ensure the KiloConnect App is installed for the correct GitHub org and that repo access includes the repositories you need.
+Ensure the OrdinantConnect App is installed for the correct GitHub org and that repo access includes the repositories you need.
 
 **“My organization blocks third-party apps.”**  
 You may need an admin to approve installing GitHub Apps.

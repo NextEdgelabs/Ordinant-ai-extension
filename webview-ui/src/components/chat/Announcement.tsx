@@ -55,7 +55,7 @@ const Announcement = ({ hideAnnouncement }: AnnouncementProps) => {
 							<SocialLink
 								icon={<SiX className="w-4 h-4" aria-hidden />}
 								label="X"
-								href="https://x.com/roocode"
+								href="https://x.com/ordinantai"
 							/>
 							<SocialLink
 								icon={<SiDiscord className="w-4 h-4" aria-hidden />}
@@ -65,7 +65,7 @@ const Announcement = ({ hideAnnouncement }: AnnouncementProps) => {
 							<SocialLink
 								icon={<SiReddit className="w-4 h-4" aria-hidden />}
 								label="Reddit"
-								href="https://www.reddit.com/r/RooCode/"
+								href="https://www.reddit.com/r/OrdinantAI/"
 							/>
 						</div>
 					</div>
@@ -104,10 +104,10 @@ const SocialLink = ({ icon, label, href }: { icon: ReactNode; label: string; hre
 
 const GitHubLink = ({ children }: { children?: ReactNode }) => (
 	<VSCodeLink
-		href="https://github.com/RooCodeInc/Roo-Code"
+		href="https://github.com/Ordinant-ai/ordinant-ai-extension"
 		onClick={(e) => {
 			e.preventDefault()
-			vscode.postMessage({ type: "openExternal", url: "https://github.com/RooCodeInc/Roo-Code" })
+			vscode.postMessage({ type: "openExternal", url: "https://github.com/Ordinant-ai/ordinant-ai-extension" })
 		}}>
 		{children}
 	</VSCodeLink>
@@ -115,10 +115,10 @@ const GitHubLink = ({ children }: { children?: ReactNode }) => (
 
 const CareersLink = ({ children }: { children?: ReactNode }) => (
 	<VSCodeLink
-		href="https://careers.roocode.com"
+		href="https://careers.ordinant.ai"
 		onClick={(e) => {
 			e.preventDefault()
-			vscode.postMessage({ type: "openExternal", url: "https://careers.roocode.com" })
+			vscode.postMessage({ type: "openExternal", url: "https://careers.ordinant.ai" })
 		}}>
 		{children}
 	</VSCodeLink>

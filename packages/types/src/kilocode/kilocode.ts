@@ -65,13 +65,13 @@ export const fastApplyApiProviderSchema = z.enum(["current", "morph", "kilocode"
 
 export type FastApplyApiProvider = z.infer<typeof fastApplyApiProviderSchema>
 
-export const DEFAULT_KILOCODE_BACKEND_URL = "https://kilo.ai"
+export const DEFAULT_KILOCODE_BACKEND_URL = "https://ordinant.ai"
 
 export function getKiloBaseUriFromToken(kilocodeToken?: string) {
 	if (kilocodeToken) {
 		try {
 			const payload_string = kilocodeToken.split(".")[1]
-			if (!payload_string) return "https://api.kilo.ai"
+			if (!payload_string) return "https://api.ordinant.ai"
 
 			const payload_json =
 				typeof atob !== "undefined" ? atob(payload_string) : Buffer.from(payload_string, "base64").toString()
@@ -91,7 +91,7 @@ export function getKiloBaseUriFromToken(kilocodeToken?: string) {
 			console.warn("Failed to get base URL from Kilo Code token")
 		}
 	}
-	return "https://api.kilo.ai"
+	return "https://api.ordinant.ai"
 }
 
 /**
@@ -124,7 +124,7 @@ function getGlobalKilocodeBackendUrl(): string {
 /**
  * Gets the app/web URL for the current environment.
  * In development: http://localhost:3000
- * In production: https://kilo.ai
+ * In production: https://ordinant.ai
  */
 export function getAppUrl(path: string = ""): string {
 	return new URL(path, getGlobalKilocodeBackendUrl()).toString()
@@ -134,7 +134,7 @@ export function getAppUrl(path: string = ""): string {
  * Gets the API URL for the current environment.
  * Respects KILOCODE_BACKEND_BASE_URL environment variable for local development.
  * In development: http://localhost:3000
- * In production: https://api.kilo.ai
+ * In production: https://api.ordinant.ai
  */
 export function getApiUrl(path: string = ""): string {
 	const backend = getGlobalKilocodeBackendUrl()
@@ -145,13 +145,13 @@ export function getApiUrl(path: string = ""): string {
 	}
 
 	// In production, use the api subdomain
-	return new URL(path, "https://api.kilo.ai").toString()
+	return new URL(path, "https://api.ordinant.ai").toString()
 }
 
 /**
  * Gets the extension config URL, which uses a legacy subdomain structure.
  * In development: http://localhost:3000/extension-config.json
- * In production: https://api.kilo.ai/extension-config.json
+ * In production: https://api.ordinant.ai/extension-config.json
  */
 export function getExtensionConfigUrl(): string {
 	try {
@@ -159,10 +159,10 @@ export function getExtensionConfigUrl(): string {
 		if (backend !== DEFAULT_KILOCODE_BACKEND_URL) {
 			return getAppUrl("/extension-config.json")
 		} else {
-			return "https://api.kilo.ai/extension-config.json"
+			return "https://api.ordinant.ai/extension-config.json"
 		}
 	} catch (error) {
 		console.warn("Failed to build extension config URL:", error)
-		return "https://api.kilo.ai/extension-config.json"
+		return "https://api.ordinant.ai/extension-config.json"
 	}
 }

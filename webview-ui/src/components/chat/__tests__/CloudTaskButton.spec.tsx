@@ -21,7 +21,7 @@ vi.mock("react-i18next")
 
 // Mock the cloud config
 vi.mock("@roo-code/cloud/src/config", () => ({
-	getRooCodeApiUrl: vi.fn(() => "https://app.roocode.com"),
+	getRooCodeApiUrl: vi.fn(() => "https://app.ordinant.ai"),
 }))
 
 // Mock the extension state context
@@ -70,7 +70,7 @@ describe("CloudTaskButton", () => {
 				email: "test@example.com",
 				extensionBridgeEnabled: true,
 			},
-			cloudApiUrl: "https://app.roocode.com",
+			cloudApiUrl: "https://app.ordinant.ai",
 		} as any)
 	})
 
@@ -89,7 +89,7 @@ describe("CloudTaskButton", () => {
 				email: "test@example.com",
 				extensionBridgeEnabled: false,
 			},
-			cloudApiUrl: "https://app.roocode.com",
+			cloudApiUrl: "https://app.ordinant.ai",
 		} as any)
 
 		render(<CloudTaskButton item={mockItem} />)
@@ -100,7 +100,7 @@ describe("CloudTaskButton", () => {
 	test("does not render when cloudUserInfo is null", () => {
 		mockUseExtensionState.mockReturnValue({
 			cloudUserInfo: null,
-			cloudApiUrl: "https://app.roocode.com",
+			cloudApiUrl: "https://app.ordinant.ai",
 		} as any)
 
 		render(<CloudTaskButton item={mockItem} />)
@@ -133,7 +133,7 @@ describe("CloudTaskButton", () => {
 		fireEvent.click(button)
 
 		await waitFor(() => {
-			const input = screen.getByDisplayValue("https://app.roocode.com/task/test-task-id")
+			const input = screen.getByDisplayValue("https://app.ordinant.ai/task/test-task-id")
 			expect(input).toBeInTheDocument()
 			expect(input).toBeDisabled()
 		})
@@ -221,7 +221,7 @@ describe("CloudTaskButton", () => {
 	test("uses correct URL from getRooCodeApiUrl", async () => {
 		// Mock getRooCodeApiUrl to return a custom URL
 		vi.doMock("@roo-code/cloud/src/config", () => ({
-			getRooCodeApiUrl: vi.fn(() => "https://custom.roocode.com"),
+			getRooCodeApiUrl: vi.fn(() => "https://custom.ordinant.ai"),
 		}))
 
 		// Clear module cache and re-import to get the mocked version

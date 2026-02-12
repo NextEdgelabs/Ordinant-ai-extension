@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Код Кило: Добавлен {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "Код Kilo: Удалено {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: Добавлен {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: Удалено {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

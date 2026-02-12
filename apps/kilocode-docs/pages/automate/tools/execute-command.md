@@ -1,6 +1,6 @@
 # execute_command
 
-The `execute_command` tool runs CLI commands on the user's system. It allows Kilo Code to perform system operations, install dependencies, build projects, start servers, and execute other terminal-based tasks needed to accomplish user objectives.
+The `execute_command` tool runs CLI commands on the user's system. It allows Ordinant.ai to perform system operations, install dependencies, build projects, start servers, and execute other terminal-based tasks needed to accomplish user objectives.
 
 ## Parameters
 
@@ -113,12 +113,12 @@ The tool uses a sophisticated terminal management system:
 
 ## Examples When Used
 
-- When setting up a new project, Kilo Code runs initialization commands like `npm init -y` followed by installing dependencies.
-- When building a web application, Kilo Code executes build commands like `npm run build` to compile assets.
-- When deploying code, Kilo Code runs git commands to commit and push changes to a repository.
-- When troubleshooting, Kilo Code executes diagnostic commands to gather system information.
-- When starting a development server, Kilo Code launches the appropriate server command (e.g., `npm start`).
-- When running tests, Kilo Code executes the test runner command for the project's testing framework.
+- When setting up a new project, Ordinant.ai runs initialization commands like `npm init -y` followed by installing dependencies.
+- When building a web application, Ordinant.ai executes build commands like `npm run build` to compile assets.
+- When deploying code, Ordinant.ai runs git commands to commit and push changes to a repository.
+- When troubleshooting, Ordinant.ai executes diagnostic commands to gather system information.
+- When starting a development server, Ordinant.ai launches the appropriate server command (e.g., `npm start`).
+- When running tests, Ordinant.ai executes the test runner command for the project's testing framework.
 
 ## Usage Examples
 

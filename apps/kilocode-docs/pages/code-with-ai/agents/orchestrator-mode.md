@@ -5,7 +5,7 @@ description: "Using Orchestrator mode for complex multi-step tasks"
 
 # Orchestrator Mode: Coordinate Complex Workflows
 
-Orchestrator Mode (formerly known as Boomerang Tasks) allows you to break down complex projects into smaller, manageable pieces. Think of it like delegating parts of your work to specialized assistants. Each subtask runs in its own context, often using a different Kilo Code mode tailored for that specific job (like [`code`](/basic-usage/using-modes#code-mode-default), [`architect`](/basic-usage/using-modes#architect-mode), or [`debug`](/basic-usage/using-modes#debug-mode)).
+Orchestrator Mode (formerly known as Boomerang Tasks) allows you to break down complex projects into smaller, manageable pieces. Think of it like delegating parts of your work to specialized assistants. Each subtask runs in its own context, often using a different Ordinant.ai mode tailored for that specific job (like [`code`](/basic-usage/using-modes#code-mode-default), [`architect`](/basic-usage/using-modes#architect-mode), or [`debug`](/basic-usage/using-modes#debug-mode)).
 
 {% youtube url="https://www.youtube.com/watch?v=20MmJNeOODo" caption="Orchestrator Mode explained and demonstrated" /%}
 
@@ -18,9 +18,9 @@ Orchestrator Mode (formerly known as Boomerang Tasks) allows you to break down c
 
 ## How It Works
 
-1.  Using Orchestrator Mode, Kilo can analyze a complex task and suggest breaking it down into a subtask.
+1.  Using Orchestrator Mode, Ordinant.ai can analyze a complex task and suggest breaking it down into a subtask.
 2.  The parent task pauses, and the new subtask begins in a different mode.
-3.  When the subtask's goal is achieved, Kilo signals completion.
+3.  When the subtask's goal is achieved, Ordinant.ai signals completion.
 4.  The parent task resumes with only the summary of the subtask. The parent uses this summary to continue the main workflow.
 
 ## Key Considerations
@@ -29,9 +29,9 @@ Orchestrator Mode (formerly known as Boomerang Tasks) allows you to break down c
 - **Context Isolation and Transfer:** Each subtask operates in complete isolation with its own conversation history. It does not automatically inherit the parent's context. Information must be explicitly passed:
     - **Down:** Via the initial instructions provided when the subtask is created.
     - **Up:** Via the final summary provided when the subtask finishes. Be mindful that only this summary returns to the parent.
-- **Navigation:** Kilo's interface helps you see the hierarchy of tasks (which task is the parent, which are children). You can typically navigate between active and paused tasks.
+- **Navigation:** Ordinant.ai's interface helps you see the hierarchy of tasks (which task is the parent, which are children). You can typically navigate between active and paused tasks.
 
-Orchestrator Mode provides a powerful way to manage complex development workflows directly within Kilo Code, leveraging specialized modes for maximum efficiency.
+Orchestrator Mode provides a powerful way to manage complex development workflows directly within Ordinant.ai, leveraging specialized modes for maximum efficiency.
 
 {% callout type="tip" title="Keep Tasks Focused" %}
 Use subtasks to maintain clarity. If a request significantly shifts focus or requires a different expertise (mode), consider creating a subtask rather than overloading the current one.

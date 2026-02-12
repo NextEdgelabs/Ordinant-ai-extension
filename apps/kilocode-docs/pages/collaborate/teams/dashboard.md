@@ -1,11 +1,11 @@
 ---
 title: "Dashboard"
-description: "Manage your team from the Kilo Code dashboard"
+description: "Manage your team from the Ordinant.ai dashboard"
 ---
 
 # Dashboard
 
-The Kilo seats dashboard is the first screen that comes up when you visit [the Kilo Code web app](https://app.kilo.ai). It provides complete visibility into your team's AI usage, costs, and management.
+The Ordinant.ai seats dashboard is the first screen that comes up when you visit [the Ordinant.ai web app](https://app.ordinant.ai). It provides complete visibility into your team's AI usage, costs, and management.
 
 <center>
 <img src="/docs/img/teams/dashboard.png" alt="Invite your team members" width="700" />
@@ -92,7 +92,7 @@ Interactive graphs displaying:
 
 ## Billing Tab
 
-Complete financial management for your Kilo Teams subscription.
+Complete financial management for your Ordinant.ai Teams subscription.
 
 - **Available credits** remaining
 - **Downloadable invoices** for expense reporting
@@ -109,11 +109,11 @@ Complete financial management for your Kilo Teams subscription.
 
 ## Subscriptions Tab
 
-Manage your Kilo Teams plan and seat allocation.
+Manage your Ordinant.ai Teams plan and seat allocation.
 
 ### Current Plan Details
 
-- **Plan type** (Kilo Teams)
+- **Plan type** (Ordinant.ai Teams)
 - **Monthly cost** per seat ($15/user/month)
 - **Billing cycle** dates and next charge
 - **Plan benefits** and included features

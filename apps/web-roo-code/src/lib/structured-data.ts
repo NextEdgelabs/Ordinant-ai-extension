@@ -77,7 +77,7 @@ export function getStructuredData(): StructuredDataGraph {
 			width: 512,
 			height: 512,
 		},
-		alternateName: ["RooCode"],
+		alternateName: ["Ordinant.ai"],
 		sameAs: [
 			EXTERNAL_LINKS.GITHUB,
 			EXTERNAL_LINKS.MARKETPLACE,
@@ -94,14 +94,14 @@ export function getStructuredData(): StructuredDataGraph {
 		"@id": `${SEO.url}#website`,
 		url: SEO.url,
 		name: SEO.name,
-		alternateName: ["RooCode"],
+		alternateName: ["Ordinant.ai"],
 		publisher: { "@id": orgId },
 	}
 
 	const softwareApplication: SoftwareApplication = {
 		"@type": "SoftwareApplication",
 		"@id": `${SEO.url}#vscode-extension`,
-		name: "Roo Code (VS Code extension)",
+		name: "Ordinant.ai (VS Code extension)",
 		applicationCategory: "DeveloperApplication",
 		operatingSystem: "Windows, macOS, Linux",
 		url: SEO.url,

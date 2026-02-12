@@ -1,11 +1,11 @@
 ---
 title: "Getting Started with Teams"
-description: "Set up your Kilo Code team account"
+description: "Set up your Ordinant.ai team account"
 ---
 
-# Get Started with Kilo Seats in 10 Minutes
+# Get Started with Ordinant.ai Seats in 10 Minutes
 
-seats for Kilo in the Teams or Enterprise subscription brings transparent AI coding to your entire engineering organization. No markup on AI costs, no vendor lock-in, complete usage visibility.
+seats for Ordinant.ai in the Teams or Enterprise subscription brings transparent AI coding to your entire engineering organization. No markup on AI costs, no vendor lock-in, complete usage visibility.
 
 ## Before You Begin
 
@@ -18,7 +18,7 @@ seats for Kilo in the Teams or Enterprise subscription brings transparent AI cod
 
 ### Step 1: Create Your Organization
 
-1. Visit [app.kilo.ai](https://app.kilo.ai)
+1. Visit [app.ordinant.ai](https://app.ordinant.ai)
 2. Sign up using your company Google Workspaces or GitHub account
     - Note: We recommend starting with your GitHub account rather than a personal Google account, but we can change it later.
 3. Click **Organizations** in the left sidebar and then **Create New Organization**
@@ -50,7 +50,7 @@ seats for Kilo in the Teams or Enterprise subscription brings transparent AI cod
 Team members receive invitation emails with these steps:
 
 1. Accept the team invitation
-2. Install Kilo Code from [VS Code Marketplace](vscode:extension/kilocode.kilo-code)
+2. Install Ordinant.ai from [VS Code Marketplace](vscode:extension/kilocode.kilo-code)
 3. Sign in with their invited email
 4. Start coding with AI assistance
 

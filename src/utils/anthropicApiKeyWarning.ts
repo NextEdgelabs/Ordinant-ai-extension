@@ -26,7 +26,9 @@ function showAnthropicApiKeyWarning(): void {
 
 	vscode.window.showWarningMessage(msg, "More Info", "Got it").then((choice) => {
 		if (choice === "More Info") {
-			vscode.env.openExternal(vscode.Uri.parse("https://github.com/Kilo-Org/kilocode/issues/2026"))
+			vscode.env.openExternal(
+				vscode.Uri.parse("https://github.com/Ordinant-ai/ordinant-ai-extension/issues/2026"),
+			)
 		}
 		// User dismissed or clicked "Got it" - nothing else to do
 	})

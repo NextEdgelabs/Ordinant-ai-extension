@@ -1,32 +1,32 @@
 ---
 title: "Frequently Asked Questions"
-description: "Find answers to common questions about Kilo Code"
+description: "Find answers to common questions about Ordinant.ai"
 ---
 
 # Frequently Asked Questions
 
-This page answers some common questions about Kilo Code.
+This page answers some common questions about Ordinant.ai.
 
 ## General
 
-### What is Kilo Code?
+### What is Ordinant.ai?
 
-Kilo Code is an open-source AI agent extension for Visual Studio Code. It helps you write code more efficiently by generating code, automating tasks, and providing suggestions.
+Ordinant.ai is an open-source AI agent extension for Visual Studio Code. It helps you write code more efficiently by generating code, automating tasks, and providing suggestions.
 
-### How does Kilo Code work?
+### How does Ordinant.ai work?
 
-Kilo Code uses large language models (LLMs) to understand your requests and translate them into actions. It can:
+Ordinant.ai uses large language models (LLMs) to understand your requests and translate them into actions. It can:
 
 - Read, write, and delete files in your project.
 - Execute commands in your VS Code terminal.
 - Perform web browsing (if enabled).
 - Use external tools via the Model Context Protocol (MCP).
 
-You interact with Kilo Code through a chat interface, where you provide instructions and review/approve its proposed actions, or you can use the inline autocomplete feature which helps you as you type.
+You interact with Ordinant.ai through a chat interface, where you provide instructions and review/approve its proposed actions, or you can use the inline autocomplete feature which helps you as you type.
 
-### What can Kilo Code do?
+### What can Ordinant.ai do?
 
-Kilo Code can help with a variety of coding tasks, including:
+Ordinant.ai can help with a variety of coding tasks, including:
 
 - Generating code from natural language descriptions.
 - Refactoring existing code.
@@ -37,43 +37,43 @@ Kilo Code can help with a variety of coding tasks, including:
 - Automating repetitive tasks.
 - Creating new files and projects.
 
-### Is Kilo Code free to use?
+### Is Ordinant.ai free to use?
 
-The Kilo Code extension itself is free and open-source. In order for Kilo Code to be useful, you need an AI model to respond to your queries. Models are hosted by providers and most charge for access.
+The Ordinant.ai extension itself is free and open-source. In order for Ordinant.ai to be useful, you need an AI model to respond to your queries. Models are hosted by providers and most charge for access.
 
 There are some models available for free. The set of free models if constantly changing based on provider pricing decisions.
 
-You can also use Kilo Code with a [local model](advanced-usage/local-models) or "Bring Your Own API Key" for [another model provider](getting-started/connecting-api-provider) (like [Anthropic](providers/anthropic), [OpenAI](providers/openai), [OpenRouter](providers/openrouter), [Requesty](providers/requesty), etc.).
+You can also use Ordinant.ai with a [local model](advanced-usage/local-models) or "Bring Your Own API Key" for [another model provider](getting-started/connecting-api-provider) (like [Anthropic](providers/anthropic), [OpenAI](providers/openai), [OpenRouter](providers/openrouter), [Requesty](providers/requesty), etc.).
 
-### How do I pay for model usage via Kilo Code?
+### How do I pay for model usage via Ordinant.ai?
 
-If you choose to pay for models via Kilo Code, you do so by buying Kilo Credits. You can [buy Kilo Credits](basic-usage/adding-credits) securely via Stripe with a credit card. We do not charge a markup on Kilo Credits. $1 you give us is $1 in Kilo Credits.
+If you choose to pay for models via Ordinant.ai, you do so by buying Ordinant.ai credits. You can [buy Ordinant.ai credits](basic-usage/adding-credits) securely via Stripe with a credit card. We do not charge a markup on Ordinant.ai credits. $1 you give us is $1 in Ordinant.ai credits.
 
-Model usage is metered by the providers in terms of different kinds of tokens. When you use a model, we debit your Kilo credits by the amount the provider charges us -- with no markup.
+Model usage is metered by the providers in terms of different kinds of tokens. When you use a model, we debit your Ordinant.ai credits by the amount the provider charges us -- with no markup.
 
 You can use any models you like as long as you have credits in your account. When you run out of credits, you can add more. It's that simple!
 
 If you're looking to earn some credits, you could join our <a href={DISCORD_URL} target='_blank'>Discord</a> where we sometimes have promotional offers!
 
-### What are the risks of using Kilo Code?
+### What are the risks of using Ordinant.ai?
 
-Kilo Code is a powerful tool, and it's important to use it responsibly. Here are some things to keep in mind:
+Ordinant.ai is a powerful tool, and it's important to use it responsibly. Here are some things to keep in mind:
 
-- **Kilo Code can make mistakes.** Always review Kilo Code's proposed changes carefully before approving them.
-- **Kilo Code can execute commands.** Be very cautious about allowing Kilo Code to run commands, especially if you're using auto-approval.
-- **Kilo Code can access the internet.** If you're using a provider that supports web browsing, be aware that Kilo Code could potentially access sensitive information.
+- **Ordinant.ai can make mistakes.** Always review Ordinant.ai's proposed changes carefully before approving them.
+- **Ordinant.ai can execute commands.** Be very cautious about allowing Ordinant.ai to run commands, especially if you're using auto-approval.
+- **Ordinant.ai can access the internet.** If you're using a provider that supports web browsing, be aware that Ordinant.ai could potentially access sensitive information.
 
 ## Setup & Installation
 
-### How do I install Kilo Code?
+### How do I install Ordinant.ai?
 
 See the [Installation Guide](/getting-started/installing) for detailed instructions.
 
 ### Which API providers are supported?
 
-Kilo Code supports a wide range of API providers, including:
+Ordinant.ai supports a wide range of API providers, including:
 
-- [Anthropic (Claude)](/providers/kilocode)
+- [Anthropic (Claude)](/providers/ordinant)
 - [Anthropic (Claude)](/providers/anthropic)
 - [OpenAI](/providers/openai)
 - [OpenRouter](/providers/openrouter)
@@ -93,9 +93,9 @@ Kilo Code supports a wide range of API providers, including:
 
 Each API provider has its own process for obtaining an API key. See the [Setting Up Your First AI Provider](/getting-started/connecting-api-provider) for links to the relevant documentation for each provider.
 
-### Can I use Kilo Code with local models?
+### Can I use Ordinant.ai with local models?
 
-Yes, Kilo Code supports running models locally using [Ollama](/providers/ollama) and [LM Studio](/providers/lmstudio). See [Using Local Models](/advanced-usage/local-models) for instructions.
+Yes, Ordinant.ai supports running models locally using [Ollama](/providers/ollama) and [LM Studio](/providers/lmstudio). See [Using Local Models](/advanced-usage/local-models) for instructions.
 
 ## Usage
 
@@ -110,7 +110,7 @@ Use **chat** when you need to:
 - Make complex, multi-file changes
 - Refactor code across your project
 - Get explanations or ask questions
-- Have Kilo Code execute commands or browse the web
+- Have Ordinant.ai execute commands or browse the web
 - Work on tasks that require planning and multiple steps
 
 Use **autocomplete** when you need to:
@@ -122,9 +122,9 @@ Use **autocomplete** when you need to:
 
 In general, autocomplete is best for quick, in-flow coding assistance, while chat is better for larger tasks that require more context and interaction.
 
-### What are modes in Kilo Code?
+### What are modes in Ordinant.ai?
 
-[Modes](/basic-usage/using-modes) are different personas that Kilo Code can adopt, each with a specific focus and set of capabilities. The built-in modes are:
+[Modes](/basic-usage/using-modes) are different personas that Ordinant.ai can adopt, each with a specific focus and set of capabilities. The built-in modes are:
 
 - **Code:** For general-purpose coding tasks.
 - **Architect:** For planning and technical leadership.
@@ -138,70 +138,70 @@ Use the dropdown menu in the chat input area to select a different mode, or use 
 
 ### What are tools and how do I use them?
 
-[Tools](/basic-usage/how-tools-work) are how Kilo Code interacts with your system. Kilo Code automatically selects and uses the appropriate tools to complete your tasks. You don't need to call tools directly. You will be prompted to approve or reject each tool use.
+[Tools](/basic-usage/how-tools-work) are how Ordinant.ai interacts with your system. Ordinant.ai automatically selects and uses the appropriate tools to complete your tasks. You don't need to call tools directly. You will be prompted to approve or reject each tool use.
 
 ### What are context mentions?
 
-[Context mentions](/basic-usage/context-mentions) are a way to provide Kilo Code with specific information about your project, such as files, folders, or problems. Use the "@" symbol followed by the item you want to mention (e.g., `@/src/file.ts`, `@problems`).
+[Context mentions](/basic-usage/context-mentions) are a way to provide Ordinant.ai with specific information about your project, such as files, folders, or problems. Use the "@" symbol followed by the item you want to mention (e.g., `@/src/file.ts`, `@problems`).
 
-### Can Kilo Code access the internet?
+### Can Ordinant.ai access the internet?
 
 Yes, if you are using a provider with a model that support web browsing. Be mindful of the security implications of allowing this.
 
-### Can Kilo Code run commands in my terminal?
+### Can Ordinant.ai run commands in my terminal?
 
-Yes, Kilo Code can execute commands in your VS Code terminal. You will be prompted to approve each command before it's executed, unless you've enabled auto-approval for commands. Be extremely cautious about auto-approving commands. If you're experiencing issues with terminal commands, see the [Shell Integration Guide](/features/shell-integration) for troubleshooting.
+Yes, Ordinant.ai can execute commands in your VS Code terminal. You will be prompted to approve each command before it's executed, unless you've enabled auto-approval for commands. Be extremely cautious about auto-approving commands. If you're experiencing issues with terminal commands, see the [Shell Integration Guide](/features/shell-integration) for troubleshooting.
 
-### How do I provide feedback to Kilo Code?
+### How do I provide feedback to Ordinant.ai?
 
-You can provide feedback by approving or rejecting Kilo Code's proposed actions. You can provide additional feedback by using the feedback field.
+You can provide feedback by approving or rejecting Ordinant.ai's proposed actions. You can provide additional feedback by using the feedback field.
 
-### Can I customize Kilo Code's behavior?
+### Can I customize Ordinant.ai's behavior?
 
-Yes, you can customize Kilo Code in several ways:
+Yes, you can customize Ordinant.ai in several ways:
 
 - **Custom Instructions:** Provide general instructions that apply to all modes, or mode-specific instructions.
 - **Custom Modes:** Create your own modes with tailored prompts and tool permissions.
 - **`.clinerules` Files:** Create `.clinerules` files in your project to provide additional guidelines.
 - **Settings:** Adjust various settings, such as auto-approval, diff editing, and more.
 
-### Does Kilo Code have any auto approval settings?
+### Does Ordinant.ai have any auto approval settings?
 
-Yes, Kilo Code has a few settings that when enabled will automatically approve actions. Find out more [here](/features/auto-approving-actions).
+Yes, Ordinant.ai has a few settings that when enabled will automatically approve actions. Find out more [here](/features/auto-approving-actions).
 
 ## Advanced Features
 
-### Can I use Kilo Code offline?
+### Can I use Ordinant.ai offline?
 
 Yes, if you use a [local model](/advanced-usage/local-models).
 
 ### What is MCP (Model Context Protocol)?
 
-[MCP](/features/mcp/overview) is a protocol that allows Kilo Code to communicate with external servers, extending its capabilities with custom tools and resources.
+[MCP](/features/mcp/overview) is a protocol that allows Ordinant.ai to communicate with external servers, extending its capabilities with custom tools and resources.
 
 ### Can I create my own MCP servers?
 
-Yes, you can create your own MCP servers to add custom functionality to Kilo Code. See the [MCP documentation](https://github.com/modelcontextprotocol) for details.
-Yes, you can create your own MCP servers to add custom functionality to Kilo Code. See the [MCP documentation](https://github.com/modelcontextprotocol) for details.
+Yes, you can create your own MCP servers to add custom functionality to Ordinant.ai. See the [MCP documentation](https://github.com/modelcontextprotocol) for details.
+Yes, you can create your own MCP servers to add custom functionality to Ordinant.ai. See the [MCP documentation](https://github.com/modelcontextprotocol) for details.
 
 ## Troubleshooting
 
-### Kilo Code isn't responding. What should I do?
+### Ordinant.ai isn't responding. What should I do?
 
 - Make sure your API key is correct and hasn't expired.
 - Check your internet connection.
 - Check the status of your chosen API provider.
 - Try restarting VS Code.
-- If the problem persists, report the issue on [GitHub](https://github.com/Kilo-Org/kilocode/issues) or [Discord](https://kilo.ai/discord).
+- If the problem persists, report the issue on [GitHub](https://github.com/Ordinant-ai/ordinant-ai-extension/issues) or [Discord](https://ordinant.ai/discord).
 
 ### I'm seeing an error message. What does it mean?
 
 The error message should provide some information about the problem. If you're unsure how to resolve it, seek help in the community forums.
 
-### Kilo Code made changes I didn't want. How do I undo them?
+### Ordinant.ai made changes I didn't want. How do I undo them?
 
-Kilo Code uses VS Code's built-in file editing capabilities. You can use the standard "Undo" command (Ctrl/Cmd + Z) to revert changes. Also, if experimental checkpoints are enabled, Kilo can revert changes made to a file.
+Ordinant.ai uses VS Code's built-in file editing capabilities. You can use the standard "Undo" command (Ctrl/Cmd + Z) to revert changes. Also, if experimental checkpoints are enabled, Ordinant.ai can revert changes made to a file.
 
 ### How do I report a bug or suggest a feature?
 
-Please report bugs or suggest features on the Kilo Code [Issues page](https://github.com/Kilo-Org/kilocode/issues) and [Feature Requests page](https://github.com/Kilo-Org/kilocode/discussions/categories/ideas).
+Please report bugs or suggest features on the Ordinant.ai [Issues page](https://github.com/Ordinant-ai/ordinant-ai-extension/issues) and [Feature Requests page](https://github.com/Ordinant-ai/ordinant-ai-extension/discussions/categories/ideas).

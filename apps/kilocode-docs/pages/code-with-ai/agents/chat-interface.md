@@ -1,12 +1,12 @@
 ---
 title: "The Chat Interface"
-description: "Learn how to use the Kilo Code chat interface effectively"
+description: "Learn how to use the Ordinant.ai chat interface effectively"
 ---
 
-# Chatting with Kilo Code
+# Chatting with Ordinant.ai
 
 {% callout type="tip" %}
-**Bottom line:** Kilo Code is an AI coding assistant that lives in VS Code. You chat with it in plain English, and it writes, edits, and explains code for you.
+**Bottom line:** Ordinant.ai is an AI coding assistant that lives in VS Code. You chat with it in plain English, and it writes, edits, and explains code for you.
 {% /callout %}
 
 {% callout type="note" title="Prefer quick completions?" %}
@@ -15,15 +15,15 @@ If you're typing code in the editor and want AI to finish your line or block, ch
 
 ## Quick Setup
 
-Find the Kilo Code icon ({% kilo-code-icon /%}) in VS Code's Primary Side Bar. Click it to open the chat panel.
+Find the Ordinant.ai icon ({% kilo-code-icon /%}) in VS Code's Primary Side Bar. Click it to open the chat panel.
 
-**Lost the panel?** Go to View > Open View... and search for "Kilo Code"
+**Lost the panel?** Go to View > Open View... and search for "Ordinant.ai"
 
-## How to Talk to Kilo Code
+## How to Talk to Ordinant.ai
 
 **The key insight:** Just type what you want in normal English. No special commands needed.
 
-{% image src="/docs/img/typing-your-requests/typing-your-requests.png" alt="Example of typing a request in Kilo Code" width="800" caption="Example of typing a request in Kilo Code" /%}
+{% image src="/docs/img/typing-your-requests/typing-your-requests.png" alt="Example of typing a request in Ordinant.ai" width="800" caption="Example of typing a request in Ordinant.ai" /%}
 
 **Good requests:**
 
@@ -60,9 +60,9 @@ find all instances of the variable oldValue in @/src/App.js and replace them wit
 
 - **Chat history** - See your conversation and task history
 - **Input field** - Type your requests here (press Enter to send)
-- **Action buttons** - Approve or reject Kilo's proposed changes
+- **Action buttons** - Approve or reject Ordinant.ai's proposed changes
 - **Plus button** - Start a new task session
-- **Mode selector** - Choose how Kilo should approach your task
+- **Mode selector** - Choose how Ordinant.ai should approach your task
 
 ## Quick Interactions
 
@@ -75,20 +75,20 @@ find all instances of the variable oldValue in @/src/App.js and replace them wit
 
 **Status signals:**
 
-- Spinning → Kilo is working
+- Spinning → Ordinant.ai is working
 - Red → Error occurred
 - Green → Success
 
 ## Common Mistakes to Avoid
 
-| Instead of this...                | Try this                                                             |
-| --------------------------------- | -------------------------------------------------------------------- |
-| "Fix the code"                    | "Fix the bug in `calculateTotal` that returns incorrect results"     |
-| Assuming Kilo knows context       | Use `@` to reference specific files                                  |
-| Multiple unrelated tasks          | Submit one focused request at a time                                 |
-| Technical jargon overload         | Clear, straightforward language works best                           |
-| Using chat for tiny code changes. | Use [autocomplete](/basic-usage/autocomplete) for inline completions |
+| Instead of this...                 | Try this                                                             |
+| ---------------------------------- | -------------------------------------------------------------------- |
+| "Fix the code"                     | "Fix the bug in `calculateTotal` that returns incorrect results"     |
+| Assuming Ordinant.ai knows context | Use `@` to reference specific files                                  |
+| Multiple unrelated tasks           | Submit one focused request at a time                                 |
+| Technical jargon overload          | Clear, straightforward language works best                           |
+| Using chat for tiny code changes.  | Use [autocomplete](/basic-usage/autocomplete) for inline completions |
 
-**Why it matters:** Kilo Code works best when you communicate like you're talking to a smart teammate who needs clear direction.
+**Why it matters:** Ordinant.ai works best when you communicate like you're talking to a smart teammate who needs clear direction.
 
 Ready to start coding? Open the chat panel and describe what you want to build!

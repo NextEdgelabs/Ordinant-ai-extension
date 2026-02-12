@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Kilo Kode: Ditambahkan {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "Kilo Kode: Dihapus {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: Ditambahkan {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: Dihapus {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

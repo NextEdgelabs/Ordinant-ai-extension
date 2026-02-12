@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "किलो कोड: जोड़ा गया {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "किलो कोड: हटाया गया {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: जोड़ा गया {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: हटाया गया {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

@@ -105,8 +105,8 @@ async function fetchModelsFromProvider(options: GetModelsOptions): Promise<Model
 		// kilocode_change start
 		case "kilocode": {
 			const backendUrl = options.kilocodeOrganizationId
-				? `https://api.kilo.ai/api/organizations/${options.kilocodeOrganizationId}`
-				: "https://api.kilo.ai/api/openrouter"
+				? `https://api.ordinant.ai/api/organizations/${options.kilocodeOrganizationId}`
+				: "https://api.ordinant.ai/api/openrouter"
 			const openRouterBaseUrl = getKiloUrlFromToken(backendUrl, options.kilocodeToken ?? "")
 			models = await getOpenRouterModels({
 				openRouterBaseUrl,
@@ -159,7 +159,7 @@ async function fetchModelsFromProvider(options: GetModelsOptions): Promise<Model
 		// kilocode_change end
 		case "roo": {
 			// Roo Code Cloud provider requires baseUrl and optional apiKey
-			const rooBaseUrl = options.baseUrl ?? process.env.ROO_CODE_PROVIDER_URL ?? "https://api.roocode.com/proxy"
+			const rooBaseUrl = options.baseUrl ?? process.env.ROO_CODE_PROVIDER_URL ?? "https://api.ordinant.ai/proxy"
 			models = await getRooModels(rooBaseUrl, options.apiKey)
 			break
 		}

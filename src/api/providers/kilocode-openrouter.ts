@@ -36,7 +36,7 @@ export class KilocodeOpenrouterHandler extends OpenRouterHandler {
 	}
 
 	constructor(options: ApiHandlerOptions) {
-		const baseApiUrl = getKiloUrlFromToken("https://api.kilo.ai/api/", options.kilocodeToken ?? "")
+		const baseApiUrl = getKiloUrlFromToken("https://api.ordinant.ai/api/", options.kilocodeToken ?? "")
 
 		options = {
 			...options,

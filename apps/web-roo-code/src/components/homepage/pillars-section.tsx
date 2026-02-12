@@ -180,8 +180,10 @@ export function PillarsSection() {
 								<h4 className="font-semibold text-lg">Open source from the get go.</h4>
 								<div className="text-muted-foreground my-4 space-y-1">
 									<p>
-										The Roo Code Extension is{" "}
-										<Link target="_blank" href="https://github.com/RooCodeInc/Roo-Code">
+										The Ordinant.ai Extension is{" "}
+										<Link
+											target="_blank"
+											href="https://github.com/Ordinant-ai/ordinant-ai-extension">
 											open source
 										</Link>{" "}
 										so you can see for yourself exactly what it&apos;s doing and we don&apos;t use

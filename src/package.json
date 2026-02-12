@@ -387,7 +387,7 @@
 				{
 					"command": "ordinant-ai.helpButtonClicked",
 					"group": "navigation@8",
-					"when": "false && view == kilo-code.SidebarProvider"
+					"when": "false && view == ordinant-ai.SidebarProvider"
 				}
 			],
 			"editor/title": [

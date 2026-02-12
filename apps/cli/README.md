@@ -185,9 +185,9 @@ The CLI will look for API keys in environment variables if not provided via `--a
 
 **Authentication Environment Variables:**
 
-| Variable          | Description                                                          |
-| ----------------- | -------------------------------------------------------------------- |
-| `ROO_WEB_APP_URL` | Override the Roo Code Cloud URL (default: `https://app.roocode.com`) |
+| Variable          | Description                                                             |
+| ----------------- | ----------------------------------------------------------------------- |
+| `ROO_WEB_APP_URL` | Override the Ordinant.ai Cloud URL (default: `https://app.ordinant.ai`) |
 
 ## Architecture
 

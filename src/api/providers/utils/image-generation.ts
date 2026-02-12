@@ -219,7 +219,7 @@ export async function generateImageWithImagesApi(options: ImagesApiOptions): Pro
 			headers: {
 				Authorization: `Bearer ${authToken}`,
 				"Content-Type": "application/json",
-				"HTTP-Referer": "https://github.com/RooVetGit/Roo-Code",
+				"HTTP-Referer": "https://github.com/Ordinant-ai/ordinant-ai-extension",
 				"X-Title": "Ordinant.ai",
 			},
 			body: JSON.stringify(requestBody),

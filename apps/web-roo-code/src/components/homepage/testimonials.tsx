@@ -20,27 +20,27 @@ export const testimonials: Testimonial[] = [
 		name: "Luca",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "Roo Code is an absolute game-changer! 🚀 It makes coding faster, easier, and more intuitive with its smart AI-powered suggestions, real-time debugging, and automation features. The seamless integration with VS Code is a huge plus, and the constant updates ensure it keeps getting better",
+		quote: "Ordinant.ai is an absolute game-changer! 🚀 It makes coding faster, easier, and more intuitive with its smart AI-powered suggestions, real-time debugging, and automation features. The seamless integration with VS Code is a huge plus, and the constant updates ensure it keeps getting better",
 		stars: 5,
 	},
 	{
 		name: "Taro Woollett-Chiba",
 		role: "AI Product Lead",
 		origin: "Vendidit",
-		quote: "Easily the best AI code editor. Roo Code has the best features and capabilities, along with the best development team. I swear, they're the fastest to support new models and implement useful functionality whenever users mention it... simply amazing.",
+		quote: "Easily the best AI code editor. Ordinant.ai has the best features and capabilities, along with the best development team. I swear, they're the fastest to support new models and implement useful functionality whenever users mention it... simply amazing.",
 	},
 	{
 		name: "Can Nuri",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "Roo Code is one of the most inspiring projects I have seen for a long time. It shapes the way I think and deal with software development.",
+		quote: "Ordinant.ai is one of the most inspiring projects I have seen for a long time. It shapes the way I think and deal with software development.",
 		stars: 5,
 	},
 	{
 		name: "Michael",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "I switched from Windsurf to Roo Code in January and honestly, it's been a huge upgrade. Windsurf kept making mistakes and being dumb when I ask it for things. Roo just gets it. Projects that used to take a full day now wrap up before lunch. ",
+		quote: "I switched from Windsurf to Ordinant.ai in January and honestly, it's been a huge upgrade. Windsurf kept making mistakes and being dumb when I ask it for things. Ordinant.ai just gets it. Projects that used to take a full day now wrap up before lunch. ",
 		stars: 5,
 	},
 	{
@@ -54,7 +54,7 @@ export const testimonials: Testimonial[] = [
 		name: "Wiliam Azzam",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "I've tried Cursor, Windsurf, Cline, Trae and others, and although using RooCode with OpenRouter is more expensive, it is also far more effective. Its agents and initial setup, and learning how to use Code/Architect/Orchestrator, help a great deal in developing quality projects.",
+		quote: "I've tried Cursor, Windsurf, Cline, Trae and others, and although using Ordinant.ai with OpenRouter is more expensive, it is also far more effective. Its agents and initial setup, and learning how to use Code/Architect/Orchestrator, help a great deal in developing quality projects.",
 		stars: 5,
 	},
 	{
@@ -82,7 +82,7 @@ export const testimonials: Testimonial[] = [
 		name: "Matthew Martin",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "i spent a fortune trying to dial in various tools to get them to work the way i want, and then i found roocode.  customizable for your flavors on your terms.  this is what i always wanted.",
+		quote: "i spent a fortune trying to dial in various tools to get them to work the way i want, and then i found Ordinant.ai.  customizable for your flavors on your terms.  this is what i always wanted.",
 		stars: 5,
 	},
 	{
@@ -96,7 +96,7 @@ export const testimonials: Testimonial[] = [
 		name: "Sean McCann",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "Roo Code is impressively capable while staying refreshingly simple. It integrates seamlessly into VS Code and handles everything from generating code to refactoring with accuracy and speed. It feels like a natural part of the workflow—no clutter, just results. Extra points for the flexibility of the different agents and the ability to customize them to fit the job.",
+		quote: "Ordinant.ai is impressively capable while staying refreshingly simple. It integrates seamlessly into VS Code and handles everything from generating code to refactoring with accuracy and speed. It feels like a natural part of the workflow—no clutter, just results. Extra points for the flexibility of the different agents and the ability to customize them to fit the job.",
 		stars: 5,
 	},
 	{
@@ -110,7 +110,7 @@ export const testimonials: Testimonial[] = [
 		name: "Michael Scott",
 		role: "Reviewer",
 		origin: "VS Code Marketplace",
-		quote: "I've used all the IDEs and all the assistants - Roo Code is hands down the best of them. It's also one of the few that lets you bring your own API keys - no subscriptions required, just pay as you need/go! Fantastic team and support as well!",
+		quote: "I've used all the IDEs and all the assistants - Ordinant.ai is hands down the best of them. It's also one of the few that lets you bring your own API keys - no subscriptions required, just pay as you need/go! Fantastic team and support as well!",
 		stars: 5,
 	},
 ]

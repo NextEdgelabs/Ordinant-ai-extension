@@ -423,7 +423,7 @@ export class AgentManagerProvider implements vscode.Disposable {
 					SessionManager.init()
 						?.shareSession(message.sessionId as string)
 						.then((result) => {
-							const shareUrl = `https://app.kilo.ai/share/${result.share_id}`
+							const shareUrl = `https://app.ordinant.ai/share/${result.share_id}`
 
 							void vscode.env.clipboard.writeText(shareUrl)
 							vscode.window.showInformationMessage(
@@ -1992,7 +1992,7 @@ export class AgentManagerProvider implements vscode.Disposable {
 		const actionLabel = t("kilocode:agentManager.actions.getHelp")
 		vscode.window.showErrorMessage(errorMessage, actionLabel).then((selection) => {
 			if (selection === actionLabel) {
-				void vscode.env.openExternal(vscode.Uri.parse("https://kilo.ai/docs"))
+				void vscode.env.openExternal(vscode.Uri.parse("https://ordinant.ai/docs"))
 			}
 		})
 	}

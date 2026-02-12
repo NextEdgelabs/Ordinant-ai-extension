@@ -128,7 +128,7 @@ vi.mock("@roo-code/cloud", () => ({
 	BridgeOrchestrator: {
 		disconnect: mockBridgeOrchestratorDisconnect,
 	},
-	getRooCodeApiUrl: vi.fn().mockReturnValue("https://app.roocode.com"),
+	getRooCodeApiUrl: vi.fn().mockReturnValue("https://app.ordinant.ai"),
 }))
 
 vi.mock("@roo-code/telemetry", () => ({

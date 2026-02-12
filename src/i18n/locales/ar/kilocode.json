@@ -93,7 +93,7 @@
 		"progress": {
 			"title": "إنشاء رسالة الالتزام",
 			"analyzing": "جاري تحليل التغييرات...",
-			"connecting": "جاري الاتصال بكيلو كود...",
+			"connecting": "جاري الاتصال بـ Ordinant.ai...",
 			"generating": "جاري إنشاء رسالة الالتزام..."
 		},
 		"ui": {
@@ -210,7 +210,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "رمز كيلو: تم إضافة {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "كود كيلوجرام: تمت إزالة {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: تم إضافة {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: تمت إزالة {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

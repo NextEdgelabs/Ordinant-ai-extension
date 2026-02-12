@@ -1,13 +1,13 @@
 ---
-title: "Kilo CLI"
-description: "Using Kilo Code from the command line"
+title: "Ordinant.ai CLI"
+description: "Using Ordinant.ai from the command line"
 ---
 
-# Kilo CLI
+# Ordinant.ai CLI
 
 Orchestrate agents from your terminal. Plan, debug, and code fast with keyboard-first navigation on the command line.
 
-The Kilo Code CLI uses the same underlying technology that powers the IDE extensions, so you can expect the same workflow to handle agentic coding tasks from start to finish.
+The Ordinant.ai CLI uses the same underlying technology that powers the IDE extensions, so you can expect the same workflow to handle agentic coding tasks from start to finish.
 
 ## Install
 
@@ -33,14 +33,14 @@ to start the CLI and begin a new task with your preferred model and relevant mod
 
 ## Update
 
-Upgrade the Kilo CLI package:
+Upgrade the Ordinant.ai CLI package:
 
 `npm update -g @kilocode/cli`
 
-## What you can do with Kilo Code CLI
+## What you can do with Ordinant.ai CLI
 
 - **Plan and execute code changes without leaving your terminal.** Use your command line to make edits to your project without opening your IDE.
-- **Switch between hundreds of LLMs without constraints.** Other CLI tools only work with one model or curate opinionated lists. With Kilo, you can switch models without booting up another tool.
+- **Switch between hundreds of LLMs without constraints.** Other CLI tools only work with one model or curate opinionated lists. With Ordinant.ai, you can switch models without booting up another tool.
 - **Choose the right mode for the task in your workflow.** Select between Architect, Ask, Debug, Orchestrator, or custom agent modes.
 - **Automate tasks.** Get AI assistance writing shell scripts for tasks like renaming all of the files in a folder or transforming sizes for a set of images.
 - **Extend capabilities with skills.** Add domain expertise and repeatable workflows through [Agent Skills](#skills).
@@ -284,7 +284,7 @@ Project-specific commands override global commands with the same name, allowing 
 
 ## Checkpoint Management
 
-Kilo Code automatically creates checkpoints as you work, allowing you to revert to previous states in your project's history.
+Ordinant.ai automatically creates checkpoints as you work, allowing you to revert to previous states in your project's history.
 
 ### Viewing Checkpoints
 
@@ -400,9 +400,9 @@ Filter tasks by workspace or favorites:
 
 ## Config reference for providers
 
-Kilo gives you the ability to bring your own keys for a number of model providers and AI gateways, like OpenRouter and Vercel AI Gateway. Each provider has unique configuration options and some let you set environment variables.
+Ordinant.ai gives you the ability to bring your own keys for a number of model providers and AI gateways, like OpenRouter and Vercel AI Gateway. Each provider has unique configuration options and some let you set environment variables.
 
-You can reference the [Provider Configuration Guide](https://github.com/Kilo-Org/kilocode/blob/main/cli/docs/PROVIDER_CONFIGURATION.md) for examples if you want to edit .config files manually. You can also run:
+You can reference the [Provider Configuration Guide](https://github.com/Ordinant-ai/ordinant-ai-extension/blob/main/cli/docs/PROVIDER_CONFIGURATION.md) for examples if you want to edit .config files manually. You can also run:
 
 `kilocode config`
 
@@ -414,7 +414,7 @@ You can also use the `/config` slash command during an interactive session, whic
 
 ## Parallel mode
 
-Parallel mode allows multiple Kilo Code instances to work in parallel on the same directory, without conflicts. You can spawn as many Kilo Code instances as you need! Once finished, changes will be available on a separate git branch.
+Parallel mode allows multiple Ordinant.ai instances to work in parallel on the same directory, without conflicts. You can spawn as many Ordinant.ai instances as you need! Once finished, changes will be available on a separate git branch.
 
 ```bash
 # Prerequisite: must be within a valid git repository
@@ -434,7 +434,7 @@ kilocode --parallel --auto "improve abc"
 
 ## Auto-approval settings
 
-Auto-approval allows the Kilo Code CLI to perform operations without first requiring user confirmation. These settings can either be built up over time in interactive mode, or by editing your config file using `kilocode config` or editing the file directly at `~/.kilocode/config.json`.
+Auto-approval allows the Ordinant.ai CLI to perform operations without first requiring user confirmation. These settings can either be built up over time in interactive mode, or by editing your config file using `kilocode config` or editing the file directly at `~/.kilocode/config.json`.
 
 ### Default auto-approval settings
 
@@ -529,9 +529,9 @@ The `execute.allowed` and `execute.denied` lists support hierarchical pattern ma
 
 ## Interactive Mode
 
-Interactive mode is the default mode when running Kilo Code without the `--auto` flag, designed to work interactively with a user through the console.
+Interactive mode is the default mode when running Ordinant.ai without the `--auto` flag, designed to work interactively with a user through the console.
 
-In interactive mode Kilo Code will request approval for operations which have not been auto-approved, allowing the user to review and approve operations before they are executed, and optionally add them to the auto-approval list.
+In interactive mode Ordinant.ai will request approval for operations which have not been auto-approved, allowing the user to review and approve operations before they are executed, and optionally add them to the auto-approval list.
 
 ### Interactive Command Approval
 
@@ -556,7 +556,7 @@ This allows you to progressively build your auto-approval rules without manually
 
 ## Autonomous mode (Non-Interactive)
 
-Autonomous mode allows Kilo Code to run in automated environments like CI/CD pipelines without requiring user interaction.
+Autonomous mode allows Ordinant.ai to run in automated environments like CI/CD pipelines without requiring user interaction.
 
 ```bash
 # Run in autonomous mode with a prompt
@@ -583,7 +583,7 @@ When running in Autonomous mode (`--auto` flag):
 
 ### JSON Output Mode
 
-Use the `--json` flag with `--auto` to get structured JSON output instead of the default terminal UI. This is useful for programmatic integration and parsing of Kilo Code responses.
+Use the `--json` flag with `--auto` to get structured JSON output instead of the default terminal UI. This is useful for programmatic integration and parsing of Ordinant.ai responses.
 
 ```bash
 # Standard autonomous mode with terminal UI
@@ -624,7 +624,7 @@ This instructs the AI to proceed without user input.
 
 ```yaml
 # GitHub Actions example
-- name: Run Kilo Code
+- name: Run Ordinant.ai
   run: |
       echo "Implement the new feature" | kilocode --auto --timeout 600
 ```

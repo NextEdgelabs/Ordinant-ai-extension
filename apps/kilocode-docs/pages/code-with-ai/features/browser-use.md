@@ -1,23 +1,23 @@
 ---
 title: "Browser Use"
-description: "Using Kilo Code to interact with web browsers"
+description: "Using Ordinant.ai to interact with web browsers"
 ---
 
 # Browser Use
 
-Kilo Code provides sophisticated browser automation capabilities that let you interact with websites directly from VS Code. This feature enables testing web applications, automating browser tasks, and capturing screenshots without leaving your development environment.
+Ordinant.ai provides sophisticated browser automation capabilities that let you interact with websites directly from VS Code. This feature enables testing web applications, automating browser tasks, and capturing screenshots without leaving your development environment.
 
 {% callout type="info" title="Model Support Required" %}
-Browser Use within Kilo Code requires the use and advanced agentic model, and has only been tested with Claude Sonnet 3.5, 3.7, and 4
+Browser Use within Ordinant.ai requires the use and advanced agentic model, and has only been tested with Claude Sonnet 3.5, 3.7, and 4
 {% /callout %}
 
 ## How Browser Use Works
 
-By default, Kilo Code uses a built-in browser that:
+By default, Ordinant.ai uses a built-in browser that:
 
-- Launches automatically when you ask Kilo to visit a website
+- Launches automatically when you ask Ordinant.ai to visit a website
 - Captures screenshots of web pages
-- Allows Kilo to interact with web elements
+- Allows Ordinant.ai to interact with web elements
 - Runs invisibly in the background
 
 All of this happens directly within VS Code, with no setup required.
@@ -26,10 +26,10 @@ All of this happens directly within VS Code, with no setup required.
 
 A typical browser interaction follows this pattern:
 
-1. Ask Kilo to visit a website
-2. Kilo launches the browser and shows you a screenshot
+1. Ask Ordinant.ai to visit a website
+2. Ordinant.ai launches the browser and shows you a screenshot
 3. Request additional actions (clicking, typing, scrolling)
-4. Kilo closes the browser when finished
+4. Ordinant.ai closes the browser when finished
 
 For example:
 
@@ -38,7 +38,7 @@ Open the browser and view our site.
 ```
 
 ```
-Can you check if my website at https://kilocode.ai is displaying correctly?
+Can you check if my website at https://ordinant.ai is displaying correctly?
 ```
 
 ```
@@ -81,7 +81,7 @@ Key characteristics:
 
 ### Accessing Settings
 
-To change Browser / Computer Use settings in Kilo:
+To change Browser / Computer Use settings in Ordinant.ai:
 
 1. Open Settings by clicking the gear icon {% codicon name="gear" /%} → Browser / Computer Use
 
@@ -89,7 +89,7 @@ To change Browser / Computer Use settings in Kilo:
 
 ### Enable/Disable Browser Use
 
-**Purpose**: Master toggle that enables Kilo to interact with websites using a Puppeteer-controlled browser.
+**Purpose**: Master toggle that enables Ordinant.ai to interact with websites using a Puppeteer-controlled browser.
 
 To change this setting:
 
@@ -99,7 +99,7 @@ To change this setting:
 
 ### Viewport Size
 
-**Purpose**: Determines the resolution of the browser session Kilo Code uses.
+**Purpose**: Determines the resolution of the browser session Ordinant.ai uses.
 
 **Tradeoff**: Higher values provide a larger viewport but increase token usage.
 
@@ -135,7 +135,7 @@ To change this setting:
 
 ### Remote Browser Connection
 
-**Purpose**: Connect Kilo to an existing Chrome browser instead of using the built-in browser.
+**Purpose**: Connect Ordinant.ai to an existing Chrome browser instead of using the built-in browser.
 
 **Benefits**:
 
@@ -161,7 +161,7 @@ To enable this feature:
 
 #### Connecting to a Visible Chrome Window
 
-Connect to a visible Chrome window to observe Kilo's interactions in real-time:
+Connect to a visible Chrome window to observe Ordinant.ai's interactions in real-time:
 
 **macOS**
 

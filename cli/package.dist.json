@@ -114,9 +114,9 @@
 	},
 	"keywords": ["cli", "tui", "terminal", "ai", "assistant", "kilocode", "kilo", "ink"],
 	"author": {
-		"name": "Kilo Code"
+		"name": "Ordinant.ai"
 	},
-	"homepage": "https://kilo.ai/cli",
+	"homepage": "https://ordinant.ai/cli",
 	"bugs": {
 		"url": "https://github.com/Kilo-Org/kilocode/issues"
 	},

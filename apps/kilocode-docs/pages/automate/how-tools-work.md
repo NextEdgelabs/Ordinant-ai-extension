@@ -1,15 +1,15 @@
 ---
 title: How Tools Work
-description: Learn how Kilo Code's tools automate your development workflow
+description: Learn how Ordinant.ai's tools automate your development workflow
 ---
 
 # How Tools Work
 
-Kilo Code uses tools to interact with your code and environment. These specialized helpers perform specific actions like reading files, making edits, running commands, or searching your codebase. Tools provide automation for common development tasks without requiring manual execution.
+Ordinant.ai uses tools to interact with your code and environment. These specialized helpers perform specific actions like reading files, making edits, running commands, or searching your codebase. Tools provide automation for common development tasks without requiring manual execution.
 
 ## Tool Workflow
 
-Describe what you want to accomplish in natural language, and Kilo Code will:
+Describe what you want to accomplish in natural language, and Ordinant.ai will:
 
 1. Select the appropriate tool based on your request
 2. Present the tool with its parameters for your review
@@ -36,7 +36,7 @@ _The tool approval interface shows Save/Reject buttons and Auto-approve options.
 
 **User:** Create a file named `greeting.js` that logs a greeting message
 
-**Kilo Code:** (Proposes the `write_to_file` tool as shown in the image above)
+**Ordinant.ai:** (Proposes the `write_to_file` tool as shown in the image above)
 
 ```xml
 <write_to_file>
@@ -54,11 +54,11 @@ greet('World');
 
 **User:** (Clicks "Save" in the interface)
 
-**Kilo Code:** (Confirms file creation)
+**Ordinant.ai:** (Confirms file creation)
 
 ## Tool Safety and Approval
 
-Every tool use requires your explicit approval. When Kilo proposes a tool, you'll see:
+Every tool use requires your explicit approval. When Ordinant.ai proposes a tool, you'll see:
 
 - A "Save" button to approve and execute the tool
 - A "Reject" button to decline the proposed tool

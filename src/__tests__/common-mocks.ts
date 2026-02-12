@@ -316,7 +316,7 @@ export function setupCommonMocks() {
 		BridgeOrchestrator: {
 			isEnabled: vi.fn().mockReturnValue(false),
 		},
-		getRooCodeApiUrl: vi.fn().mockReturnValue("https://app.roocode.com"),
+		getRooCodeApiUrl: vi.fn().mockReturnValue("https://app.ordinant.ai"),
 	}))
 }
 

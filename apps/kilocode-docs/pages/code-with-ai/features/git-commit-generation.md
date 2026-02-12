@@ -5,7 +5,7 @@ description: "Automatically generate meaningful git commit messages"
 
 # Generate Commit Messages
 
-Generate descriptive commit messages automatically based on your staged git changes. Kilo Code analyzes your staged files and creates conventional commit messages that follow best practices.
+Generate descriptive commit messages automatically based on your staged git changes. Ordinant.ai analyzes your staged files and creates conventional commit messages that follow best practices.
 
 {% callout type="info" %}
 This feature only analyzes **staged changes**. Make sure to stage your files using `git add` or via `VS Code` interface before generating commit messages.
@@ -159,4 +159,4 @@ The feature integrates with VS Code's built-in git functionality. If you encount
 ## Related Features
 
 - [API Configuration Profiles](/features/api-configuration-profiles) - Use different models for commit generation
-- [Settings Management](/features/settings-management) - Manage all your Kilo Code preferences
+- [Settings Management](/features/settings-management) - Manage all your Ordinant.ai preferences

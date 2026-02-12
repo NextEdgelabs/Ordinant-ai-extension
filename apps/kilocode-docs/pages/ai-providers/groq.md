@@ -2,25 +2,25 @@
 sidebar_label: Groq
 ---
 
-# Using Groq With Kilo Code
+# Using Groq With Ordinant.ai
 
-Groq provides ultra-fast inference for various AI models through their high-performance infrastructure. Kilo Code supports accessing models through the Groq API.
+Groq provides ultra-fast inference for various AI models through their high-performance infrastructure. Ordinant.ai supports accessing models through the Groq API.
 
 **Website:** [https://groq.com/](https://groq.com/)
 
 ## Getting an API Key
 
-To use Groq with Kilo Code, you'll need an API key from the [GroqCloud Console](https://console.groq.com/). After signing up or logging in, navigate to the API Keys section of your dashboard to create and copy your key.
+To use Groq with Ordinant.ai, you'll need an API key from the [GroqCloud Console](https://console.groq.com/). After signing up or logging in, navigate to the API Keys section of your dashboard to create and copy your key.
 
 ## Supported Models
 
-Kilo Code will attempt to fetch the list of available models from the Groq API.
+Ordinant.ai will attempt to fetch the list of available models from the Groq API.
 
 **Note:** Model availability and specifications may change. Refer to the [Groq Documentation](https://console.groq.com/docs/models) for the most up-to-date list of supported models and their capabilities.
 
-## Configuration in Kilo Code
+## Configuration in Ordinant.ai
 
-1.  **Open Kilo Code Settings:** Click the gear icon ({% codicon name="gear" /%}) in the Kilo Code panel.
+1.  **Open Ordinant.ai Settings:** Click the gear icon ({% codicon name="gear" /%}) in the Ordinant.ai panel.
 2.  **Select Provider:** Choose "Groq" from the "API Provider" dropdown.
 3.  **Enter API Key:** Paste your Groq API key into the "Groq API Key" field.
 4.  **Select Model:** Choose your desired model from the "Model" dropdown.
@@ -28,13 +28,13 @@ Kilo Code will attempt to fetch the list of available models from the Groq API.
 ## Tips and Notes
 
 - **High-Speed Inference:** Groq's LPUs provide exceptionally fast response times, making it ideal for interactive development workflows.
-- **Token Limits:** Some models have specific `max_tokens` limits that are automatically handled by Kilo Code (e.g., the `moonshotai/kimi-k2-instruct` model).
+- **Token Limits:** Some models have specific `max_tokens` limits that are automatically handled by Ordinant.ai (e.g., the `moonshotai/kimi-k2-instruct` model).
 - **Cost Efficiency:** Groq often provides competitive pricing for high-speed inference compared to other providers.
 - **Model Selection:** Choose models based on your specific needs - larger models like `llama3-70b-8192` for complex reasoning tasks, or smaller models like `llama3-8b-8192` for faster, simpler operations.
 
 ## Supported Models
 
-Kilo Code supports the following models through Groq:
+Ordinant.ai supports the following models through Groq:
 
 | Model ID                      | Provider    | Context Window | Notes                                 |
 | ----------------------------- | ----------- | -------------- | ------------------------------------- |
@@ -46,9 +46,9 @@ Kilo Code supports the following models through Groq:
 
 **Note:** Model availability may change. Refer to the [Groq documentation](https://console.groq.com/docs/models) for the latest model list and specifications.
 
-## Configuration in Kilo Code
+## Configuration in Ordinant.ai
 
-1. **Open Kilo Code Settings:** Click the gear icon ({% codicon name="gear" /%}) in the Kilo Code panel.
+1. **Open Ordinant.ai Settings:** Click the gear icon ({% codicon name="gear" /%}) in the Ordinant.ai panel.
 2. **Select Provider:** Choose "Groq" from the "API Provider" dropdown.
 3. **Enter API Key:** Paste your Groq API key into the "Groq API Key" field.
 4. **Select Model:** Choose your desired model from the "Model" dropdown.

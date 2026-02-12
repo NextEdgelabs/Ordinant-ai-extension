@@ -1,6 +1,6 @@
 ## Project Overview
 
-This is the Kilo Code documentation site. Kilo Code is the leading open source agentic engineering platform.
+This is the Ordinant.ai documentation site. Ordinant.ai is the leading open source agentic engineering platform.
 
 ## Dev Server
 
@@ -24,7 +24,7 @@ We want to convert them to Markdoc image tags like this:
 
 {% image src="/docs/img/kilo-provider/connected-accounts.png" alt="Connect account screen" width="800" caption="Connect account screen" /%}
 
-Note that this site is served under kilo.ai/docs so the `/docs` MUST be present in every image tag.
+Note that this site is served under ordinant.ai/docs so the `/docs` MUST be present in every image tag.
 
 Image attributes
 

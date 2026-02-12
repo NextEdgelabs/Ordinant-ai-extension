@@ -306,7 +306,7 @@ describe.skip("TelemetryClient", () => {
 			})
 
 			expect(mockFetch).toHaveBeenCalledWith(
-				"https://app.roocode.com/api/events",
+				"https://app.ordinant.ai/api/events",
 				expect.objectContaining({
 					method: "POST",
 					body: JSON.stringify(mockValidatedData),
@@ -348,7 +348,7 @@ describe.skip("TelemetryClient", () => {
 
 			expect(mockSettingsService.isTaskSyncEnabled).toHaveBeenCalled()
 			expect(mockFetch).toHaveBeenCalledWith(
-				"https://app.roocode.com/api/events",
+				"https://app.ordinant.ai/api/events",
 				expect.objectContaining({
 					method: "POST",
 					body: JSON.stringify(mockValidatedData),
@@ -460,7 +460,7 @@ describe.skip("TelemetryClient", () => {
 			await client.backfillMessages(messages, "test-task-id")
 
 			expect(mockFetch).toHaveBeenCalledWith(
-				"https://app.roocode.com/api/events/backfill",
+				"https://app.ordinant.ai/api/events/backfill",
 				expect.objectContaining({
 					method: "POST",
 					headers: {
@@ -515,7 +515,7 @@ describe.skip("TelemetryClient", () => {
 			await client.backfillMessages(messages, "test-task-id")
 
 			expect(mockFetch).toHaveBeenCalledWith(
-				"https://app.roocode.com/api/events/backfill",
+				"https://app.ordinant.ai/api/events/backfill",
 				expect.objectContaining({
 					method: "POST",
 					headers: {
@@ -562,7 +562,7 @@ describe.skip("TelemetryClient", () => {
 			await client.backfillMessages(messages, "test-task-id")
 
 			expect(mockFetch).toHaveBeenCalledWith(
-				"https://app.roocode.com/api/events/backfill",
+				"https://app.ordinant.ai/api/events/backfill",
 				expect.objectContaining({
 					method: "POST",
 					headers: {
@@ -648,7 +648,7 @@ describe.skip("TelemetryClient", () => {
 			await client.backfillMessages([], "test-task-id")
 
 			expect(mockFetch).toHaveBeenCalledWith(
-				"https://app.roocode.com/api/events/backfill",
+				"https://app.ordinant.ai/api/events/backfill",
 				expect.objectContaining({
 					method: "POST",
 					headers: {

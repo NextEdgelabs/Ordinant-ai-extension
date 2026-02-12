@@ -45,7 +45,7 @@ export const KiloCode = ({
 
 	// Use the existing hook to get user identity
 	const userIdentity = useKiloIdentity(apiConfiguration.kilocodeToken || "", "")
-	const isKiloCodeAiUser = userIdentity.endsWith("@kilo.ai")
+	const isKiloCodeAiUser = userIdentity.endsWith("@ordinant.ai")
 
 	const areKilocodeWarningsDisabled = apiConfiguration.kilocodeTesterWarningsDisabledUntil
 		? apiConfiguration.kilocodeTesterWarningsDisabledUntil > Date.now()
@@ -126,7 +126,7 @@ export const KiloCode = ({
 				organizationAllowList={organizationAllowList}
 			/>
 
-			{/* KILOCODE-TESTER warnings setting - only visible for @kilo.ai users */}
+			{/* KILOCODE-TESTER warnings setting - only visible for @ordinant.ai users */}
 			{isKiloCodeAiUser && (
 				<div className="mb-4">
 					<label className="block font-medium mb-2">Disable KILOCODE-TESTER warnings</label>

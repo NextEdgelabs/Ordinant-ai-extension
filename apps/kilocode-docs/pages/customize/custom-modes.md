@@ -1,15 +1,15 @@
 ---
 title: "Custom Modes"
-description: "Create and configure custom modes in Kilo Code"
+description: "Create and configure custom modes in Ordinant.ai"
 ---
 
 # Custom Modes
 
-Kilo Code allows you to create **custom modes** to tailor Kilo's behavior to specific tasks or workflows. Custom modes can be either **global** (available across all projects) or **project-specific** (defined within a single project).
+Ordinant.ai allows you to create **custom modes** to tailor Ordinant.ai's behavior to specific tasks or workflows. Custom modes can be either **global** (available across all projects) or **project-specific** (defined within a single project).
 
 ## Sticky Models for Efficient Workflow
 
-Each mode—including custom ones—features **Sticky Models**. This means Kilo Code automatically remembers and selects the last model you used with a particular mode. This lets you assign different preferred models to different tasks without constant reconfiguration, as Kilo switches between models when you change modes.
+Each mode—including custom ones—features **Sticky Models**. This means Ordinant.ai automatically remembers and selects the last model you used with a particular mode. This lets you assign different preferred models to different tasks without constant reconfiguration, as Ordinant.ai switches between models when you change modes.
 
 ## Why Use Custom Modes?
 
@@ -20,21 +20,21 @@ Each mode—including custom ones—features **Sticky Models**. This means Kilo 
 
 {% image src="/docs/img/custom-modes/custom-modes.png" alt="Overview of custom modes interface" width="600" caption="Overview of custom modes interface" /%}
 
-_Kilo Code's interface for creating and managing custom modes._
+_Ordinant.ai's interface for creating and managing custom modes._
 
 ## What's Included in a Custom Mode?
 
-Custom modes are defined by several key properties. Understanding these concepts will help you tailor Kilo's behavior effectively.
+Custom modes are defined by several key properties. Understanding these concepts will help you tailor Ordinant.ai's behavior effectively.
 
-| UI Field / YAML Property                       | Conceptual Description                                                                                                                                                               |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Slug** (`slug`)                              | A unique internal identifier for the mode. Used by Kilo Code to reference the mode, especially for associating mode-specific instruction files.                                      |
-| **Name** (`name`)                              | The display name for the mode as it appears in the Kilo Code user interface. Should be human-readable and descriptive.                                                               |
-| **Description** (`description`)                | A short, user-friendly summary of the mode's purpose displayed in the mode selector UI. Keep this concise and focused on what the mode does for the user.                            |
-| **Role Definition** (`roleDefinition`)         | Defines the core identity and expertise of the mode. This text is placed at the beginning of the system prompt and defines Kilo's personality and behavior when this mode is active. |
-| **Available Tools** (`groups`)                 | Defines the allowed toolsets and file access permissions for the mode. Corresponds to selecting which general categories of tools the mode can use.                                  |
-| **When to Use** (`whenToUse`)                  | _(Optional)_ Provides guidance for Kilo's automated decision-making, particularly for mode selection and task orchestration. Used by the Orchestrator mode for task coordination.    |
-| **Custom Instructions** (`customInstructions`) | _(Optional)_ Specific behavioral guidelines or rules for the mode. Added near the end of the system prompt to further refine Kilo's behavior.                                        |
+| UI Field / YAML Property                       | Conceptual Description                                                                                                                                                                      |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Slug** (`slug`)                              | A unique internal identifier for the mode. Used by Ordinant.ai to reference the mode, especially for associating mode-specific instruction files.                                           |
+| **Name** (`name`)                              | The display name for the mode as it appears in the Ordinant.ai user interface. Should be human-readable and descriptive.                                                                    |
+| **Description** (`description`)                | A short, user-friendly summary of the mode's purpose displayed in the mode selector UI. Keep this concise and focused on what the mode does for the user.                                   |
+| **Role Definition** (`roleDefinition`)         | Defines the core identity and expertise of the mode. This text is placed at the beginning of the system prompt and defines Ordinant.ai's personality and behavior when this mode is active. |
+| **Available Tools** (`groups`)                 | Defines the allowed toolsets and file access permissions for the mode. Corresponds to selecting which general categories of tools the mode can use.                                         |
+| **When to Use** (`whenToUse`)                  | _(Optional)_ Provides guidance for Ordinant.ai's automated decision-making, particularly for mode selection and task orchestration. Used by the Orchestrator mode for task coordination.    |
+| **Custom Instructions** (`customInstructions`) | _(Optional)_ Specific behavioral guidelines or rules for the mode. Added near the end of the system prompt to further refine Ordinant.ai's behavior.                                        |
 
 ## Import/Export Modes
 
@@ -56,7 +56,7 @@ Easily share, back up, and template your custom modes. This feature lets you exp
 2. Select the mode you wish to export
 3. Click the Export Mode button (download icon)
 4. Choose a location to save the `.yaml` file
-5. Kilo packages the mode's configuration and any rules into the YAML file
+5. Ordinant.ai packages the mode's configuration and any rules into the YAML file
 
 **Importing a Mode:**
 
@@ -78,19 +78,19 @@ When importing modes, you can change the slug in the exported YAML file before i
 
 You can create and configure custom modes in several ways:
 
-### 1. Ask Kilo! (Recommended)
+### 1. Ask Ordinant.ai! (Recommended)
 
-You can quickly create a basic custom mode by asking Kilo Code to do it for you. For example:
+You can quickly create a basic custom mode by asking Ordinant.ai to do it for you. For example:
 
 ```
 Create a new mode called "Documentation Writer". It should only be able to read files and write Markdown files.
 ```
 
-Kilo Code will guide you through the process, prompting for necessary information and creating the mode using the preferred YAML format.
+Ordinant.ai will guide you through the process, prompting for necessary information and creating the mode using the preferred YAML format.
 
 ### 2. Using the Prompts Tab
 
-1. **Open Prompts Tab:** Click the <Codicon name="notebook" /> icon in the Kilo Code top menu bar
+1. **Open Prompts Tab:** Click the <Codicon name="notebook" /> icon in the Ordinant.ai top menu bar
 2. **Create New Mode:** Click the <Codicon name="add" /> button to the right of the Modes heading
 3. **Fill in Fields:**
 
@@ -98,11 +98,11 @@ Kilo Code will guide you through the process, prompting for necessary informatio
 
 _The custom mode creation interface showing fields for name, slug, description, save location, role definition, available tools, custom instructions._
 
-The interface provides fields for Name, Slug, Description, Save Location, Role Definition, When to Use (optional), Available Tools, and Custom Instructions. After filling these, click the "Create Mode" button. Kilo Code will save the new mode in YAML format.
+The interface provides fields for Name, Slug, Description, Save Location, Role Definition, When to Use (optional), Available Tools, and Custom Instructions. After filling these, click the "Create Mode" button. Ordinant.ai will save the new mode in YAML format.
 
 ### 3. Manual Configuration (YAML & JSON)
 
-You can directly edit the configuration files to create or modify custom modes. This method offers the most control over all properties. Kilo Code now supports both YAML (preferred) and JSON formats.
+You can directly edit the configuration files to create or modify custom modes. This method offers the most control over all properties. Ordinant.ai now supports both YAML (preferred) and JSON formats.
 
 - **Global Modes:** Edit the `custom_modes.yaml` (preferred) or `custom_modes.json` file. Access it via Prompts Tab > <Codicon name="gear" /> (Settings Menu icon next to "Global Prompts") > "Edit Global Modes"
 - **Project Modes:** Edit the `.kilocodemodes` file (which can be YAML or JSON) in your project root. Access it via Prompts Tab > <Codicon name="gear" /> (Settings Menu icon next to "Project Prompts") > "Edit Project Modes"
@@ -170,7 +170,7 @@ customModes:
 
 ### `name`
 
-- **Purpose:** The display name shown in the Kilo Code UI
+- **Purpose:** The display name shown in the Ordinant.ai UI
 - **Format:** Can include spaces and proper capitalization
 
 **YAML Example:** `name: 📝 Documentation Writer`
@@ -239,9 +239,9 @@ groups:
 
 ### `whenToUse` (Optional)
 
-- **Purpose:** Provides guidance for Kilo's automated decision-making, particularly for mode selection and task orchestration
+- **Purpose:** Provides guidance for Ordinant.ai's automated decision-making, particularly for mode selection and task orchestration
 - **Format:** A string describing ideal scenarios or task types for this mode
-- **Usage:** Used by Kilo for automated decisions and not displayed in the mode selector UI
+- **Usage:** Used by Ordinant.ai for automated decisions and not displayed in the mode selector UI
 
 **YAML Example:** `whenToUse: This mode is best for refactoring Python code.`
 **JSON Example:** `"whenToUse": "This mode is best for refactoring Python code."`
@@ -272,7 +272,7 @@ YAML is now the preferred format for defining custom modes due to several advant
 - **Less Punctuation:** YAML generally requires less punctuation compared to JSON, reducing syntax errors
 - **Editor Support:** Most modern code editors provide excellent syntax highlighting and validation for YAML files
 
-While JSON is still fully supported, new modes created via the UI or by asking Kilo will default to YAML.
+While JSON is still fully supported, new modes created via the UI or by asking Ordinant.ai will default to YAML.
 
 ## Migration to YAML Format
 
@@ -280,7 +280,7 @@ While JSON is still fully supported, new modes created via the UI or by asking K
 
 Automatic migration from `custom_modes.json` to `custom_modes.yaml` happens when:
 
-- Kilo Code starts up
+- Ordinant.ai starts up
 - A `custom_modes.json` file exists
 - No `custom_modes.yaml` file exists yet
 
@@ -289,9 +289,9 @@ The migration process preserves the original JSON file for rollback purposes.
 ### Project Modes (`.kilocodemodes`)
 
 - No automatic startup migration occurs for project-specific files
-- Kilo Code can read `.kilocodemodes` files in either YAML or JSON format
+- Ordinant.ai can read `.kilocodemodes` files in either YAML or JSON format
 - When editing through the UI, JSON files will be converted to YAML format
-- For manual conversion, you can ask Kilo to help reformat configurations
+- For manual conversion, you can ask Ordinant.ai to help reformat configurations
 
 ## Mode-Specific Instructions via Files/Directories
 
@@ -335,7 +335,7 @@ Mode configurations are applied in this order:
 
 ## Overriding Default Modes
 
-You can override Kilo Code's built-in modes (like 💻 Code, 🪲 Debug, ❓ Ask, 🏗️ Architect, 🪃 Orchestrator) by creating a custom mode with the same slug.
+You can override Ordinant.ai's built-in modes (like 💻 Code, 🪲 Debug, ❓ Ask, 🏗️ Architect, 🪃 Orchestrator) by creating a custom mode with the same slug.
 
 ### Global Override Example
 
@@ -376,15 +376,15 @@ Regular expressions (`fileRegex`) offer fine-grained control over file editing p
 
 {% callout type="tip" %}
 
-**Let Kilo Build Your Regex Patterns**
+**Let Ordinant.ai Build Your Regex Patterns**
 
-Instead of writing complex regex manually, ask Kilo:
+Instead of writing complex regex manually, ask Ordinant.ai:
 
 ```
 Create a regex pattern that matches JavaScript files but excludes test files
 ```
 
-Kilo will generate the pattern. Remember to adapt it for YAML (usually single backslashes) or JSON (double backslashes).
+Ordinant.ai will generate the pattern. Remember to adapt it for YAML (usually single backslashes) or JSON (double backslashes).
 
 {% /callout %}
 
@@ -498,4 +498,4 @@ customModes:
 
 ## Community Gallery
 
-Ready to explore more? Check out the [Show and Tell](https://github.com/Kilo-Org/kilocode/discussions/categories/show-and-tell) to discover and share custom modes created by the community!
+Ready to explore more? Check out the [Show and Tell](https://github.com/Ordinant-ai/ordinant-ai-extension/discussions/categories/show-and-tell) to discover and share custom modes created by the community!

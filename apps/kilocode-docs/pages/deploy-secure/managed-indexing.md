@@ -5,7 +5,7 @@ description: "Cloud-managed codebase indexing"
 
 # Managed Indexing
 
-Kilo's **Managed Indexing** feature provides semantic search across your repositories using cloud-hosted embeddings. When enabled, Kilo indexes your codebase to deliver more relevant, context-aware responses during development.
+Ordinant.ai's **Managed Indexing** feature provides semantic search across your repositories using cloud-hosted embeddings. When enabled, Ordinant.ai indexes your codebase to deliver more relevant, context-aware responses during development.
 
 ---
 
@@ -71,12 +71,12 @@ Organization-wide indexing is enabled for any organization that has a credit bal
 - **Base branch** — Indexed in its entirety
 - **Feature branches** — Only changes from the base branch are indexed
 - **Detached HEAD states** — Not indexed
-- **Storage** — Embeddings are stored in Kilo Cloud. Your actual code is never stored, only the vector embeddings.
+- **Storage** — Embeddings are stored in Ordinant.ai Cloud. Your actual code is never stored, only the vector embeddings.
 - **Team sharing** — For teams and enterprise accounts, indexes are shared among all team members.
 
 ### Index Retention
 
-Indexes are stored for **7 days**. If a branch or repository index hasn't been updated within that window, it will be garbage collected. The next time you open the project in VS Code with Kilo running, it will be re-indexed automatically.
+Indexes are stored for **7 days**. If a branch or repository index hasn't been updated within that window, it will be garbage collected. The next time you open the project in VS Code with Ordinant.ai running, it will be re-indexed automatically.
 
 This retention policy keeps costs minimal by only maintaining indexes for actively used code.
 
@@ -84,7 +84,7 @@ This retention policy keeps costs minimal by only maintaining indexes for active
 
 ## Managing Your Indexes
 
-A minimal UI is available at [app.kilo.ai](https://app.kilo.ai) to:
+A minimal UI is available at [app.ordinant.ai](https://app.ordinant.ai) to:
 
 - View the size and status of your indexed projects
 - Delete old branches & projects.

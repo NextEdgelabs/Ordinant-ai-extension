@@ -1,11 +1,11 @@
 ---
 title: "Installation"
-description: "How to install Kilo Code on your system"
+description: "How to install Ordinant.ai on your system"
 ---
 
 # Installation
 
-Get started with Kilo Code by installing it on your preferred platform. Choose your development environment below:
+Get started with Ordinant.ai by installing it on your preferred platform. Choose your development environment below:
 
 ## Choose Your Platform
 
@@ -51,13 +51,13 @@ Get started with Kilo Code by installing it on your preferred platform. Choose y
 
 [Open VSX Registry](https://open-vsx.org/) is an open-source alternative to the VS Code Marketplace for VS Code-compatible editors that cannot access the official marketplace due to licensing restrictions.
 
-For VS Code-compatible editors like VSCodium, Gitpod, Eclipse Theia, and Windsurf, you can browse and install directly from the [Kilo Code page on Open VSX Registry](https://open-vsx.org/extension/kilocode/Kilo-Code).
+For VS Code-compatible editors like VSCodium, Gitpod, Eclipse Theia, and Windsurf, you can browse and install directly from the [Ordinant.ai page on Open VSX Registry](https://open-vsx.org/extension/ordinant-ai/ordinant-ai-extension).
 
 1. Open your editor
 2. Access the Extensions view (Side Bar icon or `Ctrl+Shift+X` / `Cmd+Shift+X`)
 3. Your editor should be pre-configured to use Open VSX Registry
-4. Search for "Kilo Code"
-5. Select "Kilo Code" and click **Install**
+4. Search for "Ordinant.ai"
+5. Select "Ordinant.ai" and click **Install**
 6. Reload the editor if prompted
 
 {% callout type="note" %}
@@ -70,8 +70,8 @@ If you prefer to download and install the VSIX file directly:
 
 1. **Download the VSIX file:**
 
-    - Find official releases on the [Kilo Code GitHub Releases page](https://github.com/Kilo-Org/kilocode/releases)
-    - Download the `.vsix` file from the [latest release](https://github.com/Kilo-Org/kilocode/releases/latest)
+    - Find official releases on the [Ordinant.ai GitHub Releases page](https://github.com/Ordinant-ai/ordinant-ai-extension/releases)
+    - Download the `.vsix` file from the [latest release](https://github.com/Ordinant-ai/ordinant-ai-extension/releases/latest)
 
 2. **Install in VS Code:**
     - Open VS Code
@@ -80,16 +80,16 @@ If you prefer to download and install the VSIX file directly:
     - Select "Install from VSIX..."
     - Browse to and select your downloaded `.vsix` file
 
-{% image src="/docs/img/installing-vsix.png" alt="Installing Kilo Code using VS Code's Install from VSIX dialog" width="600px" caption="Installing Kilo Code using VS Code's \"Install from VSIX\" dialog" /%}
+{% image src="/docs/img/installing-vsix.png" alt="Installing Ordinant.ai using VS Code's Install from VSIX dialog" width="600px" caption="Installing Ordinant.ai using VS Code's \"Install from VSIX\" dialog" /%}
 
 ## Troubleshooting
 
 **Extension Not Visible**
 
 - Restart VS Code
-- Verify Kilo Code is listed and enabled in Extensions
+- Verify Ordinant.ai is listed and enabled in Extensions
 - Try disabling and re-enabling the extension in Extensions
-- Check Output panel for errors (View → Output, select "Kilo Code")
+- Check Output panel for errors (View → Output, select "Ordinant.ai")
 
 **Installation Problems**
 
@@ -111,12 +111,12 @@ After installation, check out these resources to get started:
 
 - [Quickstart Guide](/docs/getting-started/quickstart) - Get up and running in minutes
 - [Setting Up Authentication](/docs/getting-started/setup-authentication) - Configure your AI provider
-- [Your First Task](/docs/code-with-ai/agents/chat-interface) - Learn the basics of working with Kilo Code
+- [Your First Task](/docs/code-with-ai/agents/chat-interface) - Learn the basics of working with Ordinant.ai
 
 ## Getting Support
 
 If you encounter issues not covered here:
 
-- Join our [Discord community](https://kilo.ai/discord) for real-time support
-- Submit issues on [GitHub](https://github.com/Kilo-Org/kilocode/issues)
-- Visit our [Reddit community](https://www.reddit.com/r/KiloCode)
+- Join our [Discord community](https://ordinant.ai/discord) for real-time support
+- Submit issues on [GitHub](https://github.com/Ordinant-ai/ordinant-ai-extension/issues)
+- Visit our [Reddit community](https://www.reddit.com/r/OrdinantAI)

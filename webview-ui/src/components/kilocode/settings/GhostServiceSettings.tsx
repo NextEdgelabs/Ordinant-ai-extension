@@ -281,7 +281,7 @@ export const GhostServiceSettingsView = ({
 									</div>
 									<div className="text-vscode-descriptionForeground">
 										<a
-											href="https://kilo.ai/credits"
+											href="https://ordinant.ai/credits"
 											className="text-vscode-textLink-foreground hover:underline">
 											{t("kilocode:ghost.settings.noCredits.buyCredits")}
 										</a>
@@ -302,7 +302,7 @@ export const GhostServiceSettingsView = ({
 									</ul>
 									<div className="text-vscode-descriptionForeground">
 										<a
-											href="https://kilo.ai/docs/basic-usage/autocomplete"
+											href="https://ordinant.ai/docs/basic-usage/autocomplete"
 											className="text-vscode-textLink-foreground hover:underline">
 											{t("kilocode:ghost.settings.noModelConfigured.learnMore")}
 										</a>

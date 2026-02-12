@@ -33,23 +33,23 @@ const mainNavItems: NavItem[] = [
 ]
 
 const contributingItems: DropdownItem[] = [
-	{ label: "Contributing Guide", href: "/contributing", description: "How to contribute to Kilo Code" },
+	{ label: "Contributing Guide", href: "/contributing", description: "How to contribute to Ordinant.ai" },
 	{
 		label: "Code of Conduct",
-		href: "https://github.com/Kilo-Org/kilocode?tab=coc-ov-file",
+		href: "https://github.com/Ordinant-ai/ordinant-ai-extension?tab=coc-ov-file",
 		description: "Our community guidelines",
 	},
-	{ label: "GitHub Repository", href: "https://github.com/Kilo-Org/", description: "View source and issues" },
-	{ label: "Discord Community", href: "https://kilo.ai/discord", description: "Join our community" },
+	{ label: "GitHub Repository", href: "https://github.com/Ordinant-ai/", description: "View source and issues" },
+	{ label: "Discord Community", href: "https://ordinant.ai/discord", description: "Join our community" },
 ]
 
 const helpItems: DropdownItem[] = [
 	{ label: "Documentation", href: "/", description: "Browse all documentation" },
 	{ label: "FAQ", href: "/getting-started/faq", description: "Frequently asked questions" },
-	{ label: "Support", href: "https://kilo.ai/support", description: "Get help from the team" },
+	{ label: "Support", href: "https://ordinant.ai/support", description: "Get help from the team" },
 	{
 		label: "Changelog",
-		href: "https://github.com/Kilo-Org/kilocode/releases",
+		href: "https://github.com/Ordinant-ai/ordinant-ai-extension/releases",
 		description: "Latest updates and releases",
 	},
 ]

@@ -455,8 +455,8 @@ export class McpOAuthService {
 		// Client metadata according to RFC 7591
 		const clientMetadata = {
 			client_name: "Ordinant.ai",
-			client_uri: "https://kilocode.ai",
-			logo_uri: "https://kilocode.ai/logo.png",
+			client_uri: "https://ordinant.ai",
+			logo_uri: "https://ordinant.ai/logo.png",
 			redirect_uris: redirectUris,
 			grant_types: ["authorization_code"],
 			response_types: ["code"],

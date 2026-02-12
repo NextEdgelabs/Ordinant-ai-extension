@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Kód kilo: Přidáno {{source}} {{configType}}: {{name}}{{modeStr}}",
-		"removed": "Kód Kilo: Odstraněno {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: Přidáno {{source}} {{configType}}: {{name}}{{modeStr}}",
+		"removed": "Ordinant.ai: Odstraněno {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

@@ -55,13 +55,13 @@
 		"activated": "Générateur de messages de commit Ordinant.ai activé",
 		"gitNotFound": "⚠️ Dépôt Git introuvable ou git non disponible",
 		"gitInitError": "⚠️ Erreur d'initialisation Git : {{error}}",
-		"generating": "Kilo : Génération du message de commit...",
-		"noChanges": "Kilo : Aucun changement trouvé à analyser",
-		"generated": "Kilo : Message de commit généré !",
-		"generationFailed": "Kilo : Échec de la génération du message de commit : {{errorMessage}}",
-		"generatingFromUnstaged": "Kilo : Génération du message à partir des modifications non préparées",
-		"activationFailed": "Kilo : Échec de l'activation du générateur de messages : {{error}}",
-		"providerRegistered": "Kilo : Fournisseur de messages de commit enregistré",
+		"generating": "Ordinant.ai: Génération du message de commit...",
+		"noChanges": "Ordinant.ai: Aucun changement trouvé à analyser",
+		"generated": "Ordinant.ai: Message de commit généré !",
+		"generationFailed": "Ordinant.ai: Échec de la génération du message de commit : {{errorMessage}}",
+		"generatingFromUnstaged": "Ordinant.ai: Génération du message à partir des modifications non préparées",
+		"activationFailed": "Ordinant.ai: Échec de l'activation du générateur de messages : {{error}}",
+		"providerRegistered": "Ordinant.ai: Fournisseur de messages de commit enregistré",
 		"errors": {
 			"noProject": "Aucun projet disponible",
 			"timeout": "La requête a expiré après 30 secondes",
@@ -155,19 +155,19 @@
 		}
 	},
 	"terminalCommandGenerator": {
-		"inputPrompt": "Kilo : Décrivez la commande que vous souhaitez générer",
+		"inputPrompt": "Ordinant.ai: Décrivez la commande que vous souhaitez générer",
 		"inputPlaceholder": "par exemple, arrêter le processus en cours d'exécution sur le port 3001, trouver des fichiers volumineux, etc.",
-		"noActiveTerminal": "Kilo : Aucun terminal actif trouvé. Veuillez d'abord ouvrir un terminal.",
-		"generatingProgress": "Kilo : Génération de la commande terminal...",
-		"commandGenerated": "Kilo : Commande générée : {{command}}",
-		"generationFailed": "Kilo : Échec de la génération de la commande : {{error}}",
+		"noActiveTerminal": "Ordinant.ai: Aucun terminal actif trouvé. Veuillez d'abord ouvrir un terminal.",
+		"generatingProgress": "Ordinant.ai: Génération de la commande terminal...",
+		"commandGenerated": "Ordinant.ai: Commande générée : {{command}}",
+		"generationFailed": "Ordinant.ai: Échec de la génération de la commande : {{error}}",
 		"warningDialog": {
 			"title": "Avertissement de Sécurité du Terminal",
 			"okButton": "Je comprends",
 			"message": "Vérifiez attentivement toutes les commandes générées avant de les exécuter. Les actions effectuées dans le terminal ne peuvent pas toujours être annulées — l'exécution de commandes non vérifiées peut entraîner une perte irréversible de données ou endommager votre système. Examinez et comprenez entièrement la commande avant de continuer !",
 			"cancelButton": "Annuler"
 		},
-		"tipMessage": "Kilo : Appuyez sur {{shortcut}} pour générer des commandes de terminal"
+		"tipMessage": "Ordinant.ai: Appuyez sur {{shortcut}} pour générer des commandes de terminal"
 	},
 	"seeNewChanges": {
 		"title": "Affichage des nouveaux changements",
@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"removed": "Code Kilo : Supprimé {{source}} {{configType}} : {{name}}{{modeStr}}",
-		"added": "Code Kilo : Ajouté {{source}} {{configType}} : {{name}}{{modeStr}}"
+		"removed": "Ordinant.ai: Supprimé {{source}} {{configType}} : {{name}}{{modeStr}}",
+		"added": "Ordinant.ai: Ajouté {{source}} {{configType}} : {{name}}{{modeStr}}"
 	}
 }

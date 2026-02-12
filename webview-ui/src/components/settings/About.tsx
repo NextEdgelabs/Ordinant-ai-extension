@@ -64,7 +64,7 @@ export const About = ({
 						<Trans
 							i18nKey="settings:footer.telemetry.description"
 							components={{
-								privacyLink: <VSCodeLink href="https://kilo.ai/privacy" />,
+								privacyLink: <VSCodeLink href="https://ordinant.ai/privacy" />,
 							}}
 						/>
 					</p>
@@ -74,9 +74,9 @@ export const About = ({
 					<Trans
 						i18nKey="settings:footer.feedback"
 						components={{
-							githubLink: <VSCodeLink href="https://github.com/Kilo-Org/kilocode" />,
-							redditLink: <VSCodeLink href="https://reddit.com/r/kilocode" />,
-							discordLink: <VSCodeLink href="https://kilo.ai/discord" />,
+							githubLink: <VSCodeLink href="https://github.com/Ordinant-ai/ordinant-ai-extension" />,
+							redditLink: <VSCodeLink href="https://reddit.com/r/OrdinantAI" />,
+							discordLink: <VSCodeLink href="https://ordinant.ai/discord" />,
 						}}
 					/>
 				</div>
@@ -86,7 +86,7 @@ export const About = ({
 					<Trans
 						i18nKey="settings:footer.support"
 						components={{
-							supportLink: <VSCodeLink href="https://kilo.ai/support" />,
+							supportLink: <VSCodeLink href="https://ordinant.ai/support" />,
 						}}
 					/>
 				</div>

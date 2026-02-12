@@ -89,7 +89,7 @@ export class ContributionTrackingService {
 	private async fetchToken(organizationId: string, kilocodeToken: string): Promise<TokenProvisionResponse> {
 		try {
 			const url = getKiloUrlFromToken(
-				`https://api.kilo.ai/api/organizations/${organizationId}/user-tokens`,
+				`https://api.ordinant.ai/api/organizations/${organizationId}/user-tokens`,
 				kilocodeToken,
 			)
 

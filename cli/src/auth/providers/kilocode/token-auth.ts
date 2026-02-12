@@ -15,7 +15,7 @@ import { withRawMode } from "../../utils/terminal.js"
  */
 export async function authenticateWithToken(): Promise<AuthResult> {
 	console.log("\n🔑 Manual Token Authentication\n")
-	console.log("Please navigate to https://app.kilo.ai and copy your API key from the bottom of the page!\n")
+	console.log("Please navigate to https://app.ordinant.ai and copy your API key from the bottom of the page!\n")
 
 	let kilocodeToken: string = ""
 	let profileData

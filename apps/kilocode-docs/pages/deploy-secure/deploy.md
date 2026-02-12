@@ -1,13 +1,13 @@
 ---
 title: "Deploy"
-description: "Deploy your applications with Kilo Code"
+description: "Deploy your applications with Ordinant.ai"
 ---
 
 # Deploy
 
-Kilo Deploy lets you ship **Next.js** and **static sites** directly from Kilo Code, with:
+Ordinant Deploy lets you ship **Next.js** and **static sites** directly from Ordinant.ai, with:
 
-- **One-click deployment** from the Kilo Code dashboard
+- **One-click deployment** from the Ordinant.ai dashboard
 - **No manual configuration** — deployment settings are generated for you
 - **Deployment history** with logs and build details
 - **Automatic rebuilds** on every GitHub push
@@ -31,7 +31,7 @@ Kilo Deploy lets you ship **Next.js** and **static sites** directly from Kilo Co
 Enable the **GitHub Integration** before deploying:
 
 1. Go to **Integrations → GitHub**
-2. Click **Configure** and follow the prompts to connect GitHub to Kilo Code
+2. Click **Configure** and follow the prompts to connect GitHub to Ordinant.ai
 
 ---
 
@@ -39,7 +39,7 @@ Enable the **GitHub Integration** before deploying:
 
 ### 1. Open the Deploy Tab
 
-- Navigate to your [Organization dashboard](https://app.kilo.ai/organizations) or [Profile](https://app.kilo.ai/profile)
+- Navigate to your [Organization dashboard](https://app.ordinant.ai/organizations) or [Profile](https://app.ordinant.ai/profile)
 - Select the **Deploy** tab
 
 ### 2. Select Your Project
@@ -52,7 +52,7 @@ Enable the **GitHub Integration** before deploying:
 
 ### 3. Click **Deploy**
 
-Kilo Code will:
+Ordinant.ai will:
 
 - Build your project
 - Upload artifacts
@@ -83,13 +83,13 @@ From the deployment details, you can:
 
 ## Database Support
 
-Kilo Deploy does **not** include built-in database hosting, but you can connect to any external database service.
+Ordinant Deploy does **not** include built-in database hosting, but you can connect to any external database service.
 
 ---
 
 ## Environment Variables
 
-Kilo Deploy supports Environment Variables and Secrets. Add the variable **key** and **value** during the **Create New Deployment** step, and toggle to mark as secrets.
+Ordinant Deploy supports Environment Variables and Secrets. Add the variable **key** and **value** during the **Create New Deployment** step, and toggle to mark as secrets.
 
 ## Common Use Cases
 

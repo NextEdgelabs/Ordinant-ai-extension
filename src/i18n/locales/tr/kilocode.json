@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "Kilo Kodu: {{source}} {{configType}}: {{name}}{{modeStr}} eklendi.",
-		"removed": "Kilo Kodu: Kaldırıldı {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: {{source}} {{configType}}: {{name}}{{modeStr}} eklendi.",
+		"removed": "Ordinant.ai: Kaldırıldı {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

@@ -58,7 +58,7 @@ export const ManagedCodeIndexPopover: React.FC<CodeIndexPopoverProps> = ({ child
 const Content = () => {
 	const state = useExtensionState()
 	const orgId = state.apiConfiguration?.kilocodeOrganizationId
-	const href = `https://kilo.ai/organizations/${orgId}/code-indexing`
+	const href = `https://ordinant.ai/organizations/${orgId}/code-indexing`
 	const [workspaceFolders, setWorkspaceFolders] = useState<WorkspaceFolderState[]>([])
 
 	// Request initial state when popover opens
@@ -86,7 +86,7 @@ const Content = () => {
 						<h4 className="m-0 pb-2 flex-1">Managed Code Indexing</h4>
 					</div>
 					<p className="my-0 pr-4 text-sm w-full mb-3">
-						<VSCodeLink href={href}>Configure on kilo.ai</VSCodeLink>
+						<VSCodeLink href={href}>Configure on ordinant.ai</VSCodeLink>
 					</p>
 				</div>
 
@@ -108,7 +108,7 @@ const Content = () => {
 					<h4 className="m-0 pb-2 flex-1">Managed Code Indexing</h4>
 				</div>
 				<p className="my-0 pr-4 text-sm w-full mb-3">
-					<VSCodeLink href={href}>Configure on kilo.ai</VSCodeLink>
+					<VSCodeLink href={href}>Configure on ordinant.ai</VSCodeLink>
 				</p>
 			</div>
 

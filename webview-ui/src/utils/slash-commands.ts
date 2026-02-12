@@ -28,7 +28,7 @@ export function getSupportedSlashCommands(
 			name: "newrule",
 			description: "Create a new Ordinant.ai rule with context from your conversation",
 		},
-		{ name: "reportbug", description: "Create a KiloCode GitHub issue" },
+		{ name: "reportbug", description: "Create an Ordinant.ai GitHub issue" },
 		// kilocode_change start
 		{ name: "smol", description: "Condenses your current context window" },
 		{ name: "condense", description: "Condenses your current context window" },

@@ -13,7 +13,7 @@
 		},
 		"roo": {
 			"description": "始めるための最高の無料モデル",
-			"incentive": "Rooを無料で試す"
+			"incentive": "Ordinant.aiを無料で試す"
 		}
 	},
 	"chooseProvider": "Ordinant.aiが機能するには、APIキーが必要です。",
@@ -21,7 +21,7 @@
 		"greeting": "Ordinantへようこそ！",
 		"introduction": "組み込みおよび拡張可能なモードを備えたOrdinantは、計画、アーキテクチャ設計、コーディング、デバッグ、そして今までにない生産性向上を可能にします。",
 		"accountMention": "始めるには、Ordinant Cloudアカウントを作成してください。強力なモデル、ウェブコントロール、分析、サポート、その他をご利用いただけます。",
-		"getStarted": "Rooアカウントを作成",
+		"getStarted": "Ordinant.aiアカウントを作成",
 		"noAccount": "またはアカウントなしで使用"
 	},
 	"providerSignup": {

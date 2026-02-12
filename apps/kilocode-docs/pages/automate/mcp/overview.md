@@ -5,13 +5,13 @@ description: "Overview of the Model Context Protocol"
 
 # Model Context Protocol (MCP)
 
-The Model Context Protocol (MCP) is a standard for extending Kilo Code's capabilities by connecting to external tools and services. MCP servers provide additional tools and resources that help Kilo Code accomplish tasks beyond its built-in capabilities, such as accessing databases, custom APIs, and specialized functionality.
+The Model Context Protocol (MCP) is a standard for extending Ordinant.ai's capabilities by connecting to external tools and services. MCP servers provide additional tools and resources that help Ordinant.ai accomplish tasks beyond its built-in capabilities, such as accessing databases, custom APIs, and specialized functionality.
 
 ## MCP Documentation
 
 This documentation is organized into several sections:
 
-- [**Using MCP in Kilo Code**](/features/mcp/using-mcp-in-kilo-code) - Comprehensive guide to configuring, enabling, and managing MCP servers with Kilo Code. Includes server settings, tool approval, and troubleshooting.
+- [**Using MCP in Ordinant.ai**](/features/mcp/using-mcp-in-kilo-code) - Comprehensive guide to configuring, enabling, and managing MCP servers with Ordinant.ai. Includes server settings, tool approval, and troubleshooting.
 
 - [**What is MCP?**](/features/mcp/what-is-mcp) - Clear explanation of the Model Context Protocol, its client-server architecture, and how it enables AI systems to interact with external tools.
 
@@ -21,13 +21,13 @@ This documentation is organized into several sections:
 
 ## Contributing to the Marketplace
 
-Have you created an MCP server that others might find useful? Share it with the community by contributing to the [Kilo Marketplace](https://github.com/Kilo-Org/kilo-marketplace)!
+Have you created an MCP server that others might find useful? Share it with the community by contributing to the [Ordinant.ai Marketplace](https://github.com/Ordinant-ai/ordinant-ai-marketplace)!
 
 ### How to Submit Your MCP Server
 
 1. **Develop your server**: Create an MCP server following the [MCP specification](https://github.com/modelcontextprotocol/)
-2. **Test thoroughly**: Ensure your server works correctly with Kilo Code and handles edge cases gracefully
-3. **Fork the marketplace repository**: Visit [github.com/Kilo-Org/kilo-marketplace](https://github.com/Kilo-Org/kilo-marketplace) and create a fork
+2. **Test thoroughly**: Ensure your server works correctly with Ordinant.ai and handles edge cases gracefully
+3. **Fork the marketplace repository**: Visit [github.com/Ordinant-ai/ordinant-ai-marketplace](https://github.com/Ordinant-ai/ordinant-ai-marketplace) and create a fork
 4. **Add your server**: Include your server configuration and documentation following the repository's structure
 5. **Submit a pull request**: Create a PR with a clear description of what your server does and its requirements
 
@@ -37,6 +37,6 @@ Have you created an MCP server that others might find useful? Share it with the 
 - Include example configurations for both STDIO and SSE transports if applicable
 - Specify any required environment variables or API keys
 - Note any platform-specific requirements (Windows, macOS, Linux)
-- Follow the [contribution guidelines](https://github.com/Kilo-Org/kilo-marketplace/blob/main/CONTRIBUTING.md) in the marketplace repository
+- Follow the [contribution guidelines](https://github.com/Ordinant-ai/ordinant-ai-marketplace/blob/main/CONTRIBUTING.md) in the marketplace repository
 
-For more details on contributing to Kilo Code, see the [Contributing Guide](/contributing).
+For more details on contributing to Ordinant.ai, see the [Contributing Guide](/contributing).

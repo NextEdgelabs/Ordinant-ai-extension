@@ -1,6 +1,6 @@
-# Welcome to the Kilocode Project
+# Welcome to the Ordinant.ai Project
 
-See [the Documentation for details on contributing](https://kilo.ai/docs/extending/contributing-to-kilo)
+See [the Documentation for details on contributing](https://ordinant.ai/docs/extending/contributing-to-kilo)
 
 ## TL;DR
 
@@ -13,4 +13,4 @@ There are lots of ways to contribute to the project
 - **Feature Requests:** Suggest new features or improvements
 - **Community Support:** Help other users in the community
 
-The Kilocode Community is [on Discord](https://kilo.ai/discord)
+The Ordinant.ai Community is [on Discord](https://ordinant.ai/discord)

@@ -3,7 +3,7 @@ import { SEO } from "@/lib/seo"
 import { ogImageUrl } from "@/lib/og"
 
 const TITLE = "Our Cookie Policy"
-const DESCRIPTION = "Learn about how Roo Code uses cookies to enhance your experience and provide our services."
+const DESCRIPTION = "Learn about how Ordinant.ai uses cookies to enhance your experience and provide our services."
 const OG_DESCRIPTION = ""
 const PATH = "/legal/cookies"
 
@@ -48,8 +48,8 @@ export default function CookiePolicy() {
 					<h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Cookie Policy</h1>
 
 					<p className="lead">
-						This Cookie Policy explains how Roo Code uses cookies and similar technologies to recognize you
-						when you visit our website.
+						This Cookie Policy explains how Ordinant.ai uses cookies and similar technologies to recognize
+						you when you visit our website.
 					</p>
 
 					<h2 className="mt-12 text-2xl font-bold">What are cookies?</h2>
@@ -143,11 +143,11 @@ export default function CookiePolicy() {
 					<p>
 						Our blog at{" "}
 						<a
-							href="https://blog.roocode.com"
+							href="https://blog.ordinant.ai"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-primary hover:underline">
-							blog.roocode.com
+							blog.ordinant.ai
 						</a>{" "}
 						is hosted on Substack. When you visit it, Substack may set cookies for analytics,
 						personalization, and advertising/marketing. These cookies are managed directly by Substack and
@@ -187,8 +187,8 @@ export default function CookiePolicy() {
 					<h2 className="mt-12 text-2xl font-bold">Contact us</h2>
 					<p>
 						If you have questions about our use of cookies, please contact us at{" "}
-						<a href="mailto:privacy@roocode.com" className="text-primary hover:underline">
-							privacy@roocode.com
+						<a href="mailto:privacy@ordinant.ai" className="text-primary hover:underline">
+							privacy@ordinant.ai
 						</a>
 						.
 					</p>

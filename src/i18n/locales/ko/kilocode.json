@@ -206,7 +206,7 @@
 		}
 	},
 	"configDiscovery": {
-		"added": "킬로 코드: {{source}} {{configType}}: {{name}}{{modeStr}} 추가됨",
-		"removed": "Kilo 코드: 제거됨 {{source}} {{configType}}: {{name}}{{modeStr}}"
+		"added": "Ordinant.ai: {{source}} {{configType}}: {{name}}{{modeStr}} 추가됨",
+		"removed": "Ordinant.ai: 제거됨 {{source}} {{configType}}: {{name}}{{modeStr}}"
 	}
 }

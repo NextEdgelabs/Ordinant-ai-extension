@@ -1,11 +1,11 @@
 ---
 title: "Sessions & Sharing"
-description: "Share and collaborate on Kilo Code sessions"
+description: "Share and collaborate on Ordinant.ai sessions"
 ---
 
 # Sessions & Sharing
 
-A session is your platform-agnostic interaction with Kilo. It remembers your repository, your task, and the conversation so you can pause and resume work without losing context. Sessions are private to your account by default; you can optionally share a link with others who can read or fork your session.
+A session is your platform-agnostic interaction with Ordinant.ai. It remembers your repository, your task, and the conversation so you can pause and resume work without losing context. Sessions are private to your account by default; you can optionally share a link with others who can read or fork your session.
 
 ## What a session keeps for you
 
@@ -14,13 +14,13 @@ A session is your platform-agnostic interaction with Kilo. It remembers your rep
 - Task metadata (what the agent is doing for you)
 - Optional Git context (for example, the repo URL and a lightweight snapshot of state) so the agent can pick up where it left off
 
-This information lets Kilo show your recent sessions and continue right from the same context the next time you open it.
+This information lets Ordinant.ai show your recent sessions and continue right from the same context the next time you open it.
 
 ## Quick start: Create a session
 
 1. Choose the repository. Pick the GitHub repository you want the agent to work with.
 2. Describe the task. (e.g., “Add dark mode toggle and unit tests”).
-3. Interact with Kilo via any of our interfaces- the CLI, the Cloud Agent, or the Extensions in your favorite IDE.
+3. Interact with Ordinant.ai via any of our interfaces- the CLI, the Cloud Agent, or the Extensions in your favorite IDE.
 
 ## Continue where you left off
 
@@ -49,7 +49,7 @@ Forking creates a new session in your account, with its own ID, and copies over 
 
 ## Where your session data lives
 
-To keep sessions fast and resumable, Kilo stores small JSON blobs associated with your session. These include your conversation history and task metadata. If you share a session, Kilo keeps a public copy used by the share link while your private session remains under your account.
+To keep sessions fast and resumable, Ordinant.ai stores small JSON blobs associated with your session. These include your conversation history and task metadata. If you share a session, Ordinant.ai keeps a public copy used by the share link while your private session remains under your account.
 
 Good practice:
 

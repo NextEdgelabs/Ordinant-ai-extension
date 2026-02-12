@@ -251,7 +251,7 @@
 	"response": "प्रतिक्रिया",
 	"arguments": "आर्ग्युमेंट्स",
 	"text": {
-		"rooSaid": "किलो ने कहा"
+		"rooSaid": "Ordinant.ai ने कहा"
 	},
 	"feedback": {
 		"youSaid": "आपने कहा"
@@ -361,7 +361,7 @@
 			"tryButton": "क्लाउड एजेंट आज़माएं"
 		},
 		"careers": "साथ ही, <careersLink>हम भर्ती कर रहे हैं!</careersLink>",
-		"socialLinks": "<xLink>X</xLink>, <discordLink>Discord</discordLink>, या <redditLink>r/KiloCode</redditLink> पर हमसे जुड़ें 🚀"
+		"socialLinks": "<xLink>X</xLink>, <discordLink>Discord</discordLink>, या <redditLink>r/OrdinantAI</redditLink> पर हमसे जुड़ें 🚀"
 	},
 	"costs": {
 		"totalWithSubtasks": "कुल लागत (उप-कार्यों सहित): ${{cost}}",

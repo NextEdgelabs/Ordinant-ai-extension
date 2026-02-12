@@ -1,13 +1,13 @@
 ---
 title: "Workflows"
-description: "Create automated workflows with Kilo Code"
+description: "Create automated workflows with Ordinant.ai"
 ---
 
 # Workflows
 
-Workflows automate repetitive tasks by defining step-by-step instructions for Kilo Code to execute. Invoke any workflow by typing `/[workflow-name.md]` in the chat.
+Workflows automate repetitive tasks by defining step-by-step instructions for Ordinant.ai to execute. Invoke any workflow by typing `/[workflow-name.md]` in the chat.
 
-{% image src="/docs/img/slash-commands/workflows.png" alt="Workflows tab in Kilo Code" width="600" caption="Workflows tab in Kilo Code" /%}
+{% image src="/docs/img/slash-commands/workflows.png" alt="Workflows tab in Ordinant.ai" width="600" caption="Workflows tab in Ordinant.ai" /%}
 
 ## Creating Workflows
 
@@ -85,7 +85,7 @@ Parameters needed (ask if not provided):
 - Reviewers to assign
 ```
 
-Now you can trigger this workflow by typing `/submit-pr.md` in the chat. Kilo Code will:
+Now you can trigger this workflow by typing `/submit-pr.md` in the chat. Ordinant.ai will:
 
 - Scan your code for common issues before committing
 - Run your test suite to catch problems early
