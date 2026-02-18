@@ -304,11 +304,12 @@ const ContextMenu: React.FC<ContextMenuProps> = ({
 			onMouseDown={onMouseDown}>
 			<div
 				ref={menuRef}
+				className="animate-fade-in"
 				style={{
 					backgroundColor: "var(--vscode-dropdown-background)",
 					border: "1px solid var(--vscode-editorGroup-border)",
-					borderRadius: "3px",
-					boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
+					borderRadius: "6px",
+					boxShadow: "0 4px 16px rgba(0, 0, 0, 0.3)",
 					zIndex: 1000,
 					display: "flex",
 					flexDirection: "column",
@@ -368,6 +369,7 @@ const ContextMenu: React.FC<ContextMenuProps> = ({
 						<div
 							key={`${option.type}-${option.value || index}`}
 							onClick={() => isOptionSelectable(option) && onSelect(option.type, option.value)}
+							className="transition-colors duration-100"
 							style={{
 								padding:
 									option.type === ContextMenuOptionType.SectionHeader

@@ -7,9 +7,10 @@ import { BottomApiConfig } from "./BottomApiConfig" // kilocode_change
 
 interface BottomControlsProps {
 	showApiConfig?: boolean
+	onOpenTaskInfo?: (tab?: "taskStatus" | "projectSetup") => void // kilocode_change: open task info popup
 }
 
-const BottomControls: React.FC<BottomControlsProps> = ({ showApiConfig = false }) => {
+const BottomControls: React.FC<BottomControlsProps> = ({ showApiConfig = false, onOpenTaskInfo }) => {
 	const { t } = useAppTranslation()
 
 	const showFeedbackOptions = () => {
@@ -23,6 +24,15 @@ const BottomControls: React.FC<BottomControlsProps> = ({ showApiConfig = false }
 			</div>
 			<div className="flex flex-row justify-end w-auto">
 				<div className="flex items-center gap-1">
+					{/* kilocode_change start: Task Info popup trigger */}
+					{onOpenTaskInfo && (
+						<BottomButton
+							iconClass="codicon-info"
+							title={t("chat:task.taskStatus", { defaultValue: "Task Status" })}
+							onClick={() => onOpenTaskInfo("taskStatus")}
+						/>
+					)}
+					{/* kilocode_change end */}
 					<KiloRulesToggleModal />
 					<BottomButton
 						iconClass="codicon-feedback"

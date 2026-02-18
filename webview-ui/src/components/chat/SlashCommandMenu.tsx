@@ -55,17 +55,15 @@ const SlashCommandMenu: React.FC<SlashCommandMenuProps> = ({
 			onMouseDown={onMouseDown}>
 			<div
 				ref={menuRef}
-				className="bg-[var(--vscode-dropdown-background)] border border-[var(--vscode-editorGroup-border)] rounded-[3px] shadow-[0_4px_10px_rgba(0,0,0,0.25)] flex flex-col max-h-[200px] overflow-y-auto" // Corrected rounded and shadow
-			>
+				className="animate-fade-in bg-[var(--vscode-dropdown-background)] border border-[var(--vscode-editorGroup-border)] rounded-[6px] shadow-[0_4px_16px_rgba(0,0,0,0.3)] flex flex-col max-h-[200px] overflow-y-auto">
 				{filteredCommands.length > 0 ? (
 					filteredCommands.map((command, index) => (
 						<div
 							key={command.name}
-							className={`py-2 px-3 cursor-pointer flex flex-col border-b border-[var(--vscode-editorGroup-border)] ${
-								// Corrected padding
+							className={`py-2 px-3 cursor-pointer flex flex-col border-b border-[var(--vscode-editorGroup-border)] transition-colors duration-100 ${
 								index === selectedIndex
 									? "bg-[var(--vscode-quickInputList-focusBackground)] text-[var(--vscode-quickInputList-focusForeground)]"
-									: "" // Removed bg-transparent
+									: ""
 							} hover:bg-[var(--vscode-list-hoverBackground)]`}
 							onClick={() => handleClick(command)}
 							onMouseEnter={() => setSelectedIndex(index)}>

@@ -150,7 +150,7 @@ const AutoApproveMenu = ({ style }: AutoApproveMenuProps) => {
 				...style,
 			}}>
 			{isExpanded && (
-				<div className="flex flex-col gap-2 py-4">
+				<div className="flex flex-col gap-2 py-4 animate-fade-in">
 					<div
 						style={{
 							color: "var(--vscode-descriptionForeground)",

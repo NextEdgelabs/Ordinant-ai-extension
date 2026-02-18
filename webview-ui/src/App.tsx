@@ -20,7 +20,7 @@ import McpView from "./components/mcp/McpView" // kilocode_change
 import AuthView from "./components/kilocode/auth/AuthView" // kilocode_change
 import { MarketplaceView } from "./components/marketplace/MarketplaceView"
 import BottomControls from "./components/kilocode/BottomControls" // kilocode_change
-import { type TopTab } from "./components/kilocode/TopTabBar" // kilocode_change
+// kilocode_change: TopTabBar import removed - task status / project setup now rendered as popup in ChatView
 import { MemoryService } from "./services/MemoryService" // kilocode_change
 import { HumanRelayDialog } from "./components/human-relay/HumanRelayDialog"
 import { CheckpointRestoreDialog } from "./components/chat/CheckpointRestoreDialog"
@@ -34,18 +34,7 @@ import { STANDARD_TOOLTIP_DELAY } from "./components/ui/standard-tooltip"
 import { useKiloIdentity } from "./utils/kilocode/useKiloIdentity"
 import { MemoryWarningBanner } from "./kilocode/MemoryWarningBanner"
 
-type Tab =
-	| "settings"
-	| "history"
-	| "mcp"
-	| "modes"
-	| "chat"
-	| "marketplace"
-	| "account"
-	| "cloud"
-	| "profile"
-	| "auth"
-	| "taskStatus" // kilocode_change: add "profile", "auth", and "taskStatus"
+type Tab = "settings" | "history" | "mcp" | "modes" | "chat" | "marketplace" | "account" | "cloud" | "profile" | "auth" // kilocode_change: "taskStatus" and "projectSetup" removed - now rendered as popup in ChatView
 
 interface HumanRelayDialogState {
 	isOpen: boolean
@@ -80,7 +69,7 @@ const tabsByMessageAction: Partial<Record<NonNullable<ExtensionMessage["action"]
 	profileButtonClicked: "profile",
 	marketplaceButtonClicked: "marketplace",
 	promptsButtonClicked: "settings", // kilocode_change: Navigate to settings with modes section
-	taskStatusButtonClicked: "taskStatus", // kilocode_change: Navigate to task status panel
+	// kilocode_change: taskStatusButtonClicked removed - task status now rendered as popup in ChatView
 	// cloudButtonClicked: "cloud", // kilocode_change: no cloud
 }
 
@@ -363,7 +352,7 @@ const App = () => {
 					targetTab="mode"
 				/>
 			)}
-			{/* kilocode_change: task status panel - handled below with TopTabBar */}
+			{/* kilocode_change: task status / project setup now rendered as popup overlay in ChatView */}
 			{/* kilocode_change: no cloud view */}
 			{/* {tab === "cloud" && (
 				<CloudView
@@ -377,14 +366,12 @@ const App = () => {
 			{/* {tab === "account" && (
 				<AccountView userInfo={cloudUserInfo} isAuthenticated={false} onDone={() => switchTab("chat")} />
 			)} */}
-			{/* kilocode_change: ChatView with embedded tab bar for Chat/Task Status switching */}
+			{/* kilocode_change: ChatView is always the main view; task status / project setup shown as popup overlay */}
 			<ChatView
 				ref={chatViewRef}
-				isHidden={tab !== "chat" && tab !== "taskStatus"}
+				isHidden={tab !== "chat"}
 				showAnnouncement={showAnnouncement}
 				hideAnnouncement={() => setShowAnnouncement(false)}
-				activeTopTab={tab === "chat" || tab === "taskStatus" ? (tab as TopTab) : undefined}
-				onTopTabChange={(newTab) => switchTab(newTab)}
 			/>
 			<MemoizedHumanRelayDialog
 				isOpen={humanRelayDialogState.isOpen}
@@ -454,8 +441,8 @@ const App = () => {
 				/>
 			)}
 			{/* kilocode_change */}
-			{/* Chat (which includes taskStatus), history views contain their own bottom controls, settings doesn't need it */}
-			{!["chat", "settings", "history", "taskStatus"].includes(tab) && (
+			{/* Chat, history views contain their own bottom controls, settings doesn't need it */}
+			{!["chat", "settings", "history"].includes(tab) && (
 				<div className="fixed inset-0 top-auto">
 					<BottomControls />
 				</div>

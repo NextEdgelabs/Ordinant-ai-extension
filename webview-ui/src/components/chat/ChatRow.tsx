@@ -154,9 +154,10 @@ const ChatRow = memo(
 
 		const [chatrow, { height }] = useSize(
 			<div
-				// kilocode_change: add highlighted className
+				// kilocode_change: add highlighted className + fade-in for smoother appearance
 				className={cn(
-					`px-[15px] py-[10px] pr-[6px] relative ${highlighted ? "animate-message-highlight" : ""}`,
+					"px-[15px] py-[10px] pr-[6px] relative animate-fade-in",
+					highlighted && "animate-message-highlight",
 				)}>
 				{showTaskTimeline && <KiloChatRowGutterBar message={message} />}
 				<ChatRowContent {...props} />
@@ -1886,7 +1887,7 @@ export const ChatRowContent = ({
 										marginBottom: "-1.5px",
 									}}></span>
 								<span style={{ color: normalColor, fontWeight: "bold" }}>
-									KiloCode wants to create a Github issue:
+									Ordinant wants to create a Github issue:
 								</span>
 							</div>
 							<ReportBugPreview data={message.text || ""} />

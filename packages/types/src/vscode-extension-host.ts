@@ -210,6 +210,7 @@ export interface ExtensionMessage {
 		| "indexCleared"
 		| "codebaseIndexConfig"
 		| "rulesData" // kilocode_change
+		| "steeringData" // kilocode_change: steering file management
 		| "marketplaceInstallResult"
 		| "marketplaceRemoveResult"
 		| "marketplaceData"
@@ -831,6 +832,10 @@ export interface WebviewMessage {
 		| "toggleRule" // kilocode_change
 		| "createRuleFile" // kilocode_change
 		| "deleteRuleFile" // kilocode_change
+		| "refreshSteering" // kilocode_change: steering file management
+		| "createSteeringFile" // kilocode_change
+		| "deleteSteeringFile" // kilocode_change
+		| "generateFoundationFiles" // kilocode_change
 		| "searchFiles"
 		| "toggleApiConfigPin"
 		| "hasOpenedModeSelector"
@@ -987,6 +992,8 @@ export interface WebviewMessage {
 	ruleType?: string // kilocode_change
 	notificationId?: string // kilocode_change
 	commandIds?: string[] // kilocode_change: For getKeybindings
+	steeringFilePath?: string // kilocode_change: steering file management
+	steeringContent?: string // kilocode_change: steering file content
 	// kilocode_change end
 	serverName?: string
 	toolName?: string

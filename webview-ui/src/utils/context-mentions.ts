@@ -374,6 +374,23 @@ export function shouldShowContextMenu(text: string, position: number): boolean {
 		return true
 	}
 
+	// kilocode_change start: Also trigger on # for #file: syntax
+	// Check for # trigger — only if it looks like the user is typing #file:
+	const hashIndex = beforeCursor.lastIndexOf("#")
+	if (hashIndex !== -1) {
+		const textAfterHash = beforeCursor.slice(hashIndex + 1)
+		// Only trigger if:
+		// 1. User just typed # (empty after it)
+		// 2. User is typing "file:" prefix (e.g. "f", "fi", "fil", "file", "file:")
+		// 3. User is typing the filename after "file:" but no space yet (incomplete mention)
+		const isTypingFilePrefix = /^(f|fi|fil|file|file:[^\s]*)$/.test(textAfterHash)
+		const isBareHash = textAfterHash === ""
+		if (isBareHash || isTypingFilePrefix) {
+			return true
+		}
+	}
+	// kilocode_change end
+
 	// Check for @ mention context
 	const atIndex = beforeCursor.lastIndexOf("@")
 
@@ -397,3 +414,34 @@ export function shouldShowContextMenu(text: string, position: number): boolean {
 	// Show menu in all other cases
 	return true
 }
+
+// kilocode_change start: Helper to detect which trigger character was used
+export function getContextMenuTrigger(text: string, position: number): "@" | "#" | null {
+	const beforeCursor = text.slice(0, position)
+
+	const hashIndex = beforeCursor.lastIndexOf("#")
+	const atIndex = beforeCursor.lastIndexOf("@")
+
+	// Validate each trigger — check that the text after it has no unescaped whitespace
+	// (meaning the mention is still being typed, not already completed)
+	let hashValid = false
+	if (hashIndex !== -1) {
+		const afterHash = beforeCursor.slice(hashIndex + 1)
+		const isTypingFilePrefix = /^(f|fi|fil|file|file:[^\s]*)$/.test(afterHash)
+		hashValid = afterHash === "" || isTypingFilePrefix
+	}
+
+	let atValid = false
+	if (atIndex !== -1) {
+		const afterAt = beforeCursor.slice(atIndex + 1)
+		atValid = !/(?<!\\)\s/.test(afterAt)
+	}
+
+	if (!hashValid && !atValid) return null
+
+	// Return whichever valid trigger is closest to cursor (most recent)
+	if (hashValid && atValid) return hashIndex > atIndex ? "#" : "@"
+	if (hashValid) return "#"
+	return "@"
+}
+// kilocode_change end

@@ -83,6 +83,7 @@ import { GetModelsOptions } from "../../shared/api"
 import { generateSystemPrompt } from "./generateSystemPrompt"
 import { getCommand } from "../../utils/commands"
 import { toggleWorkflow, toggleRule, createRuleFile, deleteRuleFile } from "./kilorules"
+import { getSteeringData, createSteeringFile, deleteSteeringFile, generateFoundationFiles } from "./kilosteering" // kilocode_change
 import { mermaidFixPrompt } from "../prompts/utilities/mermaid" // kilocode_change
 // kilocode_change start
 import {
@@ -3086,6 +3087,75 @@ export const webviewMessageHandler = async (
 		case "reportBug":
 			provider.getCurrentTask()?.handleWebviewAskResponse("yesButtonClicked")
 			break
+		// kilocode_change start: Steering file management
+		case "refreshSteering": {
+			const workspacePath = getWorkspacePath()
+			if (workspacePath) {
+				try {
+					const steeringData = await getSteeringData(workspacePath)
+					await provider.postMessageToWebview({ type: "steeringData", ...steeringData })
+				} catch (error) {
+					console.error("Error loading steering data:", error)
+				}
+			}
+			break
+		}
+		case "createSteeringFile": {
+			if (message.filename && typeof message.isGlobal === "boolean") {
+				try {
+					await createSteeringFile(message.filename, message.isGlobal, message.steeringContent)
+				} catch (error) {
+					console.error("Error creating steering file:", error)
+					vscode.window.showErrorMessage("Failed to create steering file.")
+				}
+				// Refresh data
+				const wsPath = getWorkspacePath()
+				if (wsPath) {
+					const steeringData = await getSteeringData(wsPath)
+					await provider.postMessageToWebview({ type: "steeringData", ...steeringData })
+				}
+			}
+			break
+		}
+		case "deleteSteeringFile": {
+			if (message.steeringFilePath) {
+				try {
+					await deleteSteeringFile(message.steeringFilePath)
+				} catch (error) {
+					console.error("Error deleting steering file:", error)
+					vscode.window.showErrorMessage("Failed to delete steering file.")
+				}
+				// Refresh data
+				const wsPath = getWorkspacePath()
+				if (wsPath) {
+					const steeringData = await getSteeringData(wsPath)
+					await provider.postMessageToWebview({ type: "steeringData", ...steeringData })
+				}
+			}
+			break
+		}
+		case "generateFoundationFiles": {
+			const wsPath = getWorkspacePath()
+			if (wsPath) {
+				try {
+					const result = await generateFoundationFiles(wsPath)
+					if (result.created.length > 0) {
+						vscode.window.showInformationMessage(
+							`Created: ${result.created.join(", ")}${result.skipped.length > 0 ? ` (skipped existing: ${result.skipped.join(", ")})` : ""}`,
+						)
+					} else {
+						vscode.window.showInformationMessage("All foundation files already exist.")
+					}
+					const steeringData = await getSteeringData(wsPath)
+					await provider.postMessageToWebview({ type: "steeringData", ...steeringData })
+				} catch (error) {
+					console.error("Error generating foundation files:", error)
+					vscode.window.showErrorMessage("Failed to generate foundation files.")
+				}
+			}
+			break
+		}
+		// kilocode_change end: Steering file management
 		// end kilocode_change
 		case "telemetrySetting": {
 			const telemetrySetting = message.text as TelemetrySetting

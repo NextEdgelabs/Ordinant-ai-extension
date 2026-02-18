@@ -1,5 +1,5 @@
 // kilocode_change - new file
-import React, { memo, useState, useMemo } from "react"
+import React, { memo, useMemo } from "react"
 import { ThumbsUp, Copy, Clock, Trash2, ChevronDown, Keyboard, Settings2, Link2, Scissors } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -244,7 +244,6 @@ export interface TaskStatusPanelProps {
 }
 
 const TaskStatusPanel = ({ data, onClose, className }: TaskStatusPanelProps) => {
-	const [activeTab, setActiveTab] = useState<"status" | "name">("status")
 	const { apiConfiguration } = useExtensionState()
 	const { id: modelId, info: model } = useSelectedModel(apiConfiguration)
 
@@ -255,108 +254,74 @@ const TaskStatusPanel = ({ data, onClose, className }: TaskStatusPanelProps) => 
 			className={cn(
 				"flex flex-col h-full",
 				"bg-vscode-editor-background text-vscode-foreground",
-				"border border-vscode-focusBorder rounded-md overflow-hidden",
+				"overflow-hidden",
 				className,
 			)}>
-			{/* ===== Tab Header ===== */}
-			<div className="flex items-center justify-between border-b border-vscode-panel-border bg-vscode-sideBar-background">
-				<div className="flex">
-					<button
-						className={cn(
-							"px-4 py-2 text-sm font-medium transition-colors relative",
-							activeTab === "status"
-								? "text-vscode-foreground"
-								: "text-vscode-descriptionForeground hover:text-vscode-foreground",
-						)}
-						onClick={() => setActiveTab("status")}>
-						Task Status
-						{activeTab === "status" && (
-							<div className="absolute bottom-0 left-0 right-0 h-[2px] bg-vscode-focusBorder" />
-						)}
-					</button>
-					<button
-						className={cn(
-							"px-4 py-2 text-sm font-medium transition-colors relative",
-							activeTab === "name"
-								? "text-vscode-foreground"
-								: "text-vscode-descriptionForeground hover:text-vscode-foreground",
-						)}
-						onClick={() => setActiveTab("name")}>
-						Name...
-						{activeTab === "name" && (
-							<div className="absolute bottom-0 left-0 right-0 h-[2px] bg-vscode-focusBorder" />
-						)}
-					</button>
-				</div>
-				{/* Close button */}
-				<button
-					onClick={onClose}
-					className="px-3 py-1 mr-2 text-xs rounded border border-red-500/50 text-red-400 hover:bg-red-500/10 transition-colors">
-					Close
-				</button>
-			</div>
-
 			{/* ===== Content Area ===== */}
-			{activeTab === "status" ? (
-				<div className="flex-1 flex flex-col overflow-hidden p-3 gap-3">
-					{/* Task label and description */}
-					<div className="flex flex-col gap-1">
-						<span className="text-xs text-vscode-descriptionForeground">{data.taskLabel}</span>
-						<p className="text-sm leading-snug text-vscode-foreground">{data.taskDescription}</p>
+			<div className="flex-1 flex flex-col overflow-hidden p-3 gap-3">
+				{/* Close button */}
+				{onClose && (
+					<div className="flex justify-end">
+						<button
+							onClick={onClose}
+							className="px-3 py-1 text-xs rounded border border-red-500/50 text-red-400 hover:bg-red-500/10 transition-colors">
+							Close
+						</button>
 					</div>
+				)}
+				{/* Task label and description */}
+				<div className="flex flex-col gap-1">
+					<span className="text-xs text-vscode-descriptionForeground">{data.taskLabel}</span>
+					<p className="text-sm leading-snug text-vscode-foreground">{data.taskDescription}</p>
+				</div>
 
-					{/* Context Length bar */}
-					<ContextLengthBar
-						contextTokens={data.contextTokens}
-						contextWindow={data.contextWindow}
-						maxTokens={maxTokens}
-					/>
+				{/* Context Length bar */}
+				<ContextLengthBar
+					contextTokens={data.contextTokens}
+					contextWindow={data.contextWindow}
+					maxTokens={maxTokens}
+				/>
 
-					{/* Tokens + Cache + Action Icons row */}
-					<div className="flex items-center justify-between">
-						<MetricsRow tokensIn={data.tokensIn} tokensOut={data.tokensOut} cacheReads={data.cacheReads} />
-						<ActionIcons />
-					</div>
+				{/* Tokens + Cache + Action Icons row */}
+				<div className="flex items-center justify-between">
+					<MetricsRow tokensIn={data.tokensIn} tokensOut={data.tokensOut} cacheReads={data.cacheReads} />
+					<ActionIcons />
+				</div>
 
-					{/* Code output area */}
-					{data.codeOutput && data.codeOutput.length > 0 && <CodeOutputArea lines={data.codeOutput} />}
+				{/* Code output area */}
+				{data.codeOutput && data.codeOutput.length > 0 && <CodeOutputArea lines={data.codeOutput} />}
 
-					{/* File chips */}
-					{data.referencedFiles && data.referencedFiles.length > 0 && (
-						<div className="flex flex-col gap-2 border-t border-vscode-panel-border pt-2">
-							{/* Chip row */}
-							<div className="flex flex-wrap gap-1.5">
-								{data.referencedFiles.map((file, i) => (
-									<FileChip key={i} file={file} />
-								))}
-							</div>
-							{/* Reference text row */}
-							<div className="flex flex-wrap items-center gap-1 text-xs text-vscode-descriptionForeground">
-								{data.referencedFiles.map((file, i) => (
-									<React.Fragment key={i}>
-										<span
-											className={cn(
-												"px-1 py-0.5 rounded cursor-pointer",
-												file.highlighted
-													? "bg-green-800/40 text-green-300"
-													: "bg-vscode-textCodeBlock-background text-vscode-foreground",
-											)}>
-											#file:{file.name}
-										</span>
-										{i < data.referencedFiles!.length - 1 && (
-											<span className="text-vscode-descriptionForeground">and</span>
-										)}
-									</React.Fragment>
-								))}
-							</div>
+				{/* File chips */}
+				{data.referencedFiles && data.referencedFiles.length > 0 && (
+					<div className="flex flex-col gap-2 border-t border-vscode-panel-border pt-2">
+						{/* Chip row */}
+						<div className="flex flex-wrap gap-1.5">
+							{data.referencedFiles.map((file, i) => (
+								<FileChip key={i} file={file} />
+							))}
 						</div>
-					)}
-				</div>
-			) : (
-				<div className="flex-1 flex items-center justify-center text-vscode-descriptionForeground text-sm">
-					Name configuration panel
-				</div>
-			)}
+						{/* Reference text row */}
+						<div className="flex flex-wrap items-center gap-1 text-xs text-vscode-descriptionForeground">
+							{data.referencedFiles.map((file, i) => (
+								<React.Fragment key={i}>
+									<span
+										className={cn(
+											"px-1 py-0.5 rounded cursor-pointer",
+											file.highlighted
+												? "bg-green-800/40 text-green-300"
+												: "bg-vscode-textCodeBlock-background text-vscode-foreground",
+										)}>
+										#file:{file.name}
+									</span>
+									{i < data.referencedFiles!.length - 1 && (
+										<span className="text-vscode-descriptionForeground">and</span>
+									)}
+								</React.Fragment>
+							))}
+						</div>
+					</div>
+				)}
+			</div>
 
 			{/* ===== Bottom Controls Bar ===== */}
 			<div className="flex items-center justify-between px-3 py-1.5 border-t border-vscode-panel-border bg-vscode-sideBar-background">

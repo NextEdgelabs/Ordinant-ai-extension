@@ -43,6 +43,7 @@ export interface TaskHeaderProps {
 	onMessageClick?: (index: number) => void
 	isTaskActive?: boolean
 	todos?: any[]
+	onOpenTaskInfo?: (tab?: "taskStatus" | "projectSetup") => void // kilocode_change: open task info popup
 }
 
 const KiloTaskHeader = ({
@@ -60,6 +61,7 @@ const KiloTaskHeader = ({
 	onMessageClick,
 	isTaskActive = false,
 	todos,
+	onOpenTaskInfo,
 }: TaskHeaderProps) => {
 	const { t } = useTranslation()
 	const { showTaskTimeline, showDiffStats, clineMessages } = useExtensionState()
@@ -95,7 +97,7 @@ const KiloTaskHeader = ({
 		<div className="py-2 px-3">
 			<div
 				className={cn(
-					"p-2.5 flex flex-col relative z-1 border",
+					"p-2.5 flex flex-col relative z-1 border transition-all duration-200 ease-in-out",
 					hasTodos ? "rounded-t-xs" : "rounded-xs",
 					isTaskExpanded
 						? "border-vscode-panel-border text-vscode-foreground"
@@ -118,6 +120,19 @@ const KiloTaskHeader = ({
 							)}
 						</div>
 					</div>
+					{/* kilocode_change start: Task Info popup trigger */}
+					{onOpenTaskInfo && (
+						<StandardTooltip content={t("chat:task.taskStatus", { defaultValue: "Task Status" })}>
+							<Button
+								variant="ghost"
+								size="icon"
+								onClick={() => onOpenTaskInfo("taskStatus")}
+								className="shrink-0 w-5 h-5">
+								<span className="codicon codicon-info" />
+							</Button>
+						</StandardTooltip>
+					)}
+					{/* kilocode_change end */}
 					<StandardTooltip content={t("chat:task.closeAndStart")}>
 						<Button variant="ghost" size="icon" onClick={onClose} className="shrink-0 w-5 h-5">
 							<span className="codicon codicon-close" />
@@ -126,7 +141,7 @@ const KiloTaskHeader = ({
 				</div>
 				{/* Collapsed state: Track context and cost if we have any */}
 				{!isTaskExpanded && contextWindow > 0 && (
-					<div className={`w-full flex flex-col gap-1 h-auto`}>
+					<div className={`w-full flex flex-col gap-1 h-auto animate-fade-in`}>
 						{showTaskTimeline && (
 							<TaskTimeline
 								groupedMessages={groupedMessages}
@@ -156,7 +171,7 @@ const KiloTaskHeader = ({
 				)}
 				{/* Expanded state: Show task text and images */}
 				{isTaskExpanded && (
-					<>
+					<div className="animate-fade-in">
 						<div
 							ref={textContainerRef}
 							className="-mt-0.5 text-vscode-font-size overflow-y-auto break-words break-anywhere relative">
@@ -261,7 +276,7 @@ const KiloTaskHeader = ({
 								</div>
 							)}
 						</div>
-					</>
+					</div>
 				)}
 			</div>
 			<TodoListDisplay todos={todos ?? (task as any)?.tool?.todos ?? []} />

@@ -2,7 +2,7 @@
 import React, { memo } from "react"
 import { cn } from "@/lib/utils"
 
-export type TopTab = "chat" | "taskStatus"
+export type TopTab = "chat" | "taskStatus" | "projectSetup" // kilocode_change: add projectSetup
 
 interface TopTabBarProps {
 	activeTab: TopTab
@@ -12,6 +12,7 @@ interface TopTabBarProps {
 const tabs: { id: TopTab; label: string }[] = [
 	{ id: "chat", label: "Chat" },
 	{ id: "taskStatus", label: "Task Status" },
+	{ id: "projectSetup", label: "Project Setup" }, // kilocode_change
 ]
 
 /**

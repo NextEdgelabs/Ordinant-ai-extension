@@ -17,6 +17,7 @@ import {
 	insertMention,
 	removeMention,
 	shouldShowContextMenu,
+	getContextMenuTrigger, // kilocode_change: detect # vs @ trigger
 	SearchResult,
 } from "@src/utils/context-mentions"
 import { convertToMentionPath } from "@/utils/path-mentions"
@@ -30,6 +31,7 @@ import KiloModeSelector from "../kilocode/KiloModeSelector"
 import { KiloProfileSelector } from "../kilocode/chat/KiloProfileSelector"
 import { MAX_IMAGES_PER_MESSAGE } from "./ChatView"
 import ContextMenu from "./ContextMenu"
+import FileReferencePills, { type FileReference } from "./FileReferencePills" // kilocode_change: file reference pills
 import { ImageWarningBanner } from "./ImageWarningBanner"
 import { VolumeX, Pin, Check, WandSparkles, SendHorizontal, Paperclip, MessageSquareX } from "lucide-react"
 import { IndexingStatusBadge } from "./IndexingStatusBadge"
@@ -409,6 +411,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 		const shouldAutoScrollToCaretRef = useRef(false) // kilocode_change
 		const [selectedMenuIndex, setSelectedMenuIndex] = useState(-1)
 		const [selectedType, setSelectedType] = useState<ContextMenuOptionType | null>(null)
+		const [menuTrigger, setMenuTrigger] = useState<"@" | "#" | null>(null) // kilocode_change: track # vs @ trigger
 		const [justDeletedSpaceAfterMention, setJustDeletedSpaceAfterMention] = useState(false)
 		const [intendedCursorPosition, setIntendedCursorPosition] = useState<number | null>(null)
 		const contextMenuContainerRef = useRef<HTMLDivElement>(null)
@@ -526,6 +529,100 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 			]
 		}, [filePaths, gitCommits, openedTabs])
 
+		// kilocode_change start: Extract file references from @ mentions for pill display
+		const fileReferences = useMemo<FileReference[]>(() => {
+			const refs: FileReference[] = []
+			const seen = new Set<string>()
+			// Match @/path/to/file mentions (file and folder paths)
+			const matches = inputValue.matchAll(mentionRegexGlobal)
+			for (const match of matches) {
+				const mentionText = match[1] // captured group (the path without @)
+				if (!mentionText) continue
+				// Only include file/folder paths (starting with /) — skip problems, terminal, git, urls
+				if (!mentionText.startsWith("/")) continue
+				if (seen.has(mentionText)) continue
+				seen.add(mentionText)
+				const isFolder = mentionText.endsWith("/")
+				const basename = mentionText.split("/").filter(Boolean).pop() || mentionText
+				refs.push({
+					mentionText,
+					displayName: basename,
+					fullPath: mentionText,
+					isFolder,
+				})
+			}
+			// Also match #file:filename references
+			const hashFileRegex = /#file:([^\s,]+)/g
+			const hashMatches = inputValue.matchAll(hashFileRegex)
+			for (const match of hashMatches) {
+				const filename = match[1]
+				if (!filename) continue
+				const key = `#file:${filename}`
+				if (seen.has(key)) continue
+				seen.add(key)
+				refs.push({
+					mentionText: key,
+					displayName: filename,
+					fullPath: filename,
+					isFolder: false,
+				})
+			}
+
+			// Deduplicate by displayName: prefer @ mentions (full path) over #file: duplicates,
+			// and disambiguate genuinely different files that share the same basename.
+			const byName = new Map<string, FileReference[]>()
+			for (const ref of refs) {
+				const existing = byName.get(ref.displayName) || []
+				existing.push(ref)
+				byName.set(ref.displayName, existing)
+			}
+			const deduped: FileReference[] = []
+			for (const [, group] of byName) {
+				if (group.length === 1) {
+					deduped.push(group[0])
+				} else {
+					// Separate @ mentions from #file: mentions
+					const atMentions = group.filter((r) => !r.mentionText.startsWith("#file:"))
+					const hashMentions = group.filter((r) => r.mentionText.startsWith("#file:"))
+					// Keep @ mentions (with disambiguated names if multiple different paths)
+					if (atMentions.length > 1) {
+						for (const ref of atMentions) {
+							const parts = ref.fullPath.split("/").filter(Boolean)
+							ref.displayName = parts.slice(-2).join("/")
+							deduped.push(ref)
+						}
+					} else if (atMentions.length === 1) {
+						deduped.push(atMentions[0])
+					} else {
+						// Only #file: mentions — keep just the first one
+						deduped.push(hashMentions[0])
+					}
+				}
+			}
+			return deduped
+		}, [inputValue])
+
+		// Handle removing a file reference pill (removes the mention from text)
+		const handleRemoveFileReference = useCallback(
+			(mentionText: string) => {
+				let newValue = inputValue
+				if (mentionText.startsWith("#file:")) {
+					// Remove #file:filename from text
+					const escaped = mentionText.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+					newValue = newValue.replace(new RegExp(`\\s*${escaped}\\s*`, "g"), " ").trim()
+				} else {
+					// Remove @/path/to/file mention from text
+					const escaped = mentionText.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+					newValue = newValue.replace(new RegExp(`\\s*@${escaped}\\s*`, "g"), " ").trim()
+				}
+				// Collapse any double (or more) spaces left behind into a single space
+				newValue = newValue.replace(/  +/g, " ").trim()
+				setInputValue(newValue)
+			},
+			[inputValue, setInputValue],
+		)
+		// kilocode_change end: Extract file references for pill display
+
 		useEffect(() => {
 			const handleClickOutside = (event: MouseEvent) => {
 				if (
@@ -549,17 +646,20 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 			(type: ContextMenuOptionType, value?: string) => {
 				if (type === ContextMenuOptionType.Image) {
 					// kilocode_change start: Image selection handling
-					// Close the context menu and remove the @character in this case
+					// Close the context menu and remove the @ or # character in this case
 					setShowContextMenu(false)
 					setSelectedType(null)
 
 					if (textAreaRef.current) {
 						const beforeCursor = textAreaRef.current.value.slice(0, cursorPosition)
 						const afterCursor = textAreaRef.current.value.slice(cursorPosition)
+						// kilocode_change: find whichever trigger (@ or #) is closest to cursor
 						const lastAtIndex = beforeCursor.lastIndexOf("@")
+						const lastHashIndex = beforeCursor.lastIndexOf("#")
+						const triggerIdx = Math.max(lastAtIndex, lastHashIndex)
 
-						if (lastAtIndex !== -1) {
-							const newValue = beforeCursor.slice(0, lastAtIndex) + afterCursor
+						if (triggerIdx !== -1) {
+							const newValue = beforeCursor.slice(0, triggerIdx) + afterCursor
 							setInputValue(newValue)
 						}
 					}
@@ -613,16 +713,42 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 						insertValue = value || ""
 					}
 
-					const { newValue, mentionIndex } = insertMention(
-						textAreaRef.current.value,
-						cursorPosition,
-						insertValue,
-					)
+					// kilocode_change start: insert #file:filename when triggered by #, otherwise @/path
+					if (
+						menuTrigger === "#" &&
+						(type === ContextMenuOptionType.File ||
+							type === ContextMenuOptionType.Folder ||
+							type === ContextMenuOptionType.OpenedFile)
+					) {
+						// Extract just the basename for #file: format
+						const basename = (insertValue || "").split("/").filter(Boolean).pop() || insertValue
+						const hashFileText = `#file:${basename}`
 
-					setInputValue(newValue)
-					const newCursorPosition = newValue.indexOf(" ", mentionIndex + insertValue.length) + 1
-					setCursorPosition(newCursorPosition)
-					setIntendedCursorPosition(newCursorPosition)
+						const beforeCursor = textAreaRef.current.value.slice(0, cursorPosition)
+						const afterCursor = textAreaRef.current.value.slice(cursorPosition)
+						const lastHashIndex = beforeCursor.lastIndexOf("#")
+
+						if (lastHashIndex !== -1) {
+							const newValue = beforeCursor.slice(0, lastHashIndex) + hashFileText + " " + afterCursor
+							setInputValue(newValue)
+							const newCursorPosition = lastHashIndex + hashFileText.length + 1
+							setCursorPosition(newCursorPosition)
+							setIntendedCursorPosition(newCursorPosition)
+						}
+					} else {
+						// Original @ mention insertion
+						const { newValue, mentionIndex } = insertMention(
+							textAreaRef.current.value,
+							cursorPosition,
+							insertValue,
+						)
+
+						setInputValue(newValue)
+						const newCursorPosition = newValue.indexOf(" ", mentionIndex + insertValue.length) + 1
+						setCursorPosition(newCursorPosition)
+						setIntendedCursorPosition(newCursorPosition)
+					}
+					// kilocode_change end
 
 					// Scroll to cursor.
 					setTimeout(() => {
@@ -634,7 +760,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 				}
 			},
 			// eslint-disable-next-line react-hooks/exhaustive-deps
-			[setInputValue, cursorPosition],
+			[setInputValue, cursorPosition, menuTrigger], // kilocode_change: added menuTrigger
 		)
 
 		const handleSlashCommandsSelect = useCallback(
@@ -826,12 +952,47 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 					const charAfterIsWhitespace =
 						charAfterCursor === " " || charAfterCursor === "\n" || charAfterCursor === "\r\n"
 
-					// Checks if char before cusor is whitespace after a mention.
-					if (
+					// kilocode_change start: smart backspace for #file: mentions
+					// Check if cursor is right after a space following a #file:xxx mention
+					const hashFileMentionEndRegex = /#file:[^\s,]+$/
+					const textBeforeSpace = inputValue.slice(0, cursorPosition - 1)
+					const isAfterHashFileMention =
+						charBeforeIsWhitespace && hashFileMentionEndRegex.test(textBeforeSpace)
+
+					if (isAfterHashFileMention) {
+						const newCursorPosition = cursorPosition - 1
+						if (!charAfterIsWhitespace) {
+							event.preventDefault()
+							textAreaRef.current?.setSelectionRange(newCursorPosition, newCursorPosition)
+							setCursorPosition(newCursorPosition)
+						}
+						setCursorPosition(newCursorPosition)
+						setJustDeletedSpaceAfterMention(true)
+					} else if (
+						justDeletedSpaceAfterMention &&
+						hashFileMentionEndRegex.test(inputValue.slice(0, cursorPosition))
+					) {
+						// Delete the entire #file:xxx mention as a unit
+						const beforeCursor = inputValue.slice(0, cursorPosition)
+						const hashMatch = beforeCursor.match(/#file:[^\s,]+$/)
+						if (hashMatch) {
+							event.preventDefault()
+							const mentionStart = cursorPosition - hashMatch[0].length
+							const afterCursor = inputValue.slice(cursorPosition)
+							const newText = inputValue.slice(0, mentionStart) + afterCursor.replace(/^\s/, "")
+							setInputValue(newText)
+							setIntendedCursorPosition(mentionStart)
+						}
+						setJustDeletedSpaceAfterMention(false)
+						setShowContextMenu(false)
+					} else if (
 						charBeforeIsWhitespace &&
 						// "$" is added to ensure the match occurs at the end of the string.
 						inputValue.slice(0, cursorPosition - 1).match(new RegExp(mentionRegex.source + "$"))
 					) {
+						// kilocode_change end: smart backspace for #file: mentions
+
+						// Checks if char before cursor is whitespace after an @ mention.
 						const newCursorPosition = cursorPosition - 1
 						// If mention is followed by another word, then instead
 						// of deleting the space separating them we just move
@@ -944,17 +1105,31 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 				} // kilocode_change end: Slash command query handling
 
 				if (showMenu) {
-					const lastAtIndex = newValue.lastIndexOf("@", newCursorPosition - 1)
+					// kilocode_change start: detect # vs @ trigger
+					const trigger = getContextMenuTrigger(newValue, newCursorPosition)
+					setMenuTrigger(trigger)
+					// kilocode_change end
 
-					if (newValue.startsWith("/") && lastAtIndex === -1) {
+					const lastAtIndex = newValue.lastIndexOf("@", newCursorPosition - 1)
+					const lastHashIndex = newValue.lastIndexOf("#", newCursorPosition - 1) // kilocode_change
+
+					// kilocode_change start: determine the trigger index (whichever is closer to cursor)
+					const triggerIndex = trigger === "#" ? lastHashIndex : lastAtIndex
+					// kilocode_change end
+
+					if (newValue.startsWith("/") && lastAtIndex === -1 && lastHashIndex === -1) {
 						// kilocode_change: Prevent slash command conflict with mentions
 						// Handle slash command.
 						const query = newValue
 						setSearchQuery(query)
 						setSelectedMenuIndex(0)
-					} else {
-						// Existing @ mention handling.
-						const query = newValue.slice(lastAtIndex + 1, newCursorPosition)
+					} else if (triggerIndex !== -1) {
+						// kilocode_change: unified @ and # mention handling
+						let query = newValue.slice(triggerIndex + 1, newCursorPosition)
+						// kilocode_change: strip "file:" prefix so the search gets just the filename
+						if (trigger === "#" && query.startsWith("file:")) {
+							query = query.slice(5)
+						}
 						setSearchQuery(query)
 
 						// Send file search request if query is not empty.
@@ -990,6 +1165,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 				} else {
 					setSearchQuery("")
 					setSelectedMenuIndex(-1)
+					setMenuTrigger(null) // kilocode_change
 					setFileSearchResults([]) // Clear file search results.
 				}
 			},
@@ -1141,6 +1317,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 				.replace(/\n$/, "\n\n")
 				.replace(/[<>&]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;" })[c] || c)
 				.replace(mentionRegexGlobal, '<mark class="mention-context-textarea-highlight">$&</mark>')
+				.replace(/#file:([^\s,]+)/g, '<mark class="hashfile-textarea-highlight">$&</mark>') // kilocode_change: highlight #file: references with blue tint
 
 			// check for highlighting /slash-commands
 			if (/^\s*\//.test(processedText)) {
@@ -1519,7 +1696,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 					"flex-col-reverse",
 					"min-h-0",
 					"overflow-hidden",
-					"rounded",
+					// kilocode_change: no rounding — outer chat-text-area container is the visual card
 				)}>
 				<div
 					ref={highlightLayerRef}
@@ -1587,18 +1764,13 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 
 						onHeightChange?.(height)
 					}}
-					// kilocode_change: use regular placeholder, streaming text goes to actual input
-					placeholder={`${placeholderText}\n${placeholderBottomText}`}
+					// kilocode_change: simplified placeholder — just the main text, cleaner like Cursor
+					placeholder={placeholderText}
 					minRows={3}
 					maxRows={15}
 					autoFocus={true}
-					// kilocode_change start - isRecording active
-					style={{
-						border: isRecording
-							? "1px solid var(--vscode-editorError-foreground)"
-							: "1px solid transparent",
-					}}
-					// kilocode_change end - isRecording active
+					// kilocode_change: no own border/outline — outer container handles all visual chrome
+					style={{ border: "none", outline: "none", boxShadow: "none" }}
 					className={cn(
 						"w-full",
 						"text-vscode-input-foreground",
@@ -1607,22 +1779,17 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 						"leading-vscode-editor-line-height",
 						"cursor-text",
 						isEditMode ? "pt-1.5 pb-10 px-2" : "py-1.5 px-2",
-						// kilocode_change start - removing duplicated border
-						isRecording && "focus:outline-0",
-						// isFocused
-						// 	? "border border-vscode-focusBorder outline outline-vscode-focusBorder"
-						// 	: isDraggingOver
-						// 		? "border-2 border-dashed border-vscode-focusBorder"
-						// 		: "border border-transparent",
-						// kilocode_change end - removing duplicated border
+						// kilocode_change: no focus styling — outer container handles it
+						"focus:outline-none focus:ring-0 focus:border-none focus:shadow-none",
+						// kilocode_change: transparent bg normally — outer container provides the background
+						// but show drag feedback when files are being dragged over
 						isDraggingOver
 							? "bg-[color-mix(in_srgb,var(--vscode-input-background)_95%,var(--vscode-focusBorder))]"
-							: "bg-vscode-input-background",
-						"transition-background-color duration-150 ease-in-out",
-						"will-change-background-color",
+							: "bg-transparent",
+						"transition-all duration-150 ease-in-out",
 						"min-h-[90px]",
 						"box-border",
-						"rounded",
+						"rounded-none",
 						"resize-none",
 						"overflow-x-hidden",
 						"overflow-y-auto",
@@ -1631,7 +1798,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 						"z-[2]",
 						"scrollbar-none",
 						"scrollbar-hide",
-						"pb-16", // kilocode_change: Increased padding to prevent overlap with control bar
+						"pb-16", // kilocode_change: padding to prevent overlap with control bar
 					)}
 					onScroll={() => updateHighlights()}
 				/>
@@ -1660,7 +1827,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 					</StandardTooltip>
 				)}
 
-				{/* kilocode_change: position tweaked */}
+				{/* kilocode_change: enhance button — more subtle, only prominent on hover */}
 				<div className="absolute top-2 right-2 z-30">
 					<StandardTooltip content={t("chat:enhancePrompt")}>
 						<button
@@ -1671,14 +1838,15 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 								"relative inline-flex items-center justify-center",
 								"bg-transparent border-none p-1.5",
 								"rounded-md min-w-[28px] min-h-[28px]",
-								"opacity-60 hover:opacity-100 text-vscode-descriptionForeground hover:text-vscode-foreground",
-								"transition-all duration-150",
-								"hover:bg-[rgba(255,255,255,0.03)] hover:border-[rgba(255,255,255,0.15)]",
+								"opacity-30 hover:opacity-80 text-vscode-descriptionForeground hover:text-vscode-foreground",
+								"transition-all duration-200",
+								"hover:bg-[rgba(255,255,255,0.05)]",
 								"focus:outline-none focus-visible:ring-1 focus-visible:ring-vscode-focusBorder",
 								"active:bg-[rgba(255,255,255,0.1)]",
 								"cursor-pointer",
+								isEnhancingPrompt && "opacity-100",
 							)}>
-							<WandSparkles className={cn("w-4 h-4", isEnhancingPrompt && "animate-spin")} />
+							<WandSparkles className={cn("w-3.5 h-3.5", isEnhancingPrompt && "animate-spin")} />
 						</button>
 					</StandardTooltip>
 				</div>
@@ -1766,30 +1934,26 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 					)}
 					{/* kilocode_change end */}
 
-					{inputValue.trim() !== "" && (
-						<StandardTooltip content={t("chat:sendMessage")}>
-							<button
-								aria-label={t("chat:sendMessage")}
-								disabled={sendingDisabled}
-								onClick={!sendingDisabled ? onSend : undefined}
-								className={cn(
-									"relative inline-flex items-center justify-center",
-									"bg-transparent border-none p-1.5",
-									"rounded-md min-w-[28px] min-h-[28px]",
-									"opacity-60 hover:opacity-100 text-vscode-descriptionForeground hover:text-vscode-foreground",
-									"transition-all duration-150",
-									"hover:bg-[rgba(255,255,255,0.03)] hover:border-[rgba(255,255,255,0.15)]",
-									"focus:outline-none focus-visible:ring-1 focus-visible:ring-vscode-focusBorder",
-									"active:bg-[rgba(255,255,255,0.1)]",
-									!sendingDisabled && "cursor-pointer",
-									sendingDisabled &&
-										"opacity-40 cursor-not-allowed grayscale-[30%] hover:bg-transparent hover:border-[rgba(255,255,255,0.08)] active:bg-transparent",
-								)}>
-								{/* kilocode_change: rtl */}
-								<SendHorizontal className="w-4 h-4 rtl:-scale-x-100" />
-							</button>
-						</StandardTooltip>
-					)}
+					<StandardTooltip content={t("chat:sendMessage")}>
+						<button
+							aria-label={t("chat:sendMessage")}
+							disabled={sendingDisabled || inputValue.trim() === ""}
+							onClick={!sendingDisabled && inputValue.trim() !== "" ? onSend : undefined}
+							className={cn(
+								"relative inline-flex items-center justify-center",
+								"bg-transparent border-none p-1.5",
+								"rounded-md min-w-[28px] min-h-[28px]",
+								"transition-all duration-150",
+								"focus:outline-none focus-visible:ring-1 focus-visible:ring-vscode-focusBorder",
+								// Always visible: bright when active, dimmed when empty/disabled
+								inputValue.trim() !== "" && !sendingDisabled
+									? "opacity-80 hover:opacity-100 text-vscode-foreground cursor-pointer hover:bg-[rgba(255,255,255,0.03)] active:bg-[rgba(255,255,255,0.1)]"
+									: "opacity-25 text-vscode-descriptionForeground cursor-default",
+							)}>
+							{/* kilocode_change: rtl */}
+							<SendHorizontal className="w-4 h-4 rtl:-scale-x-100" />
+						</button>
+					</StandardTooltip>
 					{/* kilocode_change end */}
 				</div>
 
@@ -1817,7 +1981,7 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 					"gap-1",
 					"bg-editor-background",
 					isEditMode ? "px-0" : "px-1.5",
-					"pb-1",
+					"pb-2", // kilocode_change: enough bottom spacing so nothing overflows
 					"outline-none",
 					"border",
 					"border-none",
@@ -1827,8 +1991,70 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 					"box-border",
 				)}>
 				<div className="relative">
+					{/* kilocode_change start: Menus rendered OUTSIDE overflow-hidden container so they aren't clipped */}
+					{showSlashCommandsMenu && (
+						<div
+							ref={slashCommandsMenuContainerRef}
+							className="absolute bottom-full left-0 right-0 z-[1000] mb-1">
+							<SlashCommandMenu
+								onSelect={handleSlashCommandsSelect}
+								selectedIndex={selectedSlashCommandsIndex}
+								setSelectedIndex={setSelectedSlashCommandsIndex}
+								onMouseDown={handleMenuMouseDown}
+								query={slashCommandsQuery}
+								customModes={customModes}
+							/>
+						</div>
+					)}
+					{showContextMenu && (
+						<div
+							ref={contextMenuContainerRef}
+							className={cn(
+								"absolute",
+								"bottom-full",
+								"left-0",
+								"right-0",
+								"z-[1000]",
+								"mb-2",
+								"filter",
+								"drop-shadow-md",
+							)}>
+							<ContextMenu
+								onSelect={handleMentionSelect}
+								searchQuery={searchQuery}
+								inputValue={inputValue}
+								onMouseDown={handleMenuMouseDown}
+								selectedIndex={selectedMenuIndex}
+								setSelectedIndex={setSelectedMenuIndex}
+								selectedType={selectedType}
+								queryItems={queryItems}
+								modes={allModes}
+								loading={searchLoading}
+								dynamicSearchResults={fileSearchResults}
+							/>
+						</div>
+					)}
+					{/* kilocode_change end: Menus outside overflow-hidden */}
+
 					<div
-						className={cn("chat-text-area", "relative", "flex", "flex-col", "outline-none")}
+						className={cn(
+							"chat-text-area",
+							"relative",
+							"flex",
+							"flex-col",
+							"outline-none",
+							// kilocode_change: unified container — one border wrapping pills + textarea
+							"rounded-lg",
+							"border",
+							isFocused && !isRecording
+								? "border-[rgba(255,255,255,0.25)]"
+								: isRecording
+									? "border-[var(--vscode-editorError-foreground)]"
+									: "border-[rgba(255,255,255,0.12)]",
+							"bg-vscode-input-background",
+							"overflow-hidden",
+							"transition-colors duration-150",
+						)}
 						onDrop={handleDrop}
 						onDragOver={(e) => {
 							// Only allowed to drop images/files on shift key pressed.
@@ -1854,6 +2080,9 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 								setIsDraggingOver(false)
 							}
 						}}>
+						{/* kilocode_change start: File reference pills bar */}
+						<FileReferencePills files={fileReferences} onRemove={handleRemoveFileReference} />
+						{/* kilocode_change end: File reference pills bar */}
 						{/* kilocode_change start: ImageWarningBanner integration */}
 						<ImageWarningBanner
 							messageKey={imageWarning ?? ""}
@@ -1861,59 +2090,17 @@ export const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 							isVisible={!!imageWarning}
 						/>
 						{/* kilocode_change end: ImageWarningBanner integration */}
-						{/* kilocode_change start: pull slash commands from Cline */}
-						{showSlashCommandsMenu && (
-							<div ref={slashCommandsMenuContainerRef}>
-								<SlashCommandMenu
-									onSelect={handleSlashCommandsSelect}
-									selectedIndex={selectedSlashCommandsIndex}
-									setSelectedIndex={setSelectedSlashCommandsIndex}
-									onMouseDown={handleMenuMouseDown}
-									query={slashCommandsQuery}
-									customModes={customModes}
-								/>
-							</div>
-						)}
-						{/* kilocode_change end: pull slash commands from Cline */}
-						{showContextMenu && (
-							<div
-								ref={contextMenuContainerRef}
-								className={cn(
-									"absolute",
-									"bottom-full",
-									"left-0",
-									"right-0",
-									"z-[1000]",
-									"mb-2",
-									"filter",
-									"drop-shadow-md",
-								)}>
-								<ContextMenu
-									onSelect={handleMentionSelect}
-									searchQuery={searchQuery}
-									inputValue={inputValue}
-									onMouseDown={handleMenuMouseDown}
-									selectedIndex={selectedMenuIndex}
-									setSelectedIndex={setSelectedMenuIndex}
-									selectedType={selectedType}
-									queryItems={queryItems}
-									modes={allModes}
-									loading={searchLoading}
-									dynamicSearchResults={fileSearchResults}
-								/>
-							</div>
-						)}
 
 						{renderTextAreaSection()}
 
 						<div
-							// kilocode_change start
+							// kilocode_change start: bottom controls — negative margin pulls into textarea padding area
 							style={{
 								marginTop: "-38px",
 								zIndex: 10,
 								paddingLeft: "8px",
 								paddingRight: "8px",
-								paddingBottom: isEditMode ? "10px" : "0",
+								paddingBottom: isEditMode ? "10px" : "6px",
 							}}
 							ref={containerRef}
 							// kilocode_change end

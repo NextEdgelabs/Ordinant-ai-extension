@@ -508,6 +508,19 @@ export async function addCustomInstructions(
 		sections.push(`Rules:\n\n${rules.join("\n\n")}`)
 	}
 
+	// kilocode_change start: Load steering files
+	try {
+		const { getSteeringContentsForPrompt } = await import("../../webview/kilosteering")
+		const steeringContents = await getSteeringContentsForPrompt(cwd)
+		if (steeringContents.length > 0) {
+			const steeringSection = steeringContents.map((s) => `# Steering from ${s.name}:\n${s.content}`).join("\n\n")
+			sections.push(`Steering:\n\n${steeringSection}`)
+		}
+	} catch (err) {
+		// Steering files are optional; if the module is unavailable, skip silently
+	}
+	// kilocode_change end
+
 	const joinedSections = sections.join("\n\n")
 
 	const effectiveProtocol = getEffectiveProtocol(options.settings?.toolProtocol)
